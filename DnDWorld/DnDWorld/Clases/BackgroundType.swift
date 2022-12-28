@@ -53,3 +53,33 @@ enum BackgroundType {
         }
     }
 }
+
+
+struct Background {
+
+    let name: String
+    let version: String?
+
+    // Opening introduction about the background
+    let introduction: String
+
+    // Describes what skills proficiencies the background grants
+    let skillProficienciesDescription: String?
+
+    // Describes what tools proficiencies the background grants
+    let toolProficienciesDescription: String?
+
+    // Describes what languages the background grants
+    let languagesDescription: String?
+
+    let equipmentDescription: String?
+    
+    let feature: String
+    let proficencies: [String]
+    let tags: [String]
+    let description: String
+    let personality: String
+    let ideal: String
+    let bond: String
+    let flaw: String
+}

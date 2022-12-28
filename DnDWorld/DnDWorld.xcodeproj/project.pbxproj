@@ -25,6 +25,9 @@
 		CA37C6F3295A2D6400C508CB /* DamageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6F2295A2D6400C508CB /* DamageType.swift */; };
 		CA37C6F5295A368300C508CB /* ClassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6F4295A368300C508CB /* ClassType.swift */; };
 		CA37C6F7295B294300C508CB /* BackgroundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6F6295B294300C508CB /* BackgroundType.swift */; };
+		CA37C6FB295B344300C508CB /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FA295B344300C508CB /* Languages.swift */; };
+		CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FC295B34BB00C508CB /* Alignment.swift */; };
+		CA37C6FF295B37AB00C508CB /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FE295B37AB00C508CB /* Skills.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		CA37C6F2295A2D6400C508CB /* DamageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageType.swift; sourceTree = "<group>"; };
 		CA37C6F4295A368300C508CB /* ClassType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassType.swift; sourceTree = "<group>"; };
 		CA37C6F6295B294300C508CB /* BackgroundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundType.swift; sourceTree = "<group>"; };
+		CA37C6FA295B344300C508CB /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
+		CA37C6FC295B34BB00C508CB /* Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
+		CA37C6FE295B37AB00C508CB /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,9 @@
 				CA37C6F2295A2D6400C508CB /* DamageType.swift */,
 				CA37C6F4295A368300C508CB /* ClassType.swift */,
 				CA37C6F6295B294300C508CB /* BackgroundType.swift */,
+				CA37C6FA295B344300C508CB /* Languages.swift */,
+				CA37C6FC295B34BB00C508CB /* Alignment.swift */,
+				CA37C6FE295B37AB00C508CB /* Skills.swift */,
 			);
 			path = Clases;
 			sourceTree = "<group>";
@@ -301,12 +310,15 @@
 				CA37C6F3295A2D6400C508CB /* DamageType.swift in Sources */,
 				CA37C6E3295A043100C508CB /* Abilities.swift in Sources */,
 				CA37C6EF295A287800C508CB /* Armor.swift in Sources */,
+				CA37C6FB295B344300C508CB /* Languages.swift in Sources */,
 				CA37C6E1295A02A100C508CB /* Stat.swift in Sources */,
 				CA37C6EB295A286300C508CB /* Equipment.swift in Sources */,
 				CA37C6E5295A050A00C508CB /* Character.swift in Sources */,
 				CA37C6F7295B294300C508CB /* BackgroundType.swift in Sources */,
 				CA37C6F5295A368300C508CB /* ClassType.swift in Sources */,
+				CA37C6FF295B37AB00C508CB /* Skills.swift in Sources */,
 				CA37C6B82959F1C500C508CB /* ContentView.swift in Sources */,
+				CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */,
 				CA37C6E7295A053E00C508CB /* Race.swift in Sources */,
 				CA37C6E9295A055B00C508CB /* Subrace.swift in Sources */,
 				CA37C6B62959F1C500C508CB /* DnDWorldApp.swift in Sources */,
