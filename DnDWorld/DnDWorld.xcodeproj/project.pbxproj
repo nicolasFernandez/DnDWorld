@@ -32,6 +32,7 @@
 		CA8BE8E52971F3C2009517ED /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E42971F3C2009517ED /* School.swift */; };
 		CA8BE8E72971F4E8009517ED /* AttackType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E62971F4E8009517ED /* AttackType.swift */; };
 		CA8BE8EB2971F630009517ED /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EA2971F630009517ED /* Component.swift */; };
+		CADA87C6297B385300C464CE /* RaceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA87C5297B385300C464CE /* RaceType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		CA8BE8E42971F3C2009517ED /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		CA8BE8E62971F4E8009517ED /* AttackType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackType.swift; sourceTree = "<group>"; };
 		CA8BE8EA2971F630009517ED /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		CADA87C5297B385300C464CE /* RaceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				CA8BE8E42971F3C2009517ED /* School.swift */,
 				CA8BE8E62971F4E8009517ED /* AttackType.swift */,
 				CA8BE8EA2971F630009517ED /* Component.swift */,
+				CADA87C5297B385300C464CE /* RaceType.swift */,
 			);
 			path = Clases;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			files = (
 				CA37C6F3295A2D6400C508CB /* DamageType.swift in Sources */,
 				CA8BE8E72971F4E8009517ED /* AttackType.swift in Sources */,
+				CADA87C6297B385300C464CE /* RaceType.swift in Sources */,
 				CA37C6E3295A043100C508CB /* Abilities.swift in Sources */,
 				CA37C6EF295A287800C508CB /* Armor.swift in Sources */,
 				CA37C6FB295B344300C508CB /* Languages.swift in Sources */,

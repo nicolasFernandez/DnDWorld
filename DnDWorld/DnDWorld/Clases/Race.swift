@@ -7,27 +7,7 @@
 
 import Foundation
 
-enum RaceTypes {
-    case human
-    case elf
-    case halfling
-    case dwarf
-
-    var description: String {
-        switch self {
-        case .human:
-            return "Humano"
-        case .elf:
-            return "Elfo"
-        case .halfling:
-            return "Mediano"
-        case .dwarf:
-            return "Enano"
-        }
-    }
-}
-
 struct Race {
-    var type: RaceTypes
+    var type: RaceType
     var subrace: Subrace?
 }
