@@ -318,6 +318,7 @@
 				CA37C6F5295A368300C508CB /* ClassType.swift in Sources */,
 				CA37C6FF295B37AB00C508CB /* Skills.swift in Sources */,
 				CA37C6E1295A02A100C508CB /* Ability.swift in Sources */,
+				CA37C6F5295A368300C508CB /* ClassType.swift in Sources */,
 				CA37C6B82959F1C500C508CB /* ContentView.swift in Sources */,
 				CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */,
 				CA37C6E7295A053E00C508CB /* Race.swift in Sources */,
