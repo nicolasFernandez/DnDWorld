@@ -8,22 +8,22 @@
 import Foundation
 
 struct Skills {
-    let athletics: Int
-    let acrobatics: Int
-    let sleightOfHand: Int
-    let stealth: Int
-    let arcana: Int
-    let history: Int
-    let investigation: Int
-    let nature: Int
-    let religion: Int
-    let animalHandling: Int
-    let insight: Int
-    let medicine: Int
-    let perception: Int
-    let survival: Int
-    let deception: Int
-    let intimidation: Int
-    let performance: Int
-    let persuasion: Int
+    let acrobatics: Skill
+    let animalHandling: Skill
+    let arcana: Skill
+    let athletics: Skill
+    let deception: Skill
+    let history: Skill
+    let insight: Skill
+    let intimidation: Skill
+    let investigation: Skill
+    let medicine: Skill
+    let nature: Skill
+    let perception: Skill
+    let performance: Skill
+    let persuasion: Skill
+    let religion: Skill
+    let sleightOfHand: Skill
+    let stealth: Skill
+    let survival: Skill
 }
