@@ -29,6 +29,7 @@
 		CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FC295B34BB00C508CB /* Alignment.swift */; };
 		CA37C6FF295B37AB00C508CB /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FE295B37AB00C508CB /* Skills.swift */; };
 		CA8BE8E12971E5F4009517ED /* Feat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E02971E5F4009517ED /* Feat.swift */; };
+		CA8BE8E72971F4E8009517ED /* AttackType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E62971F4E8009517ED /* AttackType.swift */; };
 		CA8BE8EB2971F630009517ED /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EA2971F630009517ED /* Component.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		CA37C6FC295B34BB00C508CB /* Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
 		CA37C6FE295B37AB00C508CB /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 		CA8BE8E02971E5F4009517ED /* Feat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feat.swift; sourceTree = "<group>"; };
+		CA8BE8E62971F4E8009517ED /* AttackType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackType.swift; sourceTree = "<group>"; };
 		CA8BE8EA2971F630009517ED /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +180,7 @@
 				CA37C6FC295B34BB00C508CB /* Alignment.swift */,
 				CA37C6FE295B37AB00C508CB /* Skills.swift */,
 				CA8BE8E02971E5F4009517ED /* Feat.swift */,
+				CA8BE8E62971F4E8009517ED /* AttackType.swift */,
 				CA8BE8EA2971F630009517ED /* Component.swift */,
 			);
 			path = Clases;
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA37C6F3295A2D6400C508CB /* DamageType.swift in Sources */,
+				CA8BE8E72971F4E8009517ED /* AttackType.swift in Sources */,
 				CA37C6E3295A043100C508CB /* Abilities.swift in Sources */,
 				CA37C6EF295A287800C508CB /* Armor.swift in Sources */,
 				CA37C6FB295B344300C508CB /* Languages.swift in Sources */,
