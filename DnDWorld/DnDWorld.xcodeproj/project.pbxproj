@@ -14,7 +14,7 @@
 		CA37C6C72959F1CA00C508CB /* DnDWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6C62959F1CA00C508CB /* DnDWorldTests.swift */; };
 		CA37C6D12959F1CA00C508CB /* DnDWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6D02959F1CA00C508CB /* DnDWorldUITests.swift */; };
 		CA37C6D32959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6D22959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift */; };
-		CA37C6E1295A02A100C508CB /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E0295A02A100C508CB /* Stat.swift */; };
+		CA37C6E1295A02A100C508CB /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E0295A02A100C508CB /* Ability.swift */; };
 		CA37C6E3295A043100C508CB /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E2295A043100C508CB /* Abilities.swift */; };
 		CA37C6E5295A050A00C508CB /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E4295A050A00C508CB /* Character.swift */; };
 		CA37C6E7295A053E00C508CB /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E6295A053E00C508CB /* Race.swift */; };
@@ -58,7 +58,7 @@
 		CA37C6CC2959F1CA00C508CB /* DnDWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DnDWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA37C6D02959F1CA00C508CB /* DnDWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDWorldUITests.swift; sourceTree = "<group>"; };
 		CA37C6D22959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CA37C6E0295A02A100C508CB /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
+		CA37C6E0295A02A100C508CB /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
 		CA37C6E2295A043100C508CB /* Abilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
 		CA37C6E4295A050A00C508CB /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		CA37C6E6295A053E00C508CB /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 		CA37C6DF295A028900C508CB /* Clases */ = {
 			isa = PBXGroup;
 			children = (
-				CA37C6E0295A02A100C508CB /* Stat.swift */,
+				CA37C6E0295A02A100C508CB /* Ability.swift */,
 				CA37C6E2295A043100C508CB /* Abilities.swift */,
 				CA37C6E4295A050A00C508CB /* Character.swift */,
 				CA37C6E6295A053E00C508CB /* Race.swift */,
@@ -317,6 +317,7 @@
 				CA37C6F7295B294300C508CB /* BackgroundType.swift in Sources */,
 				CA37C6F5295A368300C508CB /* ClassType.swift in Sources */,
 				CA37C6FF295B37AB00C508CB /* Skills.swift in Sources */,
+				CA37C6E1295A02A100C508CB /* Ability.swift in Sources */,
 				CA37C6B82959F1C500C508CB /* ContentView.swift in Sources */,
 				CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */,
 				CA37C6E7295A053E00C508CB /* Race.swift in Sources */,
