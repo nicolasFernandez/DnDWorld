@@ -29,8 +29,10 @@
 		CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FC295B34BB00C508CB /* Alignment.swift */; };
 		CA8BE8DF2971E5CC009517ED /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8DE2971E5CC009517ED /* Background.swift */; };
 		CA8BE8E12971E5F4009517ED /* Feat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E02971E5F4009517ED /* Feat.swift */; };
+		CA8BE8E32971E64C009517ED /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E22971E64C009517ED /* Spell.swift */; };
 		CA8BE8E52971F3C2009517ED /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E42971F3C2009517ED /* School.swift */; };
 		CA8BE8E72971F4E8009517ED /* AttackType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E62971F4E8009517ED /* AttackType.swift */; };
+		CA8BE8E92971F59E009517ED /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E82971F59E009517ED /* Condition.swift */; };
 		CA8BE8EB2971F630009517ED /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EA2971F630009517ED /* Component.swift */; };
 		CA8BE8EF2971FA8D009517ED /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EE2971FA8D009517ED /* Skills.swift */; };
 		CA8BE8F12971FD29009517ED /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8F02971FD29009517ED /* Skill.swift */; };
@@ -80,8 +82,10 @@
 		CA37C6FC295B34BB00C508CB /* Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
 		CA8BE8DE2971E5CC009517ED /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		CA8BE8E02971E5F4009517ED /* Feat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feat.swift; sourceTree = "<group>"; };
+		CA8BE8E22971E64C009517ED /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 		CA8BE8E42971F3C2009517ED /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		CA8BE8E62971F4E8009517ED /* AttackType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackType.swift; sourceTree = "<group>"; };
+		CA8BE8E82971F59E009517ED /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
 		CA8BE8EA2971F630009517ED /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		CA8BE8EE2971FA8D009517ED /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 		CA8BE8F02971FD29009517ED /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
@@ -188,8 +192,10 @@
 				CA37C6FC295B34BB00C508CB /* Alignment.swift */,
 				CA8BE8DE2971E5CC009517ED /* Background.swift */,
 				CA8BE8E02971E5F4009517ED /* Feat.swift */,
+				CA8BE8E22971E64C009517ED /* Spell.swift */,
 				CA8BE8E42971F3C2009517ED /* School.swift */,
 				CA8BE8E62971F4E8009517ED /* AttackType.swift */,
+				CA8BE8E82971F59E009517ED /* Condition.swift */,
 				CA8BE8EA2971F630009517ED /* Component.swift */,
 				CA8BE8EE2971FA8D009517ED /* Skills.swift */,
 				CA8BE8F02971FD29009517ED /* Skill.swift */,
@@ -336,7 +342,7 @@
 				CA37C6E3295A043100C508CB /* Abilities.swift in Sources */,
 				CA37C6EF295A287800C508CB /* Armor.swift in Sources */,
 				CA37C6FB295B344300C508CB /* Languages.swift in Sources */,
-				CA37C6E1295A02A100C508CB /* Stat.swift in Sources */,
+				CA37C6E1295A02A100C508CB /* Ability.swift in Sources */,
 				CA37C6EB295A286300C508CB /* Equipment.swift in Sources */,
 				CA37C6E5295A050A00C508CB /* Character.swift in Sources */,
 				CA37C6F7295B294300C508CB /* BackgroundType.swift in Sources */,
@@ -344,7 +350,9 @@
 				CA8BE8E52971F3C2009517ED /* School.swift in Sources */,
 				CA37C6E1295A02A100C508CB /* Ability.swift in Sources */,
 				CA8BE8DF2971E5CC009517ED /* Background.swift in Sources */,
+				CA8BE8E92971F59E009517ED /* Condition.swift in Sources */,
 				CA37C6F5295A368300C508CB /* ClassType.swift in Sources */,
+				CA8BE8E32971E64C009517ED /* Spell.swift in Sources */,
 				CA37C6B82959F1C500C508CB /* ContentView.swift in Sources */,
 				CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */,
 				CA37C6E7295A053E00C508CB /* Race.swift in Sources */,
