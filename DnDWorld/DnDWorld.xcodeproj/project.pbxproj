@@ -27,6 +27,10 @@
 		CA37C6F7295B294300C508CB /* BackgroundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6F6295B294300C508CB /* BackgroundType.swift */; };
 		CA37C6FB295B344300C508CB /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FA295B344300C508CB /* Languages.swift */; };
 		CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FC295B34BB00C508CB /* Alignment.swift */; };
+		CA8BE8D62971A391009517ED /* ClassDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8D52971A391009517ED /* ClassDetails.swift */; };
+		CA8BE8D92971A3EF009517ED /* ClassRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8D82971A3EF009517ED /* ClassRow.swift */; };
+		CA8BE8DB2971AE64009517ED /* StatText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8DA2971AE64009517ED /* StatText.swift */; };
+		CA8BE8DD2971D7DC009517ED /* RaceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8DC2971D7DC009517ED /* RaceDetails.swift */; };
 		CA8BE8DF2971E5CC009517ED /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8DE2971E5CC009517ED /* Background.swift */; };
 		CA8BE8E12971E5F4009517ED /* Feat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E02971E5F4009517ED /* Feat.swift */; };
 		CA8BE8E32971E64C009517ED /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E22971E64C009517ED /* Spell.swift */; };
@@ -34,8 +38,10 @@
 		CA8BE8E72971F4E8009517ED /* AttackType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E62971F4E8009517ED /* AttackType.swift */; };
 		CA8BE8E92971F59E009517ED /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E82971F59E009517ED /* Condition.swift */; };
 		CA8BE8EB2971F630009517ED /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EA2971F630009517ED /* Component.swift */; };
+		CA8BE8ED2971F956009517ED /* SchoolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EC2971F956009517ED /* SchoolRow.swift */; };
 		CA8BE8EF2971FA8D009517ED /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EE2971FA8D009517ED /* Skills.swift */; };
 		CA8BE8F12971FD29009517ED /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8F02971FD29009517ED /* Skill.swift */; };
+		CA8BE8F32975F752009517ED /* AbilityScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8F22975F752009517ED /* AbilityScoresView.swift */; };
 		CADA87C6297B385300C464CE /* RaceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA87C5297B385300C464CE /* RaceType.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +86,10 @@
 		CA37C6F6295B294300C508CB /* BackgroundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundType.swift; sourceTree = "<group>"; };
 		CA37C6FA295B344300C508CB /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		CA37C6FC295B34BB00C508CB /* Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
+		CA8BE8D52971A391009517ED /* ClassDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetails.swift; sourceTree = "<group>"; };
+		CA8BE8D82971A3EF009517ED /* ClassRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRow.swift; sourceTree = "<group>"; };
+		CA8BE8DA2971AE64009517ED /* StatText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatText.swift; sourceTree = "<group>"; };
+		CA8BE8DC2971D7DC009517ED /* RaceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetails.swift; sourceTree = "<group>"; };
 		CA8BE8DE2971E5CC009517ED /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		CA8BE8E02971E5F4009517ED /* Feat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feat.swift; sourceTree = "<group>"; };
 		CA8BE8E22971E64C009517ED /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
@@ -87,8 +97,10 @@
 		CA8BE8E62971F4E8009517ED /* AttackType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackType.swift; sourceTree = "<group>"; };
 		CA8BE8E82971F59E009517ED /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
 		CA8BE8EA2971F630009517ED /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		CA8BE8EC2971F956009517ED /* SchoolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRow.swift; sourceTree = "<group>"; };
 		CA8BE8EE2971FA8D009517ED /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 		CA8BE8F02971FD29009517ED /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		CA8BE8F22975F752009517ED /* AbilityScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityScoresView.swift; sourceTree = "<group>"; };
 		CADA87C5297B385300C464CE /* RaceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +152,7 @@
 		CA37C6B42959F1C500C508CB /* DnDWorld */ = {
 			isa = PBXGroup;
 			children = (
+				CA8BE8D72971A39A009517ED /* Views */,
 				CA37C6DF295A028900C508CB /* Clases */,
 				CA37C6B52959F1C500C508CB /* DnDWorldApp.swift */,
 				CA37C6B72959F1C500C508CB /* ContentView.swift */,
@@ -202,6 +215,19 @@
 				CADA87C5297B385300C464CE /* RaceType.swift */,
 			);
 			path = Clases;
+			sourceTree = "<group>";
+		};
+		CA8BE8D72971A39A009517ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BE8D52971A391009517ED /* ClassDetails.swift */,
+				CA8BE8D82971A3EF009517ED /* ClassRow.swift */,
+				CA8BE8DA2971AE64009517ED /* StatText.swift */,
+				CA8BE8DC2971D7DC009517ED /* RaceDetails.swift */,
+				CA8BE8EC2971F956009517ED /* SchoolRow.swift */,
+				CA8BE8F22975F752009517ED /* AbilityScoresView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +364,7 @@
 				CA8BE8F12971FD29009517ED /* Skill.swift in Sources */,
 				CA8BE8E72971F4E8009517ED /* AttackType.swift in Sources */,
 				CA8BE8EF2971FA8D009517ED /* Skills.swift in Sources */,
+				CA8BE8ED2971F956009517ED /* SchoolRow.swift in Sources */,
 				CADA87C6297B385300C464CE /* RaceType.swift in Sources */,
 				CA37C6E3295A043100C508CB /* Abilities.swift in Sources */,
 				CA37C6EF295A287800C508CB /* Armor.swift in Sources */,
@@ -350,9 +377,12 @@
 				CA8BE8E52971F3C2009517ED /* School.swift in Sources */,
 				CA37C6E1295A02A100C508CB /* Ability.swift in Sources */,
 				CA8BE8DF2971E5CC009517ED /* Background.swift in Sources */,
+				CA8BE8DB2971AE64009517ED /* StatText.swift in Sources */,
+				CA8BE8D62971A391009517ED /* ClassDetails.swift in Sources */,
 				CA37C6EB295A286300C508CB /* Equipment.swift in Sources */,
 				CA37C6E5295A050A00C508CB /* Character.swift in Sources */,
 				CA8BE8E92971F59E009517ED /* Condition.swift in Sources */,
+				CA8BE8D92971A3EF009517ED /* ClassRow.swift in Sources */,
 				CA37C6F5295A368300C508CB /* ClassType.swift in Sources */,
 				CA8BE8E32971E64C009517ED /* Spell.swift in Sources */,
 				CA37C6B82959F1C500C508CB /* ContentView.swift in Sources */,
@@ -360,7 +390,9 @@
 				CA37C6E7295A053E00C508CB /* Race.swift in Sources */,
 				CA8BE8EB2971F630009517ED /* Component.swift in Sources */,
 				CA37C6E9295A055B00C508CB /* Subrace.swift in Sources */,
+				CA8BE8DD2971D7DC009517ED /* RaceDetails.swift in Sources */,
 				CA37C6B62959F1C500C508CB /* DnDWorldApp.swift in Sources */,
+				CA8BE8F32975F752009517ED /* AbilityScoresView.swift in Sources */,
 				CA37C6ED295A286E00C508CB /* Weapon.swift in Sources */,
 				CA8BE8E12971E5F4009517ED /* Feat.swift in Sources */,
 			);
