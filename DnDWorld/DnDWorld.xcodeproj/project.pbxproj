@@ -350,6 +350,8 @@
 				CA8BE8E52971F3C2009517ED /* School.swift in Sources */,
 				CA37C6E1295A02A100C508CB /* Ability.swift in Sources */,
 				CA8BE8DF2971E5CC009517ED /* Background.swift in Sources */,
+				CA37C6EB295A286300C508CB /* Equipment.swift in Sources */,
+				CA37C6E5295A050A00C508CB /* Character.swift in Sources */,
 				CA8BE8E92971F59E009517ED /* Condition.swift in Sources */,
 				CA37C6F5295A368300C508CB /* ClassType.swift in Sources */,
 				CA8BE8E32971E64C009517ED /* Spell.swift in Sources */,
