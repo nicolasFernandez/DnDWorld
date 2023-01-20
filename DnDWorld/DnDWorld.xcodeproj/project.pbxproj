@@ -28,6 +28,7 @@
 		CA37C6FB295B344300C508CB /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FA295B344300C508CB /* Languages.swift */; };
 		CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FC295B34BB00C508CB /* Alignment.swift */; };
 		CA37C6FF295B37AB00C508CB /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FE295B37AB00C508CB /* Skills.swift */; };
+		CA8BE8E12971E5F4009517ED /* Feat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E02971E5F4009517ED /* Feat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		CA37C6FA295B344300C508CB /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		CA37C6FC295B34BB00C508CB /* Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
 		CA37C6FE295B37AB00C508CB /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
+		CA8BE8E02971E5F4009517ED /* Feat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				CA37C6FA295B344300C508CB /* Languages.swift */,
 				CA37C6FC295B34BB00C508CB /* Alignment.swift */,
 				CA37C6FE295B37AB00C508CB /* Skills.swift */,
+				CA8BE8E02971E5F4009517ED /* Feat.swift */,
 			);
 			path = Clases;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				CA37C6E9295A055B00C508CB /* Subrace.swift in Sources */,
 				CA37C6B62959F1C500C508CB /* DnDWorldApp.swift in Sources */,
 				CA37C6ED295A286E00C508CB /* Weapon.swift in Sources */,
+				CA8BE8E12971E5F4009517ED /* Feat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
