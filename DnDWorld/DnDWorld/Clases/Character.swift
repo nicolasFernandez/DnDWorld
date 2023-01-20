@@ -10,4 +10,9 @@ import Foundation
 struct Character {
     let name: String
     let abilities: Abilities
+    let skills: Skills
+    let race: Race
+    var armorClass: Int
+    var equipmentList: [Equipment]
+    let classType: [ClassType]
 }

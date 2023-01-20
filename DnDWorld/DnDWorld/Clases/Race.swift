@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Race {
+enum RaceTypes {
     case human
     case elf
     case halfling
@@ -25,5 +25,9 @@ enum Race {
             return "Enano"
         }
     }
+}
 
+struct Race {
+    var type: RaceTypes
+    var subrace: Subrace?
 }
