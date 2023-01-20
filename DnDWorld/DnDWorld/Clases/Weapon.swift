@@ -8,7 +8,7 @@
 import Foundation
 
 struct Weapon: Equipment {
-    var name: String
+    let name: String
     let weight: Float
     let cost: Int
 
