@@ -19,6 +19,7 @@ enum Subrace {
     case lightfoot
     case stout
 
+    // TODO: move text to localization
     var description: String {
         switch self {
         case .wood:

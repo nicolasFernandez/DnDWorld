@@ -17,6 +17,7 @@ struct ClassDetails: View {
                 .padding(.trailing, 30)
                 .padding(.bottom, 8)
                 .padding(.top, 8)
+            // TODO: move texts to localization
             StatText(
                 statTitle: "Dado de golpe",
                 statValue: classType.hitDie

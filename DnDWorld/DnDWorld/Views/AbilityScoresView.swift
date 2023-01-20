@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+// TODO: complete, this is just a testing WIP
 struct AbilityScoresView: View {
     let options = ["1", "2", "3", "4", "5", ]
     @State private var selectedOption = 0

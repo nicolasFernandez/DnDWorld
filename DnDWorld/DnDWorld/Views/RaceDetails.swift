@@ -21,6 +21,7 @@ struct RaceDetails: View {
                 .padding(.trailing, 30)
                 .padding(.bottom, 8)
                 .padding(.top, 8)
+            // TODO: move text to localization
             Text("Rasgos \(raceType.title)")
                 .fontWeight(.bold)
                 .padding(.leading, 30)
