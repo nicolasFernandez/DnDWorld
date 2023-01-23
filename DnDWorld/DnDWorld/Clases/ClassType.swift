@@ -21,34 +21,8 @@ enum ClassType: String {
     case warlock
     case wizard
 
-    // TODO: move text to localization strings
-    var title: String {
-        switch self {
-        case .barbarian:
-            return "Bárbaro"
-        case .bard:
-            return "Bardo"
-        case .cleric:
-            return "Clérigo"
-        case .druid:
-            return "Druida"
-        case .fighter:
-            return "Guerrero"
-        case .monk:
-            return "Monje"
-        case .paladin:
-            return "Paladín"
-        case .ranger:
-            return "Explorador"
-        case .rogue:
-            return "Pícaro"
-        case .sorcerer:
-            return "Hechicero"
-        case .warlock:
-            return "Brujo"
-        case .wizard:
-            return "Mago"
-        }
+    var description: String {
+        return NSLocalizedString(self.rawValue, comment: "")
     }
 
     // TODO: move text to localization strings

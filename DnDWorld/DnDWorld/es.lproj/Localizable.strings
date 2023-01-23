@@ -59,3 +59,17 @@
 "sailor" = "Marinero"
 "soldier" = "Soldado"
 "urchin" = "Huérfano"
+
+// Classes
+"barbarian" = "Bárbaro"
+"bard" = "Bardo"
+"cleric" = "Clérigo"
+"druid" = "Druida"
+"fighter" = "Guerrero"
+"monk" = "Monje"
+"paladin" = "Paladín"
+"ranger" = "Explorador"
+"rogue" = "Pícaro"
+"sorcerer" = "Hechicero"
+"warlock" = "Brujo"
+"wizard" = "Mago"
