@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  DnDWorld
+
+  Created by Nicolas Alonso Fernandez Alarcon on 23-01-23.
+  
+*/
+
+//Alignment
+"lawful_good_title" = "Legal Bueno"
+"neutral_good_title" = "Neutral Bueno"
+"chaotic_good_title" = "Caótico Bueno"
+"lawful_neutral_title" = "Legal Neutral"
+"neutral_title" = "Neutral"
+"chaotic_neutral_title" = "Caótico Neutral"
+"lawful_evil_title" = "Legal Malvado"
+"neutral_evil_title" = "Neutral Malvado"
+"chaotic_evil_title" = "Chaótico Malvado"
+
+"lawful_good_description" = "Se puede contar con que las criaturas harán lo que la sociedad cree que es lo correcto. Los dragones dorados, paladines, y la mayoría de los enanos son legales buenos."
+"neutral_good_description" = "La gente hace lo que puede para ayudar a los demás de acuerdo a sus necesidades. Muchos celestiales, algunos gigantes de las nubes, y la mayoría de los gnomos son neutrales buenos."
+"chaotic_good_description" = "Las criaturas actúan según les dicta su conciencia, sin preocuparse por lo que esperan los demás. Los dragones de bronce, muchos elfos, y los unicornios son caóticos buenos."
+"lawful_neutral_description" = "Los individuos actúan acorde a la ley, tradiciones, o códigos personales. Muchos monjes y hechiceros son legales neutrales."
+"neutral_description" = "Es el alineamiento de aquellos que prefieren mantenerse al margen de cuestiones morales y no pertenecer a ningún bando, haciendo lo que ellos creen que es lo mejor en cada momento. Los hombres lagarto, la mayoría de los druidas, y muchos humanos son neutrales."
+"chaotic_neutral_description" = "Estas criaturas hacen lo que les apetece, valorando su libertad por encima de todo. Muchos bárbaros y pícaros, y algunos bardos, son caóticos neutrales."
+"lawful_evil_description" = "Las criaturas cogen metódicamente aquello que quieren, dentro de los límites de su tradición, lealtad, u orden. Los demonios, dragones azules, y los hobgoblins son legales malvados."
+"neutral_evil_description" = "Es el alineamiento de aquellos que hacen lo que sea necesario para salirse con la suya, sin compasión ni escrúpulos. Muchos drow, algunos gigantes de las nubes, y yugoloths son neutrales malvados."
+"chaotic_evil_description" = "Las criaturas actúan con una violencia arbitraria, impulsados por su codicia, su odio o su sed de sangre. Los demonios, dragones rojos, y orcos son caóticos malignos."

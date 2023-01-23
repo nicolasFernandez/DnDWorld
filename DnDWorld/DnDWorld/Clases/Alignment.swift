@@ -22,48 +22,47 @@ enum Alignment {
     var name: String {
         switch self {
         case .lawfulGood:
-            return "Legal Bueno"
+            return NSLocalizedString("lawful_good_title", comment: "")
         case .neutralGood:
-            return "Neutral Bueno"
+            return NSLocalizedString("neutral_good_title", comment: "")
         case .chaoticGood:
-            return "Caótico Bueno"
+            return NSLocalizedString("chaotic_good_title", comment: "")
         case .lawfulNeutral:
-            return "Legal Neutral"
+            return NSLocalizedString("lawful_neutral_title", comment: "")
         case .neutral:
-            return "Neutral"
+            return NSLocalizedString("neutral_title", comment: "")
         case .chaoticNeutral:
-            return "Caótico Neutral"
+            return NSLocalizedString("chaotic_neutral_title", comment: "")
         case .lawfulEvil:
-            return "Legal Malvado"
+            return NSLocalizedString("lawful_evil_title", comment: "")
         case .neutralEvil:
-            return "Neutral Malvado"
+            return NSLocalizedString("neutral_evil_title", comment: "")
         case .chaoticEvil:
-            return "Chaótico Malvado"
+            return NSLocalizedString("chaotic_evil_title", comment: "")
         }
     }
 
     // TODO: move text to localization
     var description: String {
         switch self {
-
         case .lawfulGood:
-            return "Se puede contar con que las criaturas harán lo que la sociedad cree que es lo correcto. Los dragones dorados, paladines, y la mayoría de los enanos son legales buenos."
+            return NSLocalizedString("lawful_good_description", comment: "")
         case .neutralGood:
-            return "La gente hace lo que puede para ayudar a los demás de acuerdo a sus necesidades. Muchos celestiales, algunos gigantes de las nubes, y la mayoría de los gnomos son neutrales buenos."
+            return NSLocalizedString("neutral_good_description", comment: "")
         case .chaoticGood:
-            return "Las criaturas actúan según les dicta su conciencia, sin preocuparse por lo que esperan los demás. Los dragones de bronce, muchos elfos, y los unicornios son caóticos buenos."
+            return NSLocalizedString("chaotic_good_description", comment: "")
         case .lawfulNeutral:
-            return "Los individuos actúan acorde a la ley, tradiciones, o códigos personales. Muchos monjes y hechiceros son legales neutrales."
+            return NSLocalizedString("lawful_neutral_description", comment: "")
         case .neutral:
-            return "Es el alineamiento de aquellos que prefieren mantenerse al margen de cuestiones morales y no pertenecer a ningún bando, haciendo lo que ellos creen que es lo mejor en cada momento. Los hombres lagarto, la mayoría de los druidas, y muchos humanos son neutrales."
+            return NSLocalizedString("neutral_description", comment: "")
         case .chaoticNeutral:
-            return "Estas criaturas hacen lo que les apetece, valorando su libertad por encima de todo. Muchos bárbaros y pícaros, y algunos bardos, son caóticos neutrales."
+            return NSLocalizedString("chaotic_neutral_description", comment: "")
         case .lawfulEvil:
-            return "Las criaturas cogen metódicamente aquello que quieren, dentro de los límites de su tradición, lealtad, u orden. Los demonios, dragones azules, y los hobgoblins son legales malvados."
+            return NSLocalizedString("lawful_evil_description", comment: "")
         case .neutralEvil:
-            return "Es el alineamiento de aquellos que hacen lo que sea necesario para salirse con la suya, sin compasión ni escrúpulos. Muchos drow, algunos gigantes de las nubes, y yugoloths son neutrales malvados."
+            return NSLocalizedString("neutral_evil_description", comment: "")
         case .chaoticEvil:
-            return "Las criaturas actúan con una violencia arbitraria, impulsados por su codicia, su odio o su sed de sangre. Los demonios, dragones rojos, y orcos son caóticos malignos."
+            return NSLocalizedString("chaotic_evil_description", comment: "")
         }
     }
 }
