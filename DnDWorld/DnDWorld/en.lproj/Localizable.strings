@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  DnDWorld
+
+  Created by Nicolas Alonso Fernandez Alarcon on 23-01-23.
+  
+*/
+
+//Alignment
+"lawful_good_title" = "Lawful Good"
+"neutral_good_title" = "Neutral Good"
+"chaotic_good_title" = "Chaotic Good"
+"lawful_neutral_title" = "Lawful Neutral"
+"neutral_title" = "Neutral"
+"chaotic_neutral_title" = "Chaotic Neutral"
+"lawful_evil_title" = "Lawful Evil"
+"neutral_evil_title" = "Neutral Evil"
+"chaotic_evil_title" = "Chaotic Evil"
+
+"lawful_good_description" = "Creatures can be counted on to do the right thing as expected by society. Gold dragons, paladins, and m ost dwarves are lawful good."
+"neutral_good_description" = "Folk do the best they can to help others according to their needs. Many celestials, some cloud giants, and most gnomes are neutral good."
+"chaotic_good_description" = "Creatures act as their conscience directs, with little regard for what others expect. Copper dragons, many elves, and unicorns are chaotic good."
+"lawful_neutral_description" = "individuals act in accordance with law, tradition, or personal codes. Many monks and some wizards are lawful neutral."
+"neutral_description" = "Is the alignment of those who prefer to steer clear of moral questions and don’t take sides, doing what seems best at the time. Lizardfolk, most druids, and many humans are neutral."
+"chaotic_neutral_description" = "Creatures follow their whims, holding their personal freedom above all else. Many barbarians and rogues, and some bards, are chaotic neutral."
+"lawful_evil_description" = "Creatures methodically take what they want, within the limits of a code of tradition, loyalty, or order. Devils, blue dragons, and hobgoblins are lawful evil."
+"neutral_evil_description" = "Is the alignment of those who do whatever they can get away with, without compassion or qualms. Many drow, some cloud giants, and yugoloths are neutral evil."
+"chaotic_evil_description" = "Creatures act with arbitrary violence, spurred by their greed, hatred, or bloodlust. Demons, red dragons, and orcs are chaotic evil."
