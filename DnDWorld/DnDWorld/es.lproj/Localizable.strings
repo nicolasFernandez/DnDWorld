@@ -26,3 +26,22 @@
 "lawful_evil_description" = "Las criaturas cogen metódicamente aquello que quieren, dentro de los límites de su tradición, lealtad, u orden. Los demonios, dragones azules, y los hobgoblins son legales malvados."
 "neutral_evil_description" = "Es el alineamiento de aquellos que hacen lo que sea necesario para salirse con la suya, sin compasión ni escrúpulos. Muchos drow, algunos gigantes de las nubes, y yugoloths son neutrales malvados."
 "chaotic_evil_description" = "Las criaturas actúan con una violencia arbitraria, impulsados por su codicia, su odio o su sed de sangre. Los demonios, dragones rojos, y orcos son caóticos malignos."
+
+//Languages
+"common" = "Común"
+"dwarvish" = "Enano"
+"elvish" = "Élfico"
+"giant" = "Gigante"
+"gnomish" = "Gnómico"
+"goblin" = "Goblin"
+"halfling" = "Mediano"
+"orc" = "Orco"
+"abyssal" = "Abisal"
+"celestial" = "Celestial"
+"draconic" = "Dracónico"
+"deep_speech" = "Habla Profunda"
+"infernal" = "Infernal"
+"primordial" = "Primordial"
+"sylvan" = "Silvano"
+"undercommon" = "Infracomún"
+
