@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ClassType {
+enum ClassType: String {
     case barbarian
     case bard
     case cleric
@@ -22,31 +22,6 @@ enum ClassType {
     case wizard
 
     var description: String {
-        switch self {
-        case .barbarian:
-            return "Bárbaro"
-        case .bard:
-            return "Bardo"
-        case .cleric:
-            return "Clérigo"
-        case .druid:
-            return "Druida"
-        case .fighter:
-            return "Guerrero"
-        case .monk:
-            return "Monje"
-        case .paladin:
-            return "Paladín"
-        case .ranger:
-            return "Explorador"
-        case .rogue:
-            return ""
-        case .sorcerer:
-            return "Hechicero"
-        case .warlock:
-            return "Pícaro"
-        case .wizard:
-            return "Mago"
-        }
+        return NSLocalizedString(self.rawValue, comment: "")
     }
 }
