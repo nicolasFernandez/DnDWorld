@@ -26,3 +26,22 @@
 "lawful_evil_description" = "Creatures methodically take what they want, within the limits of a code of tradition, loyalty, or order. Devils, blue dragons, and hobgoblins are lawful evil."
 "neutral_evil_description" = "Is the alignment of those who do whatever they can get away with, without compassion or qualms. Many drow, some cloud giants, and yugoloths are neutral evil."
 "chaotic_evil_description" = "Creatures act with arbitrary violence, spurred by their greed, hatred, or bloodlust. Demons, red dragons, and orcs are chaotic evil."
+
+//Languages
+"common" = "Common"
+"dwarvish" = "Dwarvish"
+"elvish" = "Elvish"
+"giant" = "Giant"
+"gnomish" = "Gnomish"
+"goblin" = "Goblin"
+"halfling" = "Halfling"
+"orc" = "Orc"
+"abyssal" = "Abyssal"
+"celestial" = "Celestial"
+"draconic" = "Draconic"
+"deep_speech" = "Deep Speech"
+"infernal" = "Infernal"
+"primordial" = "Primordial"
+"sylvan" = "Sylvan"
+"undercommon" = "Undercommon"
+
