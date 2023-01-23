@@ -45,3 +45,17 @@
 "sylvan" = "Silvano"
 "undercommon" = "Infracomún"
 
+// Background
+"acolyte" = "Acólito"
+"charlatan" = "Charlatán"
+"criminal" = "Criminal"
+"entertainer" = "Artista"
+"folk_hero" = "Héroe del pueblo"
+"guild_artisian" = "Artesano gremial"
+"hermit" = "Ermitaño"
+"noble" = "Noble"
+"outlander" = "Fronterizo"
+"sage" = "Sabio"
+"sailor" = "Marinero"
+"soldier" = "Soldado"
+"urchin" = "Huérfano"
