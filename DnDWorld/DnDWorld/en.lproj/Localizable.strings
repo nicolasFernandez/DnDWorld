@@ -45,3 +45,18 @@
 "sylvan" = "Sylvan"
 "undercommon" = "Undercommon"
 
+// Background
+"acolyte" = "Acolyte"
+"charlatan" = "Charlatan"
+"criminal" = "Criminal"
+"entertainer" = "Entertainer"
+"folk_hero" = "Folk Hero"
+"guild_artisian" = "Guild Artisian"
+"hermit" = "Hermit"
+"noble" = "Noble"
+"outlander" = "Outlander"
+"sage" = "Sage"
+"sailor" = "Sailor"
+"soldier" = "Soldier"
+"urchin" = "Urchin"
+
