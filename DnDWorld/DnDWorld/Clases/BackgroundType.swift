@@ -37,7 +37,7 @@ enum BackgroundType: String  {
             return NSLocalizedString("entertainer", comment: "")
         case .folkHero:
             return NSLocalizedString("folk_hero", comment: "")
-        case .guildArtisian:
+        case .guildArtisianMerchant:
             return NSLocalizedString("guild_artisian", comment: "")
         case .hermit:
             return NSLocalizedString("hermit", comment: "")
