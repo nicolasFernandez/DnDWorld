@@ -21,7 +21,7 @@ enum ClassType: String {
     case warlock
     case wizard
 
-    var description: String {
+    var name: String {
         return NSLocalizedString(self.rawValue, comment: "")
     }
 
