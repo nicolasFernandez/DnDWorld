@@ -8,10 +8,10 @@
 import Foundation
 
 struct Abilities {
-    let strength: Stat
-    let dexterity: Stat
-    let constitution: Stat
-    let intelligence: Stat
-    let wisdom: Stat
-    let charisma: Stat
+    let strength: Ability
+    let dexterity: Ability
+    let constitution: Ability
+    let intelligence: Ability
+    let wisdom: Ability
+    let charisma: Ability
 }

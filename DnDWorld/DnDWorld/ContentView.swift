@@ -9,13 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(alignment: .center) { // TODO: spacing to fill screen
+            Text("Generador de personaje").font(.title) // TODO: Nav bar
+            Spacer()
+            Text("Raza seleccionada") // TODO: picker view
+            Spacer()
+            Text("Clase seleccionada") // TODO: picker view
+            Spacer()
+            HStack{
+                Text("Nombre de personaje") // TODO: input text
+                Button("Random", action: {
+                    print("Random name")
+                })
+            }
+            Spacer()
+            Button("Crear", action: {
+                print("action sent")
+            }).edgesIgnoringSafeArea(.top)
+            Spacer()
         }
-        .padding()
+//        Text("Nombre de personaje")
     }
 }
 

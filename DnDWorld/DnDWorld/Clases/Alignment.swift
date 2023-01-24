@@ -18,6 +18,7 @@ enum Alignment {
     case neutralEvil
     case chaoticEvil
 
+    // TODO: move text to localization
     var name: String {
         switch self {
         case .lawfulGood:
@@ -41,6 +42,7 @@ enum Alignment {
         }
     }
 
+    // TODO: move text to localization
     var description: String {
         switch self {
 

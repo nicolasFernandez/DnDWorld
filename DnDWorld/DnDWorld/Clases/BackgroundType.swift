@@ -7,21 +7,25 @@
 
 import Foundation
 
-enum BackgroundType {
+enum BackgroundType: String  {
     case acolyte
     case charlatan
     case criminal
     case entertainer
     case folkHero
-    case guildArtisian
+    case gladiator
+    case guildArtisianMerchant
     case hermit
+    case knight
     case noble
     case outlander
+    case pirate
     case sage
     case sailor
     case soldier
     case urchin
 
+    // TODO: move to localization
     var description: String {
         switch self {
         case .acolyte:
@@ -34,7 +38,7 @@ enum BackgroundType {
             return "Artista"
         case .folkHero:
             return "Héroe del pueblo"
-        case .guildArtisian:
+        case .guildArtisianMerchant:
             return "Artesano gremial"
         case .hermit:
             return "Ermitaño"
@@ -50,36 +54,12 @@ enum BackgroundType {
             return "Soldado"
         case .urchin:
             return "Huérfano"
+        case .gladiator:
+            return "Gladiador"
+        case .knight:
+            return "Caballero"
+        case .pirate:
+            return "Pirata"
         }
     }
-}
-
-
-struct Background {
-
-    let name: String
-    let version: String?
-
-    // Opening introduction about the background
-    let introduction: String
-
-    // Describes what skills proficiencies the background grants
-    let skillProficienciesDescription: String?
-
-    // Describes what tools proficiencies the background grants
-    let toolProficienciesDescription: String?
-
-    // Describes what languages the background grants
-    let languagesDescription: String?
-
-    let equipmentDescription: String?
-    
-    let feature: String
-    let proficencies: [String]
-    let tags: [String]
-    let description: String
-    let personality: String
-    let ideal: String
-    let bond: String
-    let flaw: String
 }

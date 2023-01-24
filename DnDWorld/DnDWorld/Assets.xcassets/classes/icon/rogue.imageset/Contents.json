@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "rogue.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
