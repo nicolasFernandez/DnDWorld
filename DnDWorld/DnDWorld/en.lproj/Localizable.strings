@@ -6,6 +6,17 @@
   
 */
 
+//Races
+"dragonborn" = "Dragonborn"
+"dwarf" = "Dwarf"
+"elf" = "Elf"
+"gnome" = "Gnome"
+"half_elf" = "Half Elf"
+"halfling" = "Halfling"
+"half_orc" = "Half Orc"
+"human" = "Human"
+"tiefling" = "Tiefling"
+
 //Alignment
 "lawful_good_title" = "Lawful Good"
 "neutral_good_title" = "Neutral Good"

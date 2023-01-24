@@ -6,6 +6,17 @@
   
 */
 
+//Races
+"dragonborn" = "Dracónido"
+"dwarf" = "Enano"
+"elf" = "Elfo"
+"gnome" = "Gnomo"
+"half_elf" = "Semielfo"
+"halfling" = "Mediano"
+"half_orc" = "Semiorco"
+"human" = "Humano"
+"tiefling" = "Tiflin"
+
 //Alignment
 "lawful_good_title" = "Legal Bueno"
 "neutral_good_title" = "Neutral Bueno"
