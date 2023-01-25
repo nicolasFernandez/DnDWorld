@@ -11,7 +11,7 @@ struct RaceDetails: View {
     var raceType: RaceType
     var body: some View {
         VStack (alignment: .leading, spacing: 8) {
-            Text(raceType.title)
+            Text(raceType.name)
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.trailing, 30)
@@ -21,8 +21,7 @@ struct RaceDetails: View {
                 .padding(.trailing, 30)
                 .padding(.bottom, 8)
                 .padding(.top, 8)
-            // TODO: move text to localization
-            Text("Rasgos \(raceType.title)")
+            Text("Rasgos \(raceType.name)")
                 .fontWeight(.bold)
                 .padding(.leading, 30)
                 .padding(.trailing, 30)
