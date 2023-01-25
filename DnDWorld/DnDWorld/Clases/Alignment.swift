@@ -21,23 +21,23 @@ enum Alignment {
     var name: String {
         switch self {
         case .lawfulGood:
-            return NSLocalizedString("lawful_good_title", comment: "")
+            return NSLocalizedString("lawful_good_name", comment: "")
         case .neutralGood:
-            return NSLocalizedString("neutral_good_title", comment: "")
+            return NSLocalizedString("neutral_good_name", comment: "")
         case .chaoticGood:
-            return NSLocalizedString("chaotic_good_title", comment: "")
+            return NSLocalizedString("chaotic_good_name", comment: "")
         case .lawfulNeutral:
-            return NSLocalizedString("lawful_neutral_title", comment: "")
+            return NSLocalizedString("lawful_neutral_name", comment: "")
         case .neutral:
-            return NSLocalizedString("neutral_title", comment: "")
+            return NSLocalizedString("neutral_name", comment: "")
         case .chaoticNeutral:
-            return NSLocalizedString("chaotic_neutral_title", comment: "")
+            return NSLocalizedString("chaotic_neutral_name", comment: "")
         case .lawfulEvil:
-            return NSLocalizedString("lawful_evil_title", comment: "")
+            return NSLocalizedString("lawful_evil_name", comment: "")
         case .neutralEvil:
-            return NSLocalizedString("neutral_evil_title", comment: "")
+            return NSLocalizedString("neutral_evil_name", comment: "")
         case .chaoticEvil:
-            return NSLocalizedString("chaotic_evil_title", comment: "")
+            return NSLocalizedString("chaotic_evil_name", comment: "")
         }
     }
 
