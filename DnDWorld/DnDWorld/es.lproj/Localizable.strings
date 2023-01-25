@@ -168,3 +168,7 @@
 "necromancy_name" = "Nigromancia";
 "transmutation_name" = "Transmutación";
 
+// Views
+"Hit Die" = "Dado de golpe";
+"Primary Ability" = "Característica principal";
+"Saving Throw" = "Tirada de salvación";
