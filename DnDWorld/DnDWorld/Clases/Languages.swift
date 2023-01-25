@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum LanguageType {
+enum LanguageType: String {
     case common
     case dwarvish
     case elvish
@@ -24,4 +24,13 @@ enum LanguageType {
     case primordial
     case sylvan
     case undercommon
+
+    var name: String {
+        switch self {
+        case .deepSpeech:
+            return NSLocalizedString("deep_speech_name", comment: "")
+        default:
+            return NSLocalizedString("\(self.rawValue)_name", comment: "")
+        }
+    }
 }

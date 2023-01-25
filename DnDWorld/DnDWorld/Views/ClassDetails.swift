@@ -17,13 +17,12 @@ struct ClassDetails: View {
                 .padding(.trailing, 30)
                 .padding(.bottom, 8)
                 .padding(.top, 8)
-            // TODO: move texts to localization
             StatText(
-                statTitle: "Dado de golpe",
+                statTitle: Text("Hit Die", comment: ""),
                 statValue: classType.hitDie
             )
-            StatText(statTitle: "Característica primaria", statValue: classType.primaryAbility)
-            StatText(statTitle: "Tirada Salvación", statValue: classType.saves)
+            StatText(statTitle: Text("Primary Ability", comment: ""), statValue: classType.primaryAbility)
+            StatText(statTitle: Text("Saving throw", comment: ""), statValue: classType.saves)
             Image("\(classType.rawValue)_large")
                 .resizable()
                 .scaledToFit()

@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct StatText: View {
-    var statTitle: String
+    var statTitle: Text
     var statValue: String
     var body: some View {
         HStack {
-            Text(statTitle + ":")
+            statTitle
                 .fontWeight(.bold)
                 .padding(.leading, 30)
             Text(statValue)
@@ -23,6 +23,6 @@ struct StatText: View {
 
 struct StatText_Previews: PreviewProvider {
     static var previews: some View {
-        StatText(statTitle: "Hit die", statValue: "d8").previewLayout(.fixed(width: 500, height: 100))
+        StatText(statTitle: Text("Hit Die", comment: ""), statValue: "d8").previewLayout(.fixed(width: 500, height: 100))
     }
 }

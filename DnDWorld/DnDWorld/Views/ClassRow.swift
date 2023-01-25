@@ -18,7 +18,7 @@ struct ClassRow: View {
                     .leading, 30
                 )
                 .scaledToFit()
-            Text(classType.title)
+            Text(classType.name)
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(

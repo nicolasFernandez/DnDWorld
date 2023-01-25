@@ -25,41 +25,14 @@ enum BackgroundType: String  {
     case soldier
     case urchin
 
-    // TODO: move to localization
-    var description: String {
+    var name: String {
         switch self {
-        case .acolyte:
-            return "Acólito"
-        case .charlatan:
-            return "Charlatán"
-        case .criminal:
-            return "Criminal"
-        case .entertainer:
-            return "Artista"
         case .folkHero:
-            return "Héroe del pueblo"
+            return NSLocalizedString("folk_hero_name", comment: "")
         case .guildArtisianMerchant:
-            return "Artesano gremial"
-        case .hermit:
-            return "Ermitaño"
-        case .noble:
-            return "Noble"
-        case .outlander:
-            return "Fronterizo"
-        case .sage:
-            return "Sabio"
-        case .sailor:
-            return "Marinero"
-        case .soldier:
-            return "Soldado"
-        case .urchin:
-            return "Huérfano"
-        case .gladiator:
-            return "Gladiador"
-        case .knight:
-            return "Caballero"
-        case .pirate:
-            return "Pirata"
+            return NSLocalizedString("guild_artisian_name", comment: "")
+        default:
+            return NSLocalizedString("\(self.rawValue)_name", comment: "")
         }
     }
 }
