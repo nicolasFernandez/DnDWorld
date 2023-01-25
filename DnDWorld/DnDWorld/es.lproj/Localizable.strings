@@ -84,3 +84,14 @@
 "sorcerer" = "Hechicero"
 "warlock" = "Brujo"
 "wizard" = "Mago"
+
+// Subrace
+"wood_elf" =  "Elfo de los bosques"
+"high_elf" =  "Alto elfo"
+"drow" =  "Elfo oscuro"
+"hill_dwarf" =  "Enano de las colinas"
+"mountain_dwarf" =  "Enano de las montañas"
+"lightfoot_halfling" =  "Mediano piesligeros"
+"stout_halfling" =  "Mediano fornido"
+"deep_gnome" =  "Gnomo de los bosques"
+"rock_gnome" =  "Gnomo de las rocas"
