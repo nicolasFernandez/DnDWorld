@@ -53,6 +53,12 @@ enum BackgroundType: String  {
             return NSLocalizedString("soldier", comment: "")
         case .urchin:
             return NSLocalizedString("urchin", comment: "")
+        case .gladiator:
+            return NSLocalizedString("gladiator", comment: "")
+        case .knight:
+            return NSLocalizedString("knight", comment: "")
+        case .pirate:
+            return NSLocalizedString("pirate", comment: "")
         }
     }
 }
