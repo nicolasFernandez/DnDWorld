@@ -18,7 +18,6 @@ enum Subrace {
     case deepGnome
     case rockGnome
 
-    // TODO: move text to localization
     var name: String {
         switch self {
         case .woodElf:
