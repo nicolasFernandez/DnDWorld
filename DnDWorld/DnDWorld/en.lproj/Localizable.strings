@@ -168,3 +168,7 @@
 "necromancy_name" = "Necromancy";
 "transmutation_name" = "Transmutation";
 
+// Views
+"Hit Die" = "Hit Die";
+"Primary Ability" = "Primary Ability";
+"Saving Throw" = "Saving Throw";
