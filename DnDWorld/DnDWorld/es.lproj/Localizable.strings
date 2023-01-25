@@ -137,3 +137,13 @@
 "stout_halfling" =  "Mediano fornido"
 "deep_gnome" =  "Gnomo de los bosques"
 "rock_gnome" =  "Gnomo de las rocas"
+
+// Schools
+"abjuration_name" = "Abjuración"
+"conjuration_name" = "Conjuración"
+"divination_name" = "Adivinación"
+"enchantment_name" = "Encantamiento"
+"evocation_name" = "Evocación"
+"illusion_name" = "Ilusión"
+"necromancy_name" = "Nigromancia"
+"transmutation_name" = "Transmutación"
