@@ -27,38 +27,12 @@ enum BackgroundType: String  {
 
     var name: String {
         switch self {
-        case .acolyte:
-            return NSLocalizedString("acolyte", comment: "")
-        case .charlatan:
-            return NSLocalizedString("charlatan", comment: "")
-        case .criminal:
-            return NSLocalizedString("criminal", comment: "")
-        case .entertainer:
-            return NSLocalizedString("entertainer", comment: "")
         case .folkHero:
-            return NSLocalizedString("folk_hero", comment: "")
+            return NSLocalizedString("folk_hero_name", comment: "")
         case .guildArtisianMerchant:
-            return NSLocalizedString("guild_artisian", comment: "")
-        case .hermit:
-            return NSLocalizedString("hermit", comment: "")
-        case .noble:
-            return NSLocalizedString("noble", comment: "")
-        case .outlander:
-            return NSLocalizedString("outlander", comment: "")
-        case .sage:
-            return NSLocalizedString("sage", comment: "")
-        case .sailor:
-            return NSLocalizedString("sailor", comment: "")
-        case .soldier:
-            return NSLocalizedString("soldier", comment: "")
-        case .urchin:
-            return NSLocalizedString("urchin", comment: "")
-        case .gladiator:
-            return NSLocalizedString("gladiator", comment: "")
-        case .knight:
-            return NSLocalizedString("knight", comment: "")
-        case .pirate:
-            return NSLocalizedString("pirate", comment: "")
+            return NSLocalizedString("guild_artisian_name", comment: "")
+        default:
+            return NSLocalizedString("\(self.rawValue)_name", comment: "")
         }
     }
 }
