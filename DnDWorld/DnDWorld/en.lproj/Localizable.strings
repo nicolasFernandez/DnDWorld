@@ -172,7 +172,7 @@
 "Hit Die" = "Hit Die";
 "Primary Ability" = "Primary Ability";
 "Saving Throw" = "Saving Throw";
-"%@ Racial Traits" = "%@ Racial Traits";
+"%@ Traits" = "%@ Traits";
 
 // Abilities
 "Strength" = "Strength";
