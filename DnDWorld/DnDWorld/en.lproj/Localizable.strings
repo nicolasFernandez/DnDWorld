@@ -137,3 +137,13 @@
 "stout_halfling" =  "Stout Halfling"
 "deep_gnome" =  "Deep Gnome"
 "rock_gnome" =  "Rock Gnome"
+
+// Schools
+"abjuration_name" = "Abjuration"
+"conjuration_name" = "Conjuration"
+"divination_name" = "Divination"
+"enchantment_name" = "Enchantment"
+"evocation_name" = "Evocation"
+"illusion_name" = "Illusion"
+"necromancy_name" = "Necromancy"
+"transmutation_name" = "Transmutation"
