@@ -145,7 +145,7 @@
 "rogue_saves" = "Dexterity & Intelligence";
 "sorcerer_saves" = "Constitution & Charisma";
 "warlock_saves" = "Wisdom & Charisma";
-"wizard_saves" = "Intelligence & Sabiduría";
+"wizard_saves" = "Intelligence & Wisdom";
 
 // Subrace
 "wood_elf" =  "Wood Elf";
