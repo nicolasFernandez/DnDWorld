@@ -21,7 +21,7 @@ struct RaceDetails: View {
                 .padding(.trailing, 30)
                 .padding(.bottom, 8)
                 .padding(.top, 8)
-            Text("Rasgos \(raceType.name)")
+            Text("\(raceType.name) Racial Traits")
                 .fontWeight(.bold)
                 .padding(.leading, 30)
                 .padding(.trailing, 30)
