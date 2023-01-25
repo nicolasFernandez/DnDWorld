@@ -8,34 +8,37 @@
 import Foundation
 
 enum Subrace {
-    // elf
-    case wood
-    case high
+    case woodElf
+    case highElf
     case drow
-    // dwarf
-    case hill
-    case mountain
-    // halfling
-    case lightfoot
-    case stout
+    case hillDwarf
+    case mountainDwarf
+    case lightfootHalfling
+    case stoutHalfling
+    case deepGnome
+    case rockGnome
 
     // TODO: move text to localization
-    var description: String {
+    var name: String {
         switch self {
-        case .wood:
-            return "Elfo de los bosques"
-        case .high:
-            return "Alto elfo"
+        case .woodElf:
+            return NSLocalizedString("wood_elf", comment: "")
+        case .highElf:
+            return NSLocalizedString("high_elf", comment: "")
         case .drow:
-            return "Elfo oscuro"
-        case .hill:
-            return "Enano de las colinas"
-        case .mountain:
-            return "Enano de las montañas"
-        case .lightfoot:
-            return "Mediano piesligeros"
-        case .stout:
-            return "Mediano fornido"
+            return NSLocalizedString("drow", comment: "")
+        case .hillDwarf:
+            return NSLocalizedString("hill_dwarf", comment: "")
+        case .mountainDwarf:
+            return NSLocalizedString("mountain_dwarf", comment: "")
+        case .lightfootHalfling:
+            return NSLocalizedString("lightfoot_halfling", comment: "")
+        case .stoutHalfling:
+            return NSLocalizedString("stout_halfling", comment: "")
+        case .deepGnome:
+            return NSLocalizedString("deep_gnome", comment: "")
+        case .rockGnome:
+            return NSLocalizedString("rock_gnome", comment: "")
         }
     }
 }

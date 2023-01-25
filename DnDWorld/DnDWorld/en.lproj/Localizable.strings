@@ -84,3 +84,14 @@
 "sorcerer" = "Sorcerer"
 "warlock" = "Warlock"
 "wizard" = "Wizard"
+
+// Subrace
+"wood_elf" =  "Wood Elf"
+"high_elf" =  "High Elf"
+"drow" =  "Drow"
+"hill_dwarf" =  "Hill Dwarf"
+"mountain_dwarf" =  "Mountain Dwarf"
+"lightfoot_halfling" =  "Lightfoot Halfling"
+"stout_halfling" =  "Stout Halfling"
+"deep_gnome" =  "Deep Gnome"
+"rock_gnome" =  "Rock Gnome"
