@@ -19,44 +19,35 @@ enum RaceType: String {
     case tiefling
 
     var name: String {
-        var raceName = ""
         switch self {
         case .halfElf:
-            raceName = "half_elf"
+            return NSLocalizedString("half_elf_name", comment: "")
         case .halfOrc:
-            raceName = "half_orc"
+            return NSLocalizedString("half_orc_name", comment: "")
         default:
-            raceName = self.rawValue
+            return NSLocalizedString("\(self.rawValue)_name", comment: "")
         }
-
-        return NSLocalizedString("\(raceName)_name", comment: "")
     }
 
     var description: String {
-        var raceName = ""
         switch self {
         case .halfElf:
-            raceName = "half_elf"
+            return NSLocalizedString("half_elf_description", comment: "")
         case .halfOrc:
-            raceName = "half_orc"
+            return NSLocalizedString("half_orc_description", comment: "")
         default:
-            raceName = self.rawValue
+            return NSLocalizedString("\(self.rawValue)_description", comment: "")
         }
-
-        return NSLocalizedString("\(raceName)_description", comment: "")
     }
 
     var racialTraits: String {
-        var raceName = ""
         switch self {
         case .halfElf:
-            raceName = "half_elf"
+            return NSLocalizedString("half_elf_racial_traits", comment: "")
         case .halfOrc:
-            raceName = "half_orc"
+            return NSLocalizedString("half_orc_racial_traits", comment: "")
         default:
-            raceName = self.rawValue
+            return NSLocalizedString("\(self.rawValue)_racial_traits", comment: "")
         }
-
-        return NSLocalizedString("\(raceName)_racial_traits", comment: "")
     }
 }
