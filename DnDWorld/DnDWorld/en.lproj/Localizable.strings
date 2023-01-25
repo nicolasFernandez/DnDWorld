@@ -173,3 +173,11 @@
 "Primary Ability" = "Primary Ability";
 "Saving Throw" = "Saving Throw";
 "%@ Racial Traits" = "%@ Racial Traits";
+
+// Abilities
+"Strength" = "Strength";
+"Dexterity" = "Dexterity";
+"Constitution" = "Constitution";
+"Intelligence" = "Intelligence";
+"Wisdom" = "Wisdom";
+"Charisma" = "Charisma";

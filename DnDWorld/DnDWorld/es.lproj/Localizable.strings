@@ -173,3 +173,11 @@
 "Primary Ability" = "Característica principal";
 "Saving Throw" = "Tirada de salvación";
 "%@ Racial Traits" = "Rasgos %@";
+
+// Abilities
+"Strength" = "Fuerza";
+"Dexterity" = "Destreza";
+"Constitution" = "Constitución";
+"Intelligence" = "Inteligencia";
+"Wisdom" = "Sabiduría";
+"Charisma" = "Carisma";
