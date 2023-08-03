@@ -3,6 +3,17 @@ DnD World es una aplicacion para generar personajes utilizando las reglas básic
 
 La idea inicial de este proyecto fue poder replicar el generador de personajes que existe en dndbeyond.com para jugadores de habla hispana (inicialmente, podría expandirse) y utilizando las reglas básicas para quienes recién se inician en este juego de rol. Además de reforzar conocimientos de MVVM, y aprender del uso de RxSwift, Clean Arch, principios de SOLID, patrones de diseño y Swift UI. 
 
+## Objetivo
+Aprender técnicas para desarrollar aplicaciones testeables, escalables, flexibles, mantenibles y alcanzar la excelencia a nivel técnico! 
+- Crear módulos abiertos a extensión
+- Eliminar dependencias
+- Eliminar duplicados.
+- Aprender SOLID.
+- Aprender patrones de diseño:
+  - Strategy
+  - NullObject
+  - Composite
+
 ## Wireframe
 (WIP)
 
