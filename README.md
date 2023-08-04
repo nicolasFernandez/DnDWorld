@@ -17,6 +17,8 @@ Aprender técnicas para desarrollar aplicaciones testeables, escalables, flexibl
   - Strategy
   - NullObject
   - Composite
+  - Adapter
+  - Observer
   - etc
 
 ## Wireframe
