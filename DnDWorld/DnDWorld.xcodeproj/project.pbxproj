@@ -103,7 +103,6 @@
 		CA8BE8F02971FD29009517ED /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		CA8BE8F22975F752009517ED /* AbilityScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityScoresView.swift; sourceTree = "<group>"; };
 		CADA87C5297B385300C464CE /* RaceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceType.swift; sourceTree = "<group>"; };
-		CADA87C7297EDD1F00C464CE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		CADA87CA297EDDA900C464CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CADA87CC297EDDEB00C464CE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,29 +194,29 @@
 		CA37C6DF295A028900C508CB /* Clases */ = {
 			isa = PBXGroup;
 			children = (
-				CA37C6E0295A02A100C508CB /* Ability.swift */,
 				CA37C6E2295A043100C508CB /* Abilities.swift */,
-				CA37C6E4295A050A00C508CB /* Character.swift */,
-				CA37C6E6295A053E00C508CB /* Race.swift */,
-				CA37C6E8295A055B00C508CB /* Subrace.swift */,
-				CA37C6EA295A286300C508CB /* Equipment.swift */,
-				CA37C6EC295A286E00C508CB /* Weapon.swift */,
-				CA37C6EE295A287800C508CB /* Armor.swift */,
-				CA37C6F2295A2D6400C508CB /* DamageType.swift */,
-				CA37C6F4295A368300C508CB /* ClassType.swift */,
-				CA37C6F6295B294300C508CB /* BackgroundType.swift */,
-				CA37C6FA295B344300C508CB /* Languages.swift */,
+				CA37C6E0295A02A100C508CB /* Ability.swift */,
 				CA37C6FC295B34BB00C508CB /* Alignment.swift */,
-				CA8BE8DE2971E5CC009517ED /* Background.swift */,
-				CA8BE8E02971E5F4009517ED /* Feat.swift */,
-				CA8BE8E22971E64C009517ED /* Spell.swift */,
-				CA8BE8E42971F3C2009517ED /* School.swift */,
+				CA37C6EE295A287800C508CB /* Armor.swift */,
 				CA8BE8E62971F4E8009517ED /* AttackType.swift */,
-				CA8BE8E82971F59E009517ED /* Condition.swift */,
+				CA8BE8DE2971E5CC009517ED /* Background.swift */,
+				CA37C6F6295B294300C508CB /* BackgroundType.swift */,
+				CA37C6E4295A050A00C508CB /* Character.swift */,
+				CA37C6F4295A368300C508CB /* ClassType.swift */,
 				CA8BE8EA2971F630009517ED /* Component.swift */,
-				CA8BE8EE2971FA8D009517ED /* Skills.swift */,
-				CA8BE8F02971FD29009517ED /* Skill.swift */,
+				CA8BE8E82971F59E009517ED /* Condition.swift */,
+				CA37C6F2295A2D6400C508CB /* DamageType.swift */,
+				CA37C6EA295A286300C508CB /* Equipment.swift */,
+				CA8BE8E02971E5F4009517ED /* Feat.swift */,
+				CA37C6FA295B344300C508CB /* Languages.swift */,
+				CA37C6E6295A053E00C508CB /* Race.swift */,
 				CADA87C5297B385300C464CE /* RaceType.swift */,
+				CA8BE8E42971F3C2009517ED /* School.swift */,
+				CA8BE8F02971FD29009517ED /* Skill.swift */,
+				CA8BE8EE2971FA8D009517ED /* Skills.swift */,
+				CA8BE8E22971E64C009517ED /* Spell.swift */,
+				CA37C6E8295A055B00C508CB /* Subrace.swift */,
+				CA37C6EC295A286E00C508CB /* Weapon.swift */,
 			);
 			path = Clases;
 			sourceTree = "<group>";
@@ -225,12 +224,12 @@
 		CA8BE8D72971A39A009517ED /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CA8BE8F22975F752009517ED /* AbilityScoresView.swift */,
 				CA8BE8D52971A391009517ED /* ClassDetails.swift */,
 				CA8BE8D82971A3EF009517ED /* ClassRow.swift */,
-				CA8BE8DA2971AE64009517ED /* StatText.swift */,
 				CA8BE8DC2971D7DC009517ED /* RaceDetails.swift */,
 				CA8BE8EC2971F956009517ED /* SchoolRow.swift */,
-				CA8BE8F22975F752009517ED /* AbilityScoresView.swift */,
+				CA8BE8DA2971AE64009517ED /* StatText.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -299,7 +298,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					CA37C6B12959F1C500C508CB = {
 						CreatedOnToolsVersion = 14.2;
@@ -382,15 +381,11 @@
 				CA37C6F7295B294300C508CB /* BackgroundType.swift in Sources */,
 				CA37C6F5295A368300C508CB /* ClassType.swift in Sources */,
 				CA8BE8E52971F3C2009517ED /* School.swift in Sources */,
-				CA37C6E1295A02A100C508CB /* Ability.swift in Sources */,
 				CA8BE8DF2971E5CC009517ED /* Background.swift in Sources */,
 				CA8BE8DB2971AE64009517ED /* StatText.swift in Sources */,
 				CA8BE8D62971A391009517ED /* ClassDetails.swift in Sources */,
-				CA37C6EB295A286300C508CB /* Equipment.swift in Sources */,
-				CA37C6E5295A050A00C508CB /* Character.swift in Sources */,
 				CA8BE8E92971F59E009517ED /* Condition.swift in Sources */,
 				CA8BE8D92971A3EF009517ED /* ClassRow.swift in Sources */,
-				CA37C6F5295A368300C508CB /* ClassType.swift in Sources */,
 				CA8BE8E32971E64C009517ED /* Spell.swift in Sources */,
 				CA37C6B82959F1C500C508CB /* ContentView.swift in Sources */,
 				CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */,
@@ -454,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -487,6 +483,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -516,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -549,6 +547,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
