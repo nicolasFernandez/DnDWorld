@@ -19,35 +19,35 @@ enum RaceType: String {
     case tiefling
 
     var name: String {
-        switch self {
-        case .halfElf:
-            return NSLocalizedString("half_elf_name", comment: "")
-        case .halfOrc:
-            return NSLocalizedString("half_orc_name", comment: "")
-        default:
-            return NSLocalizedString("\(self.rawValue)_name", comment: "")
-        }
+        return NSLocalizedString(getNameKey(), comment: "")
     }
 
     var description: String {
-        switch self {
-        case .halfElf:
-            return NSLocalizedString("half_elf_description", comment: "")
-        case .halfOrc:
-            return NSLocalizedString("half_orc_description", comment: "")
-        default:
-            return NSLocalizedString("\(self.rawValue)_description", comment: "")
-        }
+        return NSLocalizedString(getDescriptionKey(), comment: "")
     }
 
     var racialTraits: String {
-        switch self {
-        case .halfElf:
-            return NSLocalizedString("half_elf_racial_traits", comment: "")
-        case .halfOrc:
-            return NSLocalizedString("half_orc_racial_traits", comment: "")
-        default:
-            return NSLocalizedString("\(self.rawValue)_racial_traits", comment: "")
+        NSLocalizedString(getRacialTraitsKey(), comment: "")
+    }
+
+    private func getNameKey() -> String {
+        "\(self.snakeCaseRawValue())_name"
+    }
+
+    private func getDescriptionKey() -> String {
+        "\(self.snakeCaseRawValue())_description"
+    }
+    
+    private func getRacialTraitsKey() -> String {
+        "\(self.snakeCaseRawValue())_racial_traits"
+    }
+
+    private func snakeCaseRawValue() -> String {
+        var newValue: String = ""
+        for letter in self.rawValue {
+            let newLetter = letter.isUppercase ? "_\(letter.lowercased())" : "\(letter)"
+            newValue.append(newLetter)
         }
+        return newValue
     }
 }
