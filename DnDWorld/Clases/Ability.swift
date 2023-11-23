@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Represents 
 struct Ability {
     private let base: Int
     private let raceBonus: Int
