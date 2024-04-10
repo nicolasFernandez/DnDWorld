@@ -3,7 +3,7 @@ DnD World es una aplicacion para generar personajes utilizando las reglas básic
 
 ## Objetivo
 
-La idea inicial de este proyecto fue poder replicar el generador de personajes que existe en dndbeyond.com para jugadores de habla hispana (inicialmente, podría expandirse) y utilizando las reglas básicas para quienes recién se inician en este juego de rol. 
+La idea inicial de este proyecto fue poder replicar el generador de personajes que existe en dndbeyond.com para jugadores de habla hispana inicialmente (podría expandirse) y utilizando las reglas básicas (podría expandirse) para quienes recién se inician en este juego de rol. 
 
 Aprender técnicas para desarrollar aplicaciones testeables, escalables, flexibles, mantenibles y alcanzar la excelencia a nivel técnico! 
 - Crear módulos abiertos a extensión
