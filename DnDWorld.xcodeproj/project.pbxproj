@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA23C1E42A81AE70005F40F0 /* AbilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA23C1E32A81AE70005F40F0 /* AbilityTests.swift */; };
+		CA23C1E62A81B09F005F40F0 /* RaceTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA23C1E52A81B09F005F40F0 /* RaceTypeTests.swift */; };
+		CA37C6B62959F1C500C508CB /* DnDWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6B52959F1C500C508CB /* DnDWorldApp.swift */; };
+		CA37C6B82959F1C500C508CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6B72959F1C500C508CB /* ContentView.swift */; };
+		CA37C6BA2959F1CA00C508CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA37C6B92959F1CA00C508CB /* Assets.xcassets */; };
+		CA37C6BD2959F1CA00C508CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA37C6BC2959F1CA00C508CB /* Preview Assets.xcassets */; };
+		CA37C6C72959F1CA00C508CB /* DnDWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6C62959F1CA00C508CB /* DnDWorldTests.swift */; };
+		CA37C6D12959F1CA00C508CB /* DnDWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6D02959F1CA00C508CB /* DnDWorldUITests.swift */; };
+		CA37C6D32959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6D22959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift */; };
+		CA37C6E1295A02A100C508CB /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E0295A02A100C508CB /* Ability.swift */; };
+		CA37C6E3295A043100C508CB /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E2295A043100C508CB /* Abilities.swift */; };
+		CA37C6E5295A050A00C508CB /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E4295A050A00C508CB /* Character.swift */; };
+		CA37C6E7295A053E00C508CB /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E6295A053E00C508CB /* Race.swift */; };
+		CA37C6E9295A055B00C508CB /* Subrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E8295A055B00C508CB /* Subrace.swift */; };
+		CA37C6EB295A286300C508CB /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6EA295A286300C508CB /* Equipment.swift */; };
+		CA37C6ED295A286E00C508CB /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6EC295A286E00C508CB /* Weapon.swift */; };
+		CA37C6EF295A287800C508CB /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6EE295A287800C508CB /* Armor.swift */; };
+		CA37C6F3295A2D6400C508CB /* DamageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6F2295A2D6400C508CB /* DamageType.swift */; };
+		CA37C6F5295A368300C508CB /* ClassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6F4295A368300C508CB /* ClassType.swift */; };
+		CA37C6F7295B294300C508CB /* BackgroundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6F6295B294300C508CB /* BackgroundType.swift */; };
+		CA37C6FB295B344300C508CB /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FA295B344300C508CB /* Languages.swift */; };
+		CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FC295B34BB00C508CB /* Alignment.swift */; };
+		CA8BE8D62971A391009517ED /* ClassDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8D52971A391009517ED /* ClassDetails.swift */; };
+		CA8BE8D92971A3EF009517ED /* ClassRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8D82971A3EF009517ED /* ClassRow.swift */; };
+		CA8BE8DB2971AE64009517ED /* StatText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8DA2971AE64009517ED /* StatText.swift */; };
+		CA8BE8DD2971D7DC009517ED /* RaceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8DC2971D7DC009517ED /* RaceDetails.swift */; };
+		CA8BE8DF2971E5CC009517ED /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8DE2971E5CC009517ED /* Background.swift */; };
+		CA8BE8E12971E5F4009517ED /* Feat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E02971E5F4009517ED /* Feat.swift */; };
+		CA8BE8E32971E64C009517ED /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E22971E64C009517ED /* Spell.swift */; };
+		CA8BE8E52971F3C2009517ED /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E42971F3C2009517ED /* School.swift */; };
+		CA8BE8E72971F4E8009517ED /* AttackType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E62971F4E8009517ED /* AttackType.swift */; };
+		CA8BE8E92971F59E009517ED /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E82971F59E009517ED /* Condition.swift */; };
+		CA8BE8EB2971F630009517ED /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EA2971F630009517ED /* Component.swift */; };
+		CA8BE8ED2971F956009517ED /* SchoolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EC2971F956009517ED /* SchoolRow.swift */; };
+		CA8BE8EF2971FA8D009517ED /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EE2971FA8D009517ED /* Skills.swift */; };
+		CA8BE8F12971FD29009517ED /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8F02971FD29009517ED /* Skill.swift */; };
+		CA8BE8F32975F752009517ED /* AbilityScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8F22975F752009517ED /* AbilityScoresView.swift */; };
+		CADA87C6297B385300C464CE /* RaceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADA87C5297B385300C464CE /* RaceType.swift */; };
+		CADA87C9297EDDA900C464CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CADA87CB297EDDA900C464CE /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA37C6C32959F1CA00C508CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA37C6AA2959F1C500C508CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA37C6B12959F1C500C508CB;
+			remoteInfo = DnDWorld;
+		};
+		CA37C6CD2959F1CA00C508CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA37C6AA2959F1C500C508CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA37C6B12959F1C500C508CB;
+			remoteInfo = DnDWorld;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA23C1E32A81AE70005F40F0 /* AbilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityTests.swift; sourceTree = "<group>"; };
+		CA23C1E52A81B09F005F40F0 /* RaceTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTypeTests.swift; sourceTree = "<group>"; };
+		CA37C6B22959F1C500C508CB /* DnDWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnDWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA37C6B52959F1C500C508CB /* DnDWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDWorldApp.swift; sourceTree = "<group>"; };
+		CA37C6B72959F1C500C508CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA37C6B92959F1CA00C508CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA37C6BC2959F1CA00C508CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA37C6C22959F1CA00C508CB /* DnDWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DnDWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA37C6C62959F1CA00C508CB /* DnDWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDWorldTests.swift; sourceTree = "<group>"; };
+		CA37C6CC2959F1CA00C508CB /* DnDWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DnDWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA37C6D02959F1CA00C508CB /* DnDWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDWorldUITests.swift; sourceTree = "<group>"; };
+		CA37C6D22959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA37C6E0295A02A100C508CB /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
+		CA37C6E2295A043100C508CB /* Abilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
+		CA37C6E4295A050A00C508CB /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		CA37C6E6295A053E00C508CB /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		CA37C6E8295A055B00C508CB /* Subrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subrace.swift; sourceTree = "<group>"; };
+		CA37C6EA295A286300C508CB /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		CA37C6EC295A286E00C508CB /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		CA37C6EE295A287800C508CB /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
+		CA37C6F2295A2D6400C508CB /* DamageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageType.swift; sourceTree = "<group>"; };
+		CA37C6F4295A368300C508CB /* ClassType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassType.swift; sourceTree = "<group>"; };
+		CA37C6F6295B294300C508CB /* BackgroundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundType.swift; sourceTree = "<group>"; };
+		CA37C6FA295B344300C508CB /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
+		CA37C6FC295B34BB00C508CB /* Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
+		CA8BE8D52971A391009517ED /* ClassDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetails.swift; sourceTree = "<group>"; };
+		CA8BE8D82971A3EF009517ED /* ClassRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRow.swift; sourceTree = "<group>"; };
+		CA8BE8DA2971AE64009517ED /* StatText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatText.swift; sourceTree = "<group>"; };
+		CA8BE8DC2971D7DC009517ED /* RaceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceDetails.swift; sourceTree = "<group>"; };
+		CA8BE8DE2971E5CC009517ED /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		CA8BE8E02971E5F4009517ED /* Feat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feat.swift; sourceTree = "<group>"; };
+		CA8BE8E22971E64C009517ED /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
+		CA8BE8E42971F3C2009517ED /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		CA8BE8E62971F4E8009517ED /* AttackType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackType.swift; sourceTree = "<group>"; };
+		CA8BE8E82971F59E009517ED /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		CA8BE8EA2971F630009517ED /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		CA8BE8EC2971F956009517ED /* SchoolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRow.swift; sourceTree = "<group>"; };
+		CA8BE8EE2971FA8D009517ED /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
+		CA8BE8F02971FD29009517ED /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		CA8BE8F22975F752009517ED /* AbilityScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityScoresView.swift; sourceTree = "<group>"; };
+		CADA87C5297B385300C464CE /* RaceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceType.swift; sourceTree = "<group>"; };
+		CADA87CA297EDDA900C464CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CADA87CC297EDDEB00C464CE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA37C6AF2959F1C500C508CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA37C6BF2959F1CA00C508CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA37C6C92959F1CA00C508CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA23C1E22A81AE4B005F40F0 /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				CA23C1E32A81AE70005F40F0 /* AbilityTests.swift */,
+				CA23C1E52A81B09F005F40F0 /* RaceTypeTests.swift */,
+			);
+			path = Clases;
+			sourceTree = "<group>";
+		};
+		CA37C6A92959F1C500C508CB = {
+			isa = PBXGroup;
+			children = (
+				CA37C6B42959F1C500C508CB /* DnDWorld */,
+				CA37C6C52959F1CA00C508CB /* DnDWorldTests */,
+				CA37C6CF2959F1CA00C508CB /* DnDWorldUITests */,
+				CA37C6B32959F1C500C508CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA37C6B32959F1C500C508CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA37C6B22959F1C500C508CB /* DnDWorld.app */,
+				CA37C6C22959F1CA00C508CB /* DnDWorldTests.xctest */,
+				CA37C6CC2959F1CA00C508CB /* DnDWorldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA37C6B42959F1C500C508CB /* DnDWorld */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BE8D72971A39A009517ED /* Views */,
+				CA37C6DF295A028900C508CB /* Clases */,
+				CA37C6B52959F1C500C508CB /* DnDWorldApp.swift */,
+				CA37C6B72959F1C500C508CB /* ContentView.swift */,
+				CA37C6B92959F1CA00C508CB /* Assets.xcassets */,
+				CA37C6BB2959F1CA00C508CB /* Preview Content */,
+				CADA87CB297EDDA900C464CE /* Localizable.strings */,
+			);
+			path = DnDWorld;
+			sourceTree = "<group>";
+		};
+		CA37C6BB2959F1CA00C508CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA37C6BC2959F1CA00C508CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA37C6C52959F1CA00C508CB /* DnDWorldTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA23C1E22A81AE4B005F40F0 /* Clases */,
+				CA37C6C62959F1CA00C508CB /* DnDWorldTests.swift */,
+			);
+			path = DnDWorldTests;
+			sourceTree = "<group>";
+		};
+		CA37C6CF2959F1CA00C508CB /* DnDWorldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA37C6D02959F1CA00C508CB /* DnDWorldUITests.swift */,
+				CA37C6D22959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift */,
+			);
+			path = DnDWorldUITests;
+			sourceTree = "<group>";
+		};
+		CA37C6DF295A028900C508CB /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				CA37C6E2295A043100C508CB /* Abilities.swift */,
+				CA37C6E0295A02A100C508CB /* Ability.swift */,
+				CA37C6FC295B34BB00C508CB /* Alignment.swift */,
+				CA37C6EE295A287800C508CB /* Armor.swift */,
+				CA8BE8E62971F4E8009517ED /* AttackType.swift */,
+				CA8BE8DE2971E5CC009517ED /* Background.swift */,
+				CA37C6F6295B294300C508CB /* BackgroundType.swift */,
+				CA37C6E4295A050A00C508CB /* Character.swift */,
+				CA37C6F4295A368300C508CB /* ClassType.swift */,
+				CA8BE8EA2971F630009517ED /* Component.swift */,
+				CA8BE8E82971F59E009517ED /* Condition.swift */,
+				CA37C6F2295A2D6400C508CB /* DamageType.swift */,
+				CA37C6EA295A286300C508CB /* Equipment.swift */,
+				CA8BE8E02971E5F4009517ED /* Feat.swift */,
+				CA37C6FA295B344300C508CB /* Languages.swift */,
+				CA37C6E6295A053E00C508CB /* Race.swift */,
+				CADA87C5297B385300C464CE /* RaceType.swift */,
+				CA8BE8E42971F3C2009517ED /* School.swift */,
+				CA8BE8F02971FD29009517ED /* Skill.swift */,
+				CA8BE8EE2971FA8D009517ED /* Skills.swift */,
+				CA8BE8E22971E64C009517ED /* Spell.swift */,
+				CA37C6E8295A055B00C508CB /* Subrace.swift */,
+				CA37C6EC295A286E00C508CB /* Weapon.swift */,
+			);
+			path = Clases;
+			sourceTree = "<group>";
+		};
+		CA8BE8D72971A39A009517ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BE8F22975F752009517ED /* AbilityScoresView.swift */,
+				CA8BE8D52971A391009517ED /* ClassDetails.swift */,
+				CA8BE8D82971A3EF009517ED /* ClassRow.swift */,
+				CA8BE8DC2971D7DC009517ED /* RaceDetails.swift */,
+				CA8BE8EC2971F956009517ED /* SchoolRow.swift */,
+				CA8BE8DA2971AE64009517ED /* StatText.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA37C6B12959F1C500C508CB /* DnDWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA37C6D62959F1CA00C508CB /* Build configuration list for PBXNativeTarget "DnDWorld" */;
+			buildPhases = (
+				CA37C6AE2959F1C500C508CB /* Sources */,
+				CA37C6AF2959F1C500C508CB /* Frameworks */,
+				CA37C6B02959F1C500C508CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DnDWorld;
+			productName = DnDWorld;
+			productReference = CA37C6B22959F1C500C508CB /* DnDWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA37C6C12959F1CA00C508CB /* DnDWorldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA37C6D92959F1CA00C508CB /* Build configuration list for PBXNativeTarget "DnDWorldTests" */;
+			buildPhases = (
+				CA37C6BE2959F1CA00C508CB /* Sources */,
+				CA37C6BF2959F1CA00C508CB /* Frameworks */,
+				CA37C6C02959F1CA00C508CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA37C6C42959F1CA00C508CB /* PBXTargetDependency */,
+			);
+			name = DnDWorldTests;
+			productName = DnDWorldTests;
+			productReference = CA37C6C22959F1CA00C508CB /* DnDWorldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA37C6CB2959F1CA00C508CB /* DnDWorldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA37C6DC2959F1CA00C508CB /* Build configuration list for PBXNativeTarget "DnDWorldUITests" */;
+			buildPhases = (
+				CA37C6C82959F1CA00C508CB /* Sources */,
+				CA37C6C92959F1CA00C508CB /* Frameworks */,
+				CA37C6CA2959F1CA00C508CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA37C6CE2959F1CA00C508CB /* PBXTargetDependency */,
+			);
+			name = DnDWorldUITests;
+			productName = DnDWorldUITests;
+			productReference = CA37C6CC2959F1CA00C508CB /* DnDWorldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA37C6AA2959F1C500C508CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CA37C6B12959F1C500C508CB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CA37C6C12959F1CA00C508CB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CA37C6B12959F1C500C508CB;
+					};
+					CA37C6CB2959F1CA00C508CB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CA37C6B12959F1C500C508CB;
+					};
+				};
+			};
+			buildConfigurationList = CA37C6AD2959F1C500C508CB /* Build configuration list for PBXProject "DnDWorld" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = CA37C6A92959F1C500C508CB;
+			productRefGroup = CA37C6B32959F1C500C508CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA37C6B12959F1C500C508CB /* DnDWorld */,
+				CA37C6C12959F1CA00C508CB /* DnDWorldTests */,
+				CA37C6CB2959F1CA00C508CB /* DnDWorldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA37C6B02959F1C500C508CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA37C6BD2959F1CA00C508CB /* Preview Assets.xcassets in Resources */,
+				CADA87C9297EDDA900C464CE /* Localizable.strings in Resources */,
+				CA37C6BA2959F1CA00C508CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA37C6C02959F1CA00C508CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA37C6CA2959F1CA00C508CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA37C6AE2959F1C500C508CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA37C6F3295A2D6400C508CB /* DamageType.swift in Sources */,
+				CA8BE8F12971FD29009517ED /* Skill.swift in Sources */,
+				CA8BE8E72971F4E8009517ED /* AttackType.swift in Sources */,
+				CA8BE8EF2971FA8D009517ED /* Skills.swift in Sources */,
+				CA8BE8ED2971F956009517ED /* SchoolRow.swift in Sources */,
+				CADA87C6297B385300C464CE /* RaceType.swift in Sources */,
+				CA37C6E3295A043100C508CB /* Abilities.swift in Sources */,
+				CA37C6EF295A287800C508CB /* Armor.swift in Sources */,
+				CA37C6FB295B344300C508CB /* Languages.swift in Sources */,
+				CA37C6E1295A02A100C508CB /* Ability.swift in Sources */,
+				CA37C6EB295A286300C508CB /* Equipment.swift in Sources */,
+				CA37C6E5295A050A00C508CB /* Character.swift in Sources */,
+				CA37C6F7295B294300C508CB /* BackgroundType.swift in Sources */,
+				CA37C6F5295A368300C508CB /* ClassType.swift in Sources */,
+				CA8BE8E52971F3C2009517ED /* School.swift in Sources */,
+				CA8BE8DF2971E5CC009517ED /* Background.swift in Sources */,
+				CA8BE8DB2971AE64009517ED /* StatText.swift in Sources */,
+				CA8BE8D62971A391009517ED /* ClassDetails.swift in Sources */,
+				CA8BE8E92971F59E009517ED /* Condition.swift in Sources */,
+				CA8BE8D92971A3EF009517ED /* ClassRow.swift in Sources */,
+				CA8BE8E32971E64C009517ED /* Spell.swift in Sources */,
+				CA37C6B82959F1C500C508CB /* ContentView.swift in Sources */,
+				CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */,
+				CA37C6E7295A053E00C508CB /* Race.swift in Sources */,
+				CA8BE8EB2971F630009517ED /* Component.swift in Sources */,
+				CA37C6E9295A055B00C508CB /* Subrace.swift in Sources */,
+				CA8BE8DD2971D7DC009517ED /* RaceDetails.swift in Sources */,
+				CA37C6B62959F1C500C508CB /* DnDWorldApp.swift in Sources */,
+				CA8BE8F32975F752009517ED /* AbilityScoresView.swift in Sources */,
+				CA37C6ED295A286E00C508CB /* Weapon.swift in Sources */,
+				CA8BE8E12971E5F4009517ED /* Feat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA37C6BE2959F1CA00C508CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA23C1E42A81AE70005F40F0 /* AbilityTests.swift in Sources */,
+				CA23C1E62A81B09F005F40F0 /* RaceTypeTests.swift in Sources */,
+				CA37C6C72959F1CA00C508CB /* DnDWorldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA37C6C82959F1CA00C508CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA37C6D32959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift in Sources */,
+				CA37C6D12959F1CA00C508CB /* DnDWorldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA37C6C42959F1CA00C508CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA37C6B12959F1C500C508CB /* DnDWorld */;
+			targetProxy = CA37C6C32959F1CA00C508CB /* PBXContainerItemProxy */;
+		};
+		CA37C6CE2959F1CA00C508CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA37C6B12959F1C500C508CB /* DnDWorld */;
+			targetProxy = CA37C6CD2959F1CA00C508CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CADA87CB297EDDA900C464CE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CADA87CA297EDDA900C464CE /* en */,
+				CADA87CC297EDDEB00C464CE /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA37C6D42959F1CA00C508CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA37C6D52959F1CA00C508CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA37C6D72959F1CA00C508CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DnDWorld/Preview Content\"";
+				DEVELOPMENT_TEAM = R2D4BU6644;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicowez.DnDWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA37C6D82959F1CA00C508CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DnDWorld/Preview Content\"";
+				DEVELOPMENT_TEAM = R2D4BU6644;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicowez.DnDWorld;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA37C6DA2959F1CA00C508CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicowez.DnDWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DnDWorld.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DnDWorld";
+			};
+			name = Debug;
+		};
+		CA37C6DB2959F1CA00C508CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicowez.DnDWorldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DnDWorld.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DnDWorld";
+			};
+			name = Release;
+		};
+		CA37C6DD2959F1CA00C508CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicowez.DnDWorldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DnDWorld;
+			};
+			name = Debug;
+		};
+		CA37C6DE2959F1CA00C508CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicowez.DnDWorldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DnDWorld;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA37C6AD2959F1C500C508CB /* Build configuration list for PBXProject "DnDWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA37C6D42959F1CA00C508CB /* Debug */,
+				CA37C6D52959F1CA00C508CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA37C6D62959F1CA00C508CB /* Build configuration list for PBXNativeTarget "DnDWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA37C6D72959F1CA00C508CB /* Debug */,
+				CA37C6D82959F1CA00C508CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA37C6D92959F1CA00C508CB /* Build configuration list for PBXNativeTarget "DnDWorldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA37C6DA2959F1CA00C508CB /* Debug */,
+				CA37C6DB2959F1CA00C508CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA37C6DC2959F1CA00C508CB /* Build configuration list for PBXNativeTarget "DnDWorldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA37C6DD2959F1CA00C508CB /* Debug */,
+				CA37C6DE2959F1CA00C508CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA37C6AA2959F1C500C508CB /* Project object */;
+}
