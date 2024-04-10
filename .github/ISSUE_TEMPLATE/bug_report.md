@@ -1,38 +1,37 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+title: "[BUG]"
+labels: bug
+assignees: nicolasFernandez
 
 ---
 
-**Describe the bug**
+**Bug Description**
 A clear and concise description of what the bug is.
 
-**To Reproduce**
+**Steps to Reproduce**
 Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+1. On your device, navigate to '...'
+2. Tap on '...'
+3. Swipe down to '...'
+4. Observe the error
 
-**Expected behavior**
+**Expected Behavior**
 A clear and concise description of what you expected to happen.
 
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+**Device (please complete the following information):**
+ - Device: [e.g. MacBook Pro, iPhone13]
+ - OS: [e.g. macOS Monterey, iOS15]
+ - App Version [e.g. 1.2.5] (if applicable)
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+**Context and Environment**
+- If on a desktop, specify if you're using an Apple Silicon or Intel chip.
+- If on mobile, are there any specific settings engaged (e.g., Low Power Mode)?
+- Network information if relevant (e.g., Wi-Fi, LTE).
 
-**Additional context**
-Add any other context about the problem here.
+**Additional Information**
+Add any other information about the problem here, such as frequency of occurrence or workarounds if applicable.
