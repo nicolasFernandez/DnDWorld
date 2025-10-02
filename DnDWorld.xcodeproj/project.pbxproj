@@ -29,6 +29,8 @@
 		CA37C6F7295B294300C508CB /* BackgroundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6F6295B294300C508CB /* BackgroundType.swift */; };
 		CA37C6FB295B344300C508CB /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FA295B344300C508CB /* Languages.swift */; };
 		CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FC295B34BB00C508CB /* Alignment.swift */; };
+		CA486CCC2E8F2B35004C0792 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA486CCA2E8F2B35004C0792 /* String+Utils.swift */; };
+		CA486CCF2E8F2C2A004C0792 /* String+UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA486CCD2E8F2C2A004C0792 /* String+UtilsTests.swift */; };
 		CA8BE8D62971A391009517ED /* ClassDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8D52971A391009517ED /* ClassDetails.swift */; };
 		CA8BE8D92971A3EF009517ED /* ClassRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8D82971A3EF009517ED /* ClassRow.swift */; };
 		CA8BE8DB2971AE64009517ED /* StatText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8DA2971AE64009517ED /* StatText.swift */; };
@@ -91,6 +93,8 @@
 		CA37C6F6295B294300C508CB /* BackgroundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundType.swift; sourceTree = "<group>"; };
 		CA37C6FA295B344300C508CB /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		CA37C6FC295B34BB00C508CB /* Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
+		CA486CCA2E8F2B35004C0792 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		CA486CCD2E8F2C2A004C0792 /* String+UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UtilsTests.swift"; sourceTree = "<group>"; };
 		CA8BE8D52971A391009517ED /* ClassDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetails.swift; sourceTree = "<group>"; };
 		CA8BE8D82971A3EF009517ED /* ClassRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRow.swift; sourceTree = "<group>"; };
 		CA8BE8DA2971AE64009517ED /* StatText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatText.swift; sourceTree = "<group>"; };
@@ -168,13 +172,14 @@
 		CA37C6B42959F1C500C508CB /* DnDWorld */ = {
 			isa = PBXGroup;
 			children = (
-				CA8BE8D72971A39A009517ED /* Views */,
-				CA37C6DF295A028900C508CB /* Clases */,
-				CA37C6B52959F1C500C508CB /* DnDWorldApp.swift */,
-				CA37C6B72959F1C500C508CB /* ContentView.swift */,
 				CA37C6B92959F1CA00C508CB /* Assets.xcassets */,
-				CA37C6BB2959F1CA00C508CB /* Preview Content */,
+				CA37C6DF295A028900C508CB /* Clases */,
+				CA37C6B72959F1C500C508CB /* ContentView.swift */,
+				CA37C6B52959F1C500C508CB /* DnDWorldApp.swift */,
 				CADA87CB297EDDA900C464CE /* Localizable.strings */,
+				CA37C6BB2959F1CA00C508CB /* Preview Content */,
+				CA486CCB2E8F2B35004C0792 /* Utils */,
+				CA8BE8D72971A39A009517ED /* Views */,
 			);
 			path = DnDWorld;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			children = (
 				CA23C1E22A81AE4B005F40F0 /* Clases */,
 				CA37C6C62959F1CA00C508CB /* DnDWorldTests.swift */,
+				CA486CCE2E8F2C2A004C0792 /* Utils */,
 			);
 			path = DnDWorldTests;
 			sourceTree = "<group>";
@@ -233,6 +239,22 @@
 				CA37C6EC295A286E00C508CB /* Weapon.swift */,
 			);
 			path = Clases;
+			sourceTree = "<group>";
+		};
+		CA486CCB2E8F2B35004C0792 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CA486CCA2E8F2B35004C0792 /* String+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CA486CCE2E8F2C2A004C0792 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CA486CCD2E8F2C2A004C0792 /* String+UtilsTests.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		CA8BE8D72971A39A009517ED /* Views */ = {
@@ -380,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA486CCC2E8F2B35004C0792 /* String+Utils.swift in Sources */,
 				CA37C6F3295A2D6400C508CB /* DamageType.swift in Sources */,
 				CA8BE8F12971FD29009517ED /* Skill.swift in Sources */,
 				CA8BE8E72971F4E8009517ED /* AttackType.swift in Sources */,
@@ -418,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA486CCF2E8F2C2A004C0792 /* String+UtilsTests.swift in Sources */,
 				CA23C1E42A81AE70005F40F0 /* AbilityTests.swift in Sources */,
 				CA23C1E62A81B09F005F40F0 /* RaceTypeTests.swift in Sources */,
 				CA37C6C72959F1CA00C508CB /* DnDWorldTests.swift in Sources */,
@@ -591,7 +615,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DnDWorld/Preview Content\"";
-				DEVELOPMENT_TEAM = R2D4BU6644;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -620,7 +644,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DnDWorld/Preview Content\"";
-				DEVELOPMENT_TEAM = R2D4BU6644;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -648,6 +672,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
@@ -667,6 +692,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;

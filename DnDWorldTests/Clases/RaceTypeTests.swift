@@ -75,16 +75,7 @@ final class RaceTypeTests: XCTestCase {
     }
 
     private func getSnakedRaceType(_ raceType: RaceType) -> String {
-        mapPascalCaseToSnakeCase(raceType.rawValue)
-    }
-
-    private func mapPascalCaseToSnakeCase(_ value: String) -> String {
-        var newValue: String = ""
-        for letter in value {
-            let newLetter = letter.isUppercase ? "_\(letter.lowercased())" : "\(letter)"
-            newValue.append(newLetter)
-        }
-        return newValue
+        raceType.rawValue.camelToSnakeCase()
     }
 
 }
