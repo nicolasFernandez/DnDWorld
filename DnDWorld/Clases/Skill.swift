@@ -11,15 +11,15 @@ import Foundation
 struct Skill {
     let name: String
     private let baseAbility: Ability
-    private let proficencyBonus: Int
+    private let proficiencyBonus: Int
 
     var modifier: Int {
-        return baseAbility.modifier + self.proficencyBonus
+        return baseAbility.modifier + self.proficiencyBonus
     }
 
-    init(name: String, baseAbility: Ability, proficencyBonus: Int = 0, modifier: Int) {
+    init(name: String, baseAbility: Ability, proficiencyBonus: Int = 0, modifier: Int) {
         self.name = name
         self.baseAbility = baseAbility
-        self.proficencyBonus = proficencyBonus
+        self.proficiencyBonus = proficiencyBonus
     }
 }
