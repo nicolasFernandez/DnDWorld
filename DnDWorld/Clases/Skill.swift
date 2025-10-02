@@ -7,15 +7,17 @@
 
 import Foundation
 
+/// Defines a skill of the character like acrobatics, animal handling...
 struct Skill {
     let name: String
     private let baseAbility: Ability
-    private let proficencyBonus: Int?
+    private let proficencyBonus: Int
+
     var modifier: Int {
-        return baseAbility.modifier + (self.proficencyBonus ?? 0)
+        return baseAbility.modifier + self.proficencyBonus
     }
 
-    init(name: String, baseAbility: Ability, proficencyBonus: Int?, modifier: Int) {
+    init(name: String, baseAbility: Ability, proficencyBonus: Int = 0, modifier: Int) {
         self.name = name
         self.baseAbility = baseAbility
         self.proficencyBonus = proficencyBonus
