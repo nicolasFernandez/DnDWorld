@@ -7,7 +7,8 @@
 
 import Foundation
 
-/// Represents 
+/// Represents abilities of the character 
+/// Strength, Dexterity, Constitution, Intelligence, Wisdom, Charisma
 struct Ability {
     private let base: Int
     private let raceBonus: Int
@@ -18,10 +19,10 @@ struct Ability {
     }
 
     var totalScore: Int {
-        return base + raceBonus
+        base + raceBonus
     }
 
-    init(base: Int, raceBonus: Int) {
+    init(base: Int, raceBonus: Int = 0) {
         self.base = base
         self.raceBonus = raceBonus
     }
