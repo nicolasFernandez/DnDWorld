@@ -26,11 +26,9 @@ enum LanguageType: String {
     case undercommon
 
     var name: String {
-        switch self {
-        case .deepSpeech:
-            return NSLocalizedString("deep_speech_name", comment: "")
-        default:
-            return NSLocalizedString("\(self.rawValue)_name", comment: "")
-        }
+        NSLocalizedString(
+            "\(self.rawValue.camelToSnakeCase())_name",
+            comment: ""
+        )
     }
 }

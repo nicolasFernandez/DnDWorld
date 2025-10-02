@@ -50,4 +50,11 @@ enum Feat: String {
     case tough
     case warCaster
     case weaponMaster
+
+    var name: String {
+        NSLocalizedString(
+            "\(self.rawValue.camelToSnakeCase())_name",
+            comment: ""
+        )
+    }
 }

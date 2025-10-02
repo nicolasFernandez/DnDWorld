@@ -26,13 +26,16 @@ enum BackgroundType: String  {
     case urchin
 
     var name: String {
-        switch self {
-        case .folkHero:
-            return NSLocalizedString("folk_hero_name", comment: "")
-        case .guildArtisianMerchant:
-            return NSLocalizedString("guild_artisian_name", comment: "")
-        default:
-            return NSLocalizedString("\(self.rawValue)_name", comment: "")
-        }
+        NSLocalizedString(
+            "\(self.rawValue.camelToSnakeCase())_name",
+            comment: ""
+        )
+    }
+
+    var description: String {
+        NSLocalizedString(
+            "\(self.rawValue.camelToSnakeCase())_description",
+            comment: ""
+        )
     }
 }

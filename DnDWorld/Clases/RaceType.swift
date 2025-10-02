@@ -19,35 +19,24 @@ enum RaceType: String {
     case tiefling
 
     var name: String {
-        NSLocalizedString(getNameKey(), comment: "")
+        NSLocalizedString(
+            "\(self.rawValue.camelToSnakeCase())_name",
+            comment: ""
+        )
     }
 
     var description: String {
-        NSLocalizedString(getDescriptionKey(), comment: "")
+        NSLocalizedString(
+            "\(self.rawValue.camelToSnakeCase())_description",
+            comment: ""
+        )
     }
 
     var racialTraits: String {
-        NSLocalizedString(getRacialTraitsKey(), comment: "")
+        NSLocalizedString(
+            "\(self.rawValue.camelToSnakeCase())_racial_traits",
+            comment: ""
+        )
     }
 
-    private func getNameKey() -> String {
-        "\(self.snakeCaseRawValue())_name"
-    }
-
-    private func getDescriptionKey() -> String {
-        "\(self.snakeCaseRawValue())_description"
-    }
-    
-    private func getRacialTraitsKey() -> String {
-        "\(self.snakeCaseRawValue())_racial_traits"
-    }
-
-    private func snakeCaseRawValue() -> String {
-        var newValue: String = ""
-        for letter in self.rawValue {
-            let newLetter = letter.isUppercase ? "_\(letter.lowercased())" : "\(letter)"
-            newValue.append(newLetter)
-        }
-        return newValue
-    }
 }
