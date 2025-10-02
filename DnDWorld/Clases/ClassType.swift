@@ -22,11 +22,17 @@ enum ClassType: String {
     case wizard
 
     var name: String {
-        return NSLocalizedString("\(self.rawValue)_name", comment: "")
+        NSLocalizedString(
+            "\(self.rawValue)_name",
+            comment: ""
+        )
     }
 
     var description: String {
-        return NSLocalizedString("\(self.rawValue)_description", comment: "")
+        NSLocalizedString(
+            "\(self.rawValue)_description",
+            comment: ""
+        )
     }
 
     var hitDie: String {
@@ -59,10 +65,16 @@ enum ClassType: String {
     }
 
     var primaryAbility: String {
-        return NSLocalizedString("\(self.rawValue)_primary_ability", comment: "")
+        NSLocalizedString(
+            "\(self.rawValue)_primary_ability",
+            comment: ""
+        )
     }
 
     var saves: String {
-        return NSLocalizedString("\(self.rawValue)_saves", comment: "")
+        NSLocalizedString(
+            "\(self.rawValue)_saves",
+            comment: ""
+        )
     }
 }

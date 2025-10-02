@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Subrace {
+enum Subrace: String {
     case woodElf
     case highElf
     case drow
@@ -19,25 +19,9 @@ enum Subrace {
     case rockGnome
 
     var name: String {
-        switch self {
-        case .woodElf:
-            return NSLocalizedString("wood_elf", comment: "")
-        case .highElf:
-            return NSLocalizedString("high_elf", comment: "")
-        case .drow:
-            return NSLocalizedString("drow", comment: "")
-        case .hillDwarf:
-            return NSLocalizedString("hill_dwarf", comment: "")
-        case .mountainDwarf:
-            return NSLocalizedString("mountain_dwarf", comment: "")
-        case .lightfootHalfling:
-            return NSLocalizedString("lightfoot_halfling", comment: "")
-        case .stoutHalfling:
-            return NSLocalizedString("stout_halfling", comment: "")
-        case .deepGnome:
-            return NSLocalizedString("deep_gnome", comment: "")
-        case .rockGnome:
-            return NSLocalizedString("rock_gnome", comment: "")
-        }
+        NSLocalizedString(
+            "\(self.rawValue.camelToSnakeCase())",
+            comment: ""
+        )
     }
 }

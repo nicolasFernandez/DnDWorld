@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Condition {
+enum Condition: String {
     case blinded
     case charmed
     case deafened
@@ -23,4 +23,18 @@ enum Condition {
     case restrained
     case stunned
     case unconscious
+
+    var name: String {
+        NSLocalizedString(
+            "\(self.rawValue.camelToSnakeCase())_name",
+            comment: ""
+        )
+    }
+
+    var description: String {
+        NSLocalizedString(
+            "\(self.rawValue.camelToSnakeCase())_description",
+            comment: ""
+        )
+    }
 }

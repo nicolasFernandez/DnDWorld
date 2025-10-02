@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum DamageType {
+enum DamageType: String {
     case acid
     case bludgeoning
     case cold
@@ -27,4 +27,11 @@ enum DamageType {
     case unarmedAttack
     case naturalAttack
     case meleeWeaponAttack
+
+    var name: String {
+        NSLocalizedString(
+            "\(self.rawValue.camelToSnakeCase())_name",
+            comment: ""
+        )
+    }
 }
