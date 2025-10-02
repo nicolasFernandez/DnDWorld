@@ -26,7 +26,7 @@ final class RaceTypeTests: XCTestCase {
         XCTAssertEqual(getDescription(raceType: sut), sut.description)
     }
 
-    func test_dragonborn_ratialTraits() {
+    func test_dragonborn_racialTraits() {
         let sut = RaceType.dragonborn
         XCTAssertEqual(getRacialTraits(raceType: sut), sut.racialTraits)
     }
@@ -42,7 +42,7 @@ final class RaceTypeTests: XCTestCase {
     }
 
     private func getName(raceType: RaceType) -> String {
-        return NSLocalizedString(
+        NSLocalizedString(
             getNameKey(raceType: raceType),
             comment: ""
         )
@@ -53,7 +53,7 @@ final class RaceTypeTests: XCTestCase {
     }
 
     private func getDescription(raceType: RaceType) -> String {
-        return NSLocalizedString(
+        NSLocalizedString(
             getDescriptionKey(raceType: raceType),
             comment: ""
         )
@@ -64,7 +64,7 @@ final class RaceTypeTests: XCTestCase {
     }
 
     private func getRacialTraits(raceType: RaceType) -> String {
-        return NSLocalizedString(
+        NSLocalizedString(
             getRacialTraitsKey(raceType: raceType),
             comment: ""
         )
