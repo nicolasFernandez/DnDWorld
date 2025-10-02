@@ -19,11 +19,11 @@ enum RaceType: String {
     case tiefling
 
     var name: String {
-        return NSLocalizedString(getNameKey(), comment: "")
+        NSLocalizedString(getNameKey(), comment: "")
     }
 
     var description: String {
-        return NSLocalizedString(getDescriptionKey(), comment: "")
+        NSLocalizedString(getDescriptionKey(), comment: "")
     }
 
     var racialTraits: String {
