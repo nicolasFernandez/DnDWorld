@@ -11,7 +11,7 @@ struct ClassRow: View {
     var classType: ClassType
     var body: some View {
         HStack {
-            Image(classType.rawValue)
+            Image(decorative: classType.icon)
                 .resizable()
                 .frame(width: 45, height: 45)
                 .padding(
@@ -24,7 +24,6 @@ struct ClassRow: View {
                 .padding(
                     .trailing, 30
                 )
-            Spacer()
         }
     }
 }

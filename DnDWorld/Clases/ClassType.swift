@@ -20,6 +20,19 @@ enum ClassType: String {
     case sorcerer
     case warlock
     case wizard
+    case monsterHunter
+    case bloodHunter
+    case artificer
+    case gunslinger
+    case illrigger
+
+    var icon: String {
+        "\(self.rawValue)_icon"
+    }
+
+    var portrait: String {
+        "\(self.rawValue)_portrait"
+    }
 
     var name: String {
         NSLocalizedString(
