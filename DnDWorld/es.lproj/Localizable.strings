@@ -107,19 +107,29 @@
 "sorcerer_name" = "Hechicero";
 "warlock_name" = "Brujo";
 "wizard_name" = "Mago";
+"monsterHunter_name" = "Monster Hunter";
+"bloodHunter_name" = "Blood Hunter";
+"artificer_name" = "Artífice";
+"gunslinger_name" = "Gunslinger";
+"illrigger_name" = "Illrigger";
 
-"barbarian_description" = "Un guerrero feroz de fondo primitivo que puede entrar en una furia de la batalla";
-"bard_description" =  "Un inspirante mago cuyo poder replica la música de la creación";
-"cleric_description" =  "Un campeón sacerdotal que esgrime magia divina al servicio de un poder mayor";
+"barbarian_description" = "Un guerrero feroz de fondo primitivo que puede entrar en una furia de la batalla.";
+"bard_description" =  "Un inspirante mago cuyo poder replica la música de la creación.";
+"cleric_description" =  "Un campeón sacerdotal que esgrime magia divina al servicio de un poder mayor.";
 "druid_description" =  "Un sacerdote de la Antigua Fe, que blande los poderes de la naturaleza -la luz de la luna y el crecimiento de las plantas, el fuego y el rayo- y que adopta formas animales.";
 "fighter_description" =  "Un maestro del combate marcial competente con una gran variedad de armas y armaduras.";
 "monk_description" =  "Un maestro de las artes marciales, que domina el poder del cuerpo en busca de la perfección física y espiritual.";
-"paladin_description" =  "Un guerrero santo atado a un juramento sagrado";
-"ranger_description" =  "Un guerrero que usa la proeza marcial y la magia de la naturaleza para combatir las amenazas en los límites de la civilización";
+"paladin_description" =  "Un guerrero santo atado a un juramento sagrado.";
+"ranger_description" =  "Un guerrero que usa la proeza marcial y la magia de la naturaleza para combatir las amenazas en los límites de la civilización.";
 "rogue_description" =  "Un rufián que usa sigilo y astucia para superar obstáculos y enemigos.";
 "sorcerer_description" =  "Un lanzador de conjuros que recurre a la magia inherente de un don o una linea de sangre.";
-"warlock_description" =  "Un practicante de la magia que deriva de un contrato con una entidad extraplanaria";
+"warlock_description" =  "Un practicante de la magia que deriva de un contrato con una entidad extraplanaria.";
 "wizard_description" =  "Un usuario de magia educado capaz de manipular la estructura de la realidad.";
+"monsterHunter_description" = "Monster Hunters are skilled professionals, specializing in identifying, tracking, and slaying monsters.";
+"bloodHunter_description" = "Willing to suffer whatever it takes to achieve victory, these adept warriors have forged themselves into a potent force dedicated to protecting the innocent.";
+"artificer_description" = "Masters of invention, artificers use ingenuity and magic to unlock extraordinary capabilities in objects.";
+"gunslinger_description" = "Infamous for surviving by their wits and relying on split-second timing and a considerable amount of luck.";
+"illrigger_description" = "Knights, assassins, mages, and terror commandos of Hell, illriggers command the battlefield, disrupt enemy factions, and carry out their archdevil’s infernal will.";
 
 "barbarian_primary_ability" = "Fuerza";
 "bard_primary_ability" = "Carisma";
@@ -133,6 +143,11 @@
 "sorcerer_primary_ability" = "Carisma";
 "warlock_primary_ability" = "Carisma";
 "wizard_primary_ability" = "Inteligencia";
+"monsterHunter_primary_ability" = "Fuerza o Destreza, Inteligencia";
+"bloodHunter_primary_ability" = "Fuerza o Destreza, y Inteligencia o Sabiduría";
+"artificer_primary_ability" = "Inteligencia";
+"gunslinger_primary_ability" = "Destreza";
+"illrigger_primary_ability" = "Fuerza o Destreza";
 
 "barbarian_saves" = "Fuerza y Constitución";
 "bard_saves" = "Destreza y Carisma";
@@ -146,6 +161,11 @@
 "sorcerer_saves" = "Constitución y Carisma";
 "warlock_saves" = "Sabiduría y Carisma";
 "wizard_saves" = "Inteligencia y Sabiduría";
+"monsterHunter_saves" = "Destreza e Inteligencia";
+"bloodHunter_saves" = "Destreza e Inteligencia";
+"artificer_saves" = "Constitución e Inteligencia";
+"gunslinger_saves" = "Destreza y Carisma";
+"illrigger_saves" = "Constitución y Carisma";
 
 // Subrace
 "wood_elf" =  "Elfo de los bosques";
