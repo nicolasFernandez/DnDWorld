@@ -52,27 +52,11 @@ enum ClassType: String {
         switch self {
         case .barbarian:
             return "d12"
-        case .bard:
+        case .bard, .cleric, .druid, .monk, .rogue, .warlock, .artificer, .gunslinger:
             return "d8"
-        case .cleric:
-            return "d8"
-        case .druid:
-            return "d8"
-        case .fighter:
+        case .fighter, .paladin, .ranger, .monsterHunter, .bloodHunter, .illrigger:
             return "d10"
-        case .monk:
-            return "d8"
-        case .paladin:
-            return "d10"
-        case .ranger:
-            return "d10"
-        case .rogue:
-            return "d8"
-        case .sorcerer:
-            return "d6"
-        case .warlock:
-            return "d8"
-        case .wizard:
+        case .sorcerer,.wizard:
             return "d6"
         }
     }
