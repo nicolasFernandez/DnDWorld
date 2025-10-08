@@ -103,6 +103,6 @@ enum ClassType: String {
 
     // TODO: Build a choice making system for initial equipment
     var equipment: [String] {
-        [""]
+        []
     }
 }
