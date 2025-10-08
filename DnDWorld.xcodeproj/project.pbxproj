@@ -31,6 +31,7 @@
 		CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6FC295B34BB00C508CB /* Alignment.swift */; };
 		CA486CCC2E8F2B35004C0792 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA486CCA2E8F2B35004C0792 /* String+Utils.swift */; };
 		CA486CCF2E8F2C2A004C0792 /* String+UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA486CCD2E8F2C2A004C0792 /* String+UtilsTests.swift */; };
+		CA5CE07A2E96BE72000BC2DC /* AttackType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5CE0792E96BE72000BC2DC /* AttackType.swift */; };
 		CA8BE8D62971A391009517ED /* ClassDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8D52971A391009517ED /* ClassDetails.swift */; };
 		CA8BE8D92971A3EF009517ED /* ClassRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8D82971A3EF009517ED /* ClassRow.swift */; };
 		CA8BE8DB2971AE64009517ED /* StatText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8DA2971AE64009517ED /* StatText.swift */; };
@@ -39,7 +40,6 @@
 		CA8BE8E12971E5F4009517ED /* Feat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E02971E5F4009517ED /* Feat.swift */; };
 		CA8BE8E32971E64C009517ED /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E22971E64C009517ED /* Spell.swift */; };
 		CA8BE8E52971F3C2009517ED /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E42971F3C2009517ED /* School.swift */; };
-		CA8BE8E72971F4E8009517ED /* AttackType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E62971F4E8009517ED /* AttackType.swift */; };
 		CA8BE8E92971F59E009517ED /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E82971F59E009517ED /* Condition.swift */; };
 		CA8BE8EB2971F630009517ED /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EA2971F630009517ED /* Component.swift */; };
 		CA8BE8ED2971F956009517ED /* SchoolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EC2971F956009517ED /* SchoolRow.swift */; };
@@ -95,6 +95,7 @@
 		CA37C6FC295B34BB00C508CB /* Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
 		CA486CCA2E8F2B35004C0792 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 		CA486CCD2E8F2C2A004C0792 /* String+UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UtilsTests.swift"; sourceTree = "<group>"; };
+		CA5CE0792E96BE72000BC2DC /* AttackType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackType.swift; sourceTree = "<group>"; };
 		CA8BE8D52971A391009517ED /* ClassDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetails.swift; sourceTree = "<group>"; };
 		CA8BE8D82971A3EF009517ED /* ClassRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRow.swift; sourceTree = "<group>"; };
 		CA8BE8DA2971AE64009517ED /* StatText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatText.swift; sourceTree = "<group>"; };
@@ -103,7 +104,6 @@
 		CA8BE8E02971E5F4009517ED /* Feat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feat.swift; sourceTree = "<group>"; };
 		CA8BE8E22971E64C009517ED /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 		CA8BE8E42971F3C2009517ED /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
-		CA8BE8E62971F4E8009517ED /* AttackType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackType.swift; sourceTree = "<group>"; };
 		CA8BE8E82971F59E009517ED /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
 		CA8BE8EA2971F630009517ED /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		CA8BE8EC2971F956009517ED /* SchoolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRow.swift; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 				CA37C6E0295A02A100C508CB /* Ability.swift */,
 				CA37C6FC295B34BB00C508CB /* Alignment.swift */,
 				CA37C6EE295A287800C508CB /* Armor.swift */,
-				CA8BE8E62971F4E8009517ED /* AttackType.swift */,
+				CA5CE0792E96BE72000BC2DC /* AttackType.swift */,
 				CA8BE8DE2971E5CC009517ED /* Background.swift */,
 				CA37C6F6295B294300C508CB /* BackgroundType.swift */,
 				CA37C6E4295A050A00C508CB /* Character.swift */,
@@ -403,9 +403,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA486CCC2E8F2B35004C0792 /* String+Utils.swift in Sources */,
+				CA5CE07A2E96BE72000BC2DC /* AttackType.swift in Sources */,
 				CA37C6F3295A2D6400C508CB /* DamageType.swift in Sources */,
 				CA8BE8F12971FD29009517ED /* Skill.swift in Sources */,
-				CA8BE8E72971F4E8009517ED /* AttackType.swift in Sources */,
 				CA8BE8EF2971FA8D009517ED /* Skills.swift in Sources */,
 				CA8BE8ED2971F956009517ED /* SchoolRow.swift in Sources */,
 				CADA87C6297B385300C464CE /* RaceType.swift in Sources */,

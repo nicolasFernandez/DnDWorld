@@ -11,13 +11,6 @@ struct SchoolRow: View {
     var school: School
     var body: some View {
         HStack {
-            Image(school.rawValue)
-                .resizable()
-                .frame(width: 45, height: 45)
-                .padding(
-                    .leading, 30
-                )
-                .scaledToFit()
             Text(school.name)
                 .font(.title)
                 .fontWeight(.bold)

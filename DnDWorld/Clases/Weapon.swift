@@ -14,7 +14,6 @@ struct Weapon: Equipment {
 
     let range: Int?
     let disadvantageRange: Int?
-
     let reach: Int
     let damage: String
     let damageType: DamageType

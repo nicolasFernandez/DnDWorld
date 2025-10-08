@@ -11,9 +11,9 @@
 "dwarf_name" = "Dwarf";
 "elf_name" = "Elf";
 "gnome_name" = "Gnome";
-"half_elf_name" = "Half Elf";
+"half_elf_name" = "Half-Elf";
 "halfling_name" = "Halfling";
-"half_orc_name" = "Half Orc";
+"half_orc_name" = "Half-Orc";
 "human_name" = "Human";
 "tiefling_name" = "Tiefling";
 
@@ -78,21 +78,6 @@
 
 // Background
 "acolyte_name" = "Acolyte";
-"charlatan_name" = "Charlatan";
-"criminal_name" = "Criminal";
-"entertainer_name" = "Entertainer";
-"folk_hero_name" = "Folk Hero";
-"gladiator_name" = "Gladiator";
-"guild_artisian_name" = "Guild Artisian";
-"hermit_name" = "Hermit";
-"knight_name" = "Knight";
-"noble_name" = "Noble";
-"outlander_name" = "Outlander";
-"pirate_name" = "Pirate";
-"sage_name" = "Sage";
-"sailor_name" = "Sailor";
-"soldier_name" = "Soldier";
-"urchin_name" = "Urchin";
 
 // Classes
 "barbarian_name" = "Barbarian";
@@ -107,11 +92,6 @@
 "sorcerer_name" = "Sorcerer";
 "warlock_name" = "Warlock";
 "wizard_name" = "Wizard";
-"monsterHunter_name" = "Monster Hunter";
-"bloodHunter_name" = "Blood Hunter";
-"artificer_name" = "Artificer";
-"gunslinger_name" = "Gunslinger";
-"illrigger_name" = "Illrigger";
 
 "barbarian_description" = "A fierce warrior of primitive background who can enter a battle rage";
 "bard_description" =  "An inspiring magician whose power echoes the music of creation";
@@ -125,11 +105,6 @@
 "sorcerer_description" =  "A spellcaster who draws on inherent magic from a gift or bloodline";
 "warlock_description" =  "A wielder of magic that is derived from a bargain with an extraplanar entity";
 "wizard_description" =  "A scholarly magic-user capable of manipulating the structures of reality";
-"monsterHunter_description" = "Monster Hunters are skilled professionals, specializing in identifying, tracking, and slaying monsters.";
-"bloodHunter_description" = "Willing to suffer whatever it takes to achieve victory, these adept warriors have forged themselves into a potent force dedicated to protecting the innocent.";
-"artificer_description" = "Masters of invention, artificers use ingenuity and magic to unlock extraordinary capabilities in objects.";
-"gunslinger_description" = "Infamous for surviving by their wits and relying on split-second timing and a considerable amount of luck.";
-"illrigger_description" = "Knights, assassins, mages, and terror commandos of Hell, illriggers command the battlefield, disrupt enemy factions, and carry out their archdevil’s infernal will.";
 
 "barbarian_primary_ability" = "Strength";
 "bard_primary_ability" = "Charisma";
@@ -143,11 +118,6 @@
 "sorcerer_primary_ability" = "Charisma";
 "warlock_primary_ability" = "Charisma";
 "wizard_primary_ability" = "Intelligence";
-"monsterHunter_primary_ability" = "Strength or Dexterity, Intelligence";
-"bloodHunter_primary_ability" = "Strength or Dexterity, & Intelligence or Wisdom";
-"artificer_primary_ability" = "Intelligence";
-"gunslinger_primary_ability" = "Dexterity";
-"illrigger_primary_ability" = "Strength or Dexterity";
 
 "barbarian_saves" = "Strength & Constitution";
 "bard_saves" = "Dexterity & Charisma";
@@ -161,21 +131,11 @@
 "sorcerer_saves" = "Constitution & Charisma";
 "warlock_saves" = "Wisdom & Charisma";
 "wizard_saves" = "Intelligence & Wisdom";
-"monsterHunter_saves" = "Dexterity & Intelligence";
-"bloodHunter_saves" = "Dexterity & Intelligence";
-"artificer_saves" = "Constitution & Intelligence";
-"gunslinger_saves" = "Dexterity & Charisma";
-"illrigger_saves" = "Constitution & Charisma";
 
 // Subrace
-"wood_elf" =  "Wood Elf";
 "high_elf" =  "High Elf";
-"drow" =  "Drow";
 "hill_dwarf" =  "Hill Dwarf";
-"mountain_dwarf" =  "Mountain Dwarf";
 "lightfoot_halfling" =  "Lightfoot Halfling";
-"stout_halfling" =  "Stout Halfling";
-"deep_gnome" =  "Deep Gnome";
 "rock_gnome" =  "Rock Gnome";
 
 // Schools

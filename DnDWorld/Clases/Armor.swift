@@ -9,7 +9,6 @@ import Foundation
 
 struct Armor: Equipment {
     let name: String
-
     let weight: Float
     let cost: Int
 
