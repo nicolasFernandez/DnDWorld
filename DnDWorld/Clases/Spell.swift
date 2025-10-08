@@ -9,7 +9,6 @@ import Foundation
 
 // Hechizos
 struct Spell {
-
     let name: String
     let school: School
     

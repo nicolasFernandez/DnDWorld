@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Alignment {
+enum Alignment: String {
     case lawfulGood
     case neutralGood
     case chaoticGood
@@ -19,48 +19,10 @@ enum Alignment {
     case chaoticEvil
 
     var name: String {
-        switch self {
-        case .lawfulGood:
-            return NSLocalizedString("lawful_good_name", comment: "")
-        case .neutralGood:
-            return NSLocalizedString("neutral_good_name", comment: "")
-        case .chaoticGood:
-            return NSLocalizedString("chaotic_good_name", comment: "")
-        case .lawfulNeutral:
-            return NSLocalizedString("lawful_neutral_name", comment: "")
-        case .neutral:
-            return NSLocalizedString("neutral_name", comment: "")
-        case .chaoticNeutral:
-            return NSLocalizedString("chaotic_neutral_name", comment: "")
-        case .lawfulEvil:
-            return NSLocalizedString("lawful_evil_name", comment: "")
-        case .neutralEvil:
-            return NSLocalizedString("neutral_evil_name", comment: "")
-        case .chaoticEvil:
-            return NSLocalizedString("chaotic_evil_name", comment: "")
-        }
+        NSLocalizedString("\(self.rawValue.camelToSnakeCase())_name", comment: "")
     }
 
     var description: String {
-        switch self {
-        case .lawfulGood:
-            return NSLocalizedString("lawful_good_description", comment: "")
-        case .neutralGood:
-            return NSLocalizedString("neutral_good_description", comment: "")
-        case .chaoticGood:
-            return NSLocalizedString("chaotic_good_description", comment: "")
-        case .lawfulNeutral:
-            return NSLocalizedString("lawful_neutral_description", comment: "")
-        case .neutral:
-            return NSLocalizedString("neutral_description", comment: "")
-        case .chaoticNeutral:
-            return NSLocalizedString("chaotic_neutral_description", comment: "")
-        case .lawfulEvil:
-            return NSLocalizedString("lawful_evil_description", comment: "")
-        case .neutralEvil:
-            return NSLocalizedString("neutral_evil_description", comment: "")
-        case .chaoticEvil:
-            return NSLocalizedString("chaotic_evil_description", comment: "")
-        }
+        NSLocalizedString("\(self.rawValue.camelToSnakeCase())_description", comment: "")
     }
 }

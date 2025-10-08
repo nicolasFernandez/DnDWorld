@@ -19,24 +19,15 @@ enum RaceType: String {
     case tiefling
 
     var name: String {
-        NSLocalizedString(
-            "\(self.rawValue.camelToSnakeCase())_name",
-            comment: ""
-        )
+        NSLocalizedString("\(self.rawValue.camelToSnakeCase())_name", comment: "")
     }
 
     var description: String {
-        NSLocalizedString(
-            "\(self.rawValue.camelToSnakeCase())_description",
-            comment: ""
-        )
+        NSLocalizedString("\(self.rawValue.camelToSnakeCase())_description", comment: "")
     }
 
     var racialTraits: String {
-        NSLocalizedString(
-            "\(self.rawValue.camelToSnakeCase())_racial_traits",
-            comment: ""
-        )
+        NSLocalizedString("\(self.rawValue.camelToSnakeCase())_racial_traits", comment: "")
     }
 
 }

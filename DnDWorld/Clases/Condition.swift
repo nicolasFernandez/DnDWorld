@@ -25,16 +25,10 @@ enum Condition: String {
     case unconscious
 
     var name: String {
-        NSLocalizedString(
-            "\(self.rawValue.camelToSnakeCase())_name",
-            comment: ""
-        )
+        NSLocalizedString("\(self.rawValue.camelToSnakeCase())_name", comment: "")
     }
 
     var description: String {
-        NSLocalizedString(
-            "\(self.rawValue.camelToSnakeCase())_description",
-            comment: ""
-        )
+        NSLocalizedString("\(self.rawValue.camelToSnakeCase())_description", comment: "")
     }
 }

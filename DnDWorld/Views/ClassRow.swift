@@ -11,13 +11,6 @@ struct ClassRow: View {
     var classType: ClassType
     var body: some View {
         HStack {
-            Image(decorative: classType.icon)
-                .resizable()
-                .frame(width: 45, height: 45)
-                .padding(
-                    .leading, 30
-                )
-                .scaledToFit()
             Text(classType.name)
                 .font(.title)
                 .fontWeight(.bold)

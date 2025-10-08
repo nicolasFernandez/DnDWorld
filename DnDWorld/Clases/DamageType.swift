@@ -21,17 +21,8 @@ enum DamageType: String {
     case radiant
     case slashing
     case thunder
-    case shortbow
-    case longbow
-    case oneHandedMeleeAttack
-    case unarmedAttack
-    case naturalAttack
-    case meleeWeaponAttack
 
     var name: String {
-        NSLocalizedString(
-            "\(self.rawValue.camelToSnakeCase())_name",
-            comment: ""
-        )
+        NSLocalizedString("\(self.rawValue.camelToSnakeCase())_name", comment: "")
     }
 }
