@@ -8,21 +8,22 @@
 import Foundation
 
 // Trasfondo
-struct Background {
-    let name: String
-    let feature: Feat
-    let proficiencies: [Skill]?
+class Background {
+    let name: String = ""
+    let feature: Feat = .none
+    let proficiencies: [Skill]? = nil // max two
 
     // Opening introduction about the background
-    let introduction: String
+    let introduction: String = ""
 
-    let ideal: String
-    let bond: String
-    let flaw: String
+    let personalityTraits: [String] = [] // max two
+    let ideal: String = ""
+    let bond: String = ""
+    let flaw: String = ""
 
     // Describes what tools proficiencies the background grants
-    let toolProficienciesDescription: [String]?
+    let toolProficienciesDescription: [String]? = nil // max two
 
     // Describes what languages the background grants
-    let languages: [LanguageType]
+    let languages: [LanguageType] = [] // max two
 }

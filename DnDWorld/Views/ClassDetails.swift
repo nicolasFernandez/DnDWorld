@@ -19,13 +19,10 @@ struct ClassDetails: View {
                 .padding(.top, 8)
             StatText(
                 statTitle: Text("Hit Die", comment: ""),
-                statValue: classType.hitDie
+                statValue: "1d\(classType.hitDie)"
             )
             StatText(statTitle: Text("Primary Ability", comment: ""), statValue: classType.primaryAbility)
             StatText(statTitle: Text("Saving throw", comment: ""), statValue: classType.saves)
-            Image("\(classType.rawValue)_large")
-                .resizable()
-                .scaledToFit()
         }
     }
 }

@@ -15,7 +15,7 @@
 "halfling_name" = "Mediano";
 "half_orc_name" = "Semiorco";
 "human_name" = "Humano";
-"tiefling_name" = "Tiflin";
+"tiefling_name" = "Tiefling";
 
 "dragonborn_description" = "Los dracónidos se parecen mucho a los dragones que permanecen erectos en forma humanoide, aunque carecen de alas o cola.";
 "dwarf_description" = "Duros y valientes, los enanos son conocidos como hábiles guerreros, mineros y trabajadores de la piedra y el metal.";
@@ -78,21 +78,6 @@
 
 // Background
 "acolyte_name" = "Acólito";
-"charlatan_name" = "Charlatán";
-"criminal_name" = "Criminal";
-"entertainer_name" = "Artista";
-"folk_hero_name" = "Héroe del pueblo";
-"gladiator_name" = "Gladiador";
-"guild_artisian_name" = "Artesano gremial";
-"hermit_name" = "Ermitaño";
-"knight_name" = "Caballero";
-"noble_name" = "Noble";
-"outlander_name" = "Fronterizo";
-"pirate_name" = "Pirata";
-"sage_name" = "Sabio";
-"sailor_name" = "Marinero";
-"soldier_name" = "Soldado";
-"urchin_name" = "Huérfano";
 
 // Classes
 "barbarian_name" = "Bárbaro";
@@ -107,11 +92,6 @@
 "sorcerer_name" = "Hechicero";
 "warlock_name" = "Brujo";
 "wizard_name" = "Mago";
-"monsterHunter_name" = "Monster Hunter";
-"bloodHunter_name" = "Blood Hunter";
-"artificer_name" = "Artífice";
-"gunslinger_name" = "Gunslinger";
-"illrigger_name" = "Illrigger";
 
 "barbarian_description" = "Un guerrero feroz de fondo primitivo que puede entrar en una furia de la batalla.";
 "bard_description" =  "Un inspirante mago cuyo poder replica la música de la creación.";
@@ -125,11 +105,6 @@
 "sorcerer_description" =  "Un lanzador de conjuros que recurre a la magia inherente de un don o una linea de sangre.";
 "warlock_description" =  "Un practicante de la magia que deriva de un contrato con una entidad extraplanaria.";
 "wizard_description" =  "Un usuario de magia educado capaz de manipular la estructura de la realidad.";
-"monsterHunter_description" = "Monster Hunters are skilled professionals, specializing in identifying, tracking, and slaying monsters.";
-"bloodHunter_description" = "Willing to suffer whatever it takes to achieve victory, these adept warriors have forged themselves into a potent force dedicated to protecting the innocent.";
-"artificer_description" = "Masters of invention, artificers use ingenuity and magic to unlock extraordinary capabilities in objects.";
-"gunslinger_description" = "Infamous for surviving by their wits and relying on split-second timing and a considerable amount of luck.";
-"illrigger_description" = "Knights, assassins, mages, and terror commandos of Hell, illriggers command the battlefield, disrupt enemy factions, and carry out their archdevil’s infernal will.";
 
 "barbarian_primary_ability" = "Fuerza";
 "bard_primary_ability" = "Carisma";
@@ -143,11 +118,6 @@
 "sorcerer_primary_ability" = "Carisma";
 "warlock_primary_ability" = "Carisma";
 "wizard_primary_ability" = "Inteligencia";
-"monsterHunter_primary_ability" = "Fuerza o Destreza, Inteligencia";
-"bloodHunter_primary_ability" = "Fuerza o Destreza, y Inteligencia o Sabiduría";
-"artificer_primary_ability" = "Inteligencia";
-"gunslinger_primary_ability" = "Destreza";
-"illrigger_primary_ability" = "Fuerza o Destreza";
 
 "barbarian_saves" = "Fuerza y Constitución";
 "bard_saves" = "Destreza y Carisma";
@@ -161,21 +131,11 @@
 "sorcerer_saves" = "Constitución y Carisma";
 "warlock_saves" = "Sabiduría y Carisma";
 "wizard_saves" = "Inteligencia y Sabiduría";
-"monsterHunter_saves" = "Destreza e Inteligencia";
-"bloodHunter_saves" = "Destreza e Inteligencia";
-"artificer_saves" = "Constitución e Inteligencia";
-"gunslinger_saves" = "Destreza y Carisma";
-"illrigger_saves" = "Constitución y Carisma";
 
 // Subrace
-"wood_elf" =  "Elfo de los bosques";
 "high_elf" =  "Alto elfo";
-"drow" =  "Elfo oscuro";
 "hill_dwarf" =  "Enano de las colinas";
-"mountain_dwarf" =  "Enano de las montañas";
 "lightfoot_halfling" =  "Mediano piesligeros";
-"stout_halfling" =  "Mediano fornido";
-"deep_gnome" =  "Gnomo de los bosques";
 "rock_gnome" =  "Gnomo de las rocas";
 
 // Schools
