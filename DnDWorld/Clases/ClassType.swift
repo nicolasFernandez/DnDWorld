@@ -30,7 +30,7 @@ enum ClassType: String {
     }
 
     var name: String {
-        NSLocalizedString("\(self.rawValue)_name",comment: "")
+        NSLocalizedString("\(self.rawValue)_name", comment: "")
     }
 
     var description: String {
