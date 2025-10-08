@@ -18,10 +18,10 @@ enum BackgroundType: String  {
         NSLocalizedString("\(self.rawValue.camelToSnakeCase())_description", comment: "")
     }
 
-    var skillProficiencies: String {""} // TODO: add a way to set proficiencies on skills
-    var languages: String {""}
-    var personalityTraits: String {""}
-    var ideals: String {""}
-    var bonds: String {""}
-    var flaws: String {""}
+    var skillProficiencies: String? { nil } // TODO: add a way to set proficiencies on skills
+    var languages: String? { nil }
+    var personalityTraits: String? { nil }
+    var ideals: String? { nil }
+    var bonds: String? { nil }
+    var flaws: String? { nil }
 }
