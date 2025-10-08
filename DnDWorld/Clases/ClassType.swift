@@ -91,14 +91,8 @@ enum ClassType: String {
     }
 
     // TODO: Build a struct for this
-    var proficiencies: [String: String] {
-        [
-            "Armor": "",
-            "Weapons": "",
-            "Tools": "",
-            "Saving Throws": "",
-            "Skills": ""
-        ]
+    var proficiencies: [String: String]? {
+        nil
     }
 
     // TODO: Build a choice making system for initial equipment
