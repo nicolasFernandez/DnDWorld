@@ -78,7 +78,9 @@ enum ClassType: String {
         }
     }
 
-    var diceHigherLevelHitPoints: Int {
+    /// Rolls hit points for higher levels using dice (non-deterministic).
+    /// - Returns: A random value between 1 and hitDie (inclusive).
+    func rollHigherLevelHitPoints() -> Int {
         Int.random(in: 1...hitDie) // + con modifier per level after 1
     }
 
