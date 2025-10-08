@@ -1,42 +1,38 @@
 # DnDWorld
-DnD World es una aplicacion para generar personajes utilizando las reglas básicas del "Manual del Jugador" de Dungeons & Dragons 5e, con sus stats e items iniciales según raza, sub-raza, trasfondo, etc. 
 
-## Objetivo
+A Swift application for Dungeons & Dragons character management and world building.
 
-La idea inicial de este proyecto fue poder replicar el generador de personajes que existe en dndbeyond.com para jugadores de habla hispana inicialmente (podría expandirse) y utilizando las reglas básicas (podría expandirse) para quienes recién se inician en este juego de rol. 
+## Security Note
 
-Aprender técnicas para desarrollar aplicaciones testeables, escalables, flexibles, mantenibles y alcanzar la excelencia a nivel técnico! 
-- Crear módulos abiertos a extensión
-- Eliminar dependencias
-- Eliminar duplicados.
-- Reforzar conocimientos de MVVM
-- Aprender SOLID, Clean Arch.
-- Aprender RxSwift
-- Aprender SwiftUI
-- Aprender patrones de diseño:
-  - Strategy
-  - NullObject
-  - Composite
-  - Adapter
-  - Observer
-  - etc
+This project uses git hooks to automatically sanitize sensitive information before commits:
 
-## Wireframe
-(WIP)
+1. **pre-commit hook**: Automatically replaces the actual bundle identifiers with placeholder values before committing
+2. **post-checkout hook**: Restores the actual bundle identifiers after checkout for local development
 
-## Diagrama de dependencias
-(WIP)
+### Setup
 
-## To-Do: 
-- [ ] Elegir una raza, clase y nombre de personaje.
-- [ ] Elegir competencias de raza y bonificadores según sea el caso.
-- [ ] Elegir competencias de clase y bonificadores según sea el caso.
-- [ ] Elegir un metodo de asignación de puntos (compra de puntos, standard array, random) y permitir asignarlos al personaje. 
-- [ ] Elegir un trasfondo y seleccionar sus competencias o bonificadores correspondientes. 
-- [ ] Elegir entre equipamiento inicial según trasfondo o compra de items para administrar el inventario. 
-- [ ] Generar vista con hoja de personaje completa
-- [ ] (opcional) Implementar conversor de monedas
-- [ ] (opcional) Exportar hoja como imagen (jpg, png) o pdf
+To use these hooks, make sure they are executable:
 
-## Feedback
-Reporta un bug o feature en la pestaña issues. 
+```bash
+chmod +x .git/hooks/pre-commit
+chmod +x .git/hooks/post-checkout
+```
+
+### How it works
+
+- When you commit changes, the pre-commit hook will sanitize the project.pbxproj file
+- After checkout/pull, the post-checkout hook will restore your actual development identifiers
+- This ensures development team and bundle identifiers remain private
+
+## Development
+
+- Follow SOLID principles and Clean Code practices
+- Apply design patterns like Strategy, NullObject, Composite, Adapter, Observer when needed
+- Use SwiftUI instead of UIKit
+
+## TO-DO:
+
+- [ ] View components for Character Sheet
+- [ ] Character Sheet View
+- [ ] Export as PDF or image
+- [ ] Allow user to create characters step-by-step (race, class, background, initial equipment or wealth, choose point assignment systems) 
