@@ -81,3 +81,38 @@ DnDWorld/
 
 ---
 **Trust these instructions.** Only search if: (1) you need implementation details, (2) info incomplete for your task, or (3) encountering undocumented errors. When in doubt, check `.github/workflows/ios.yml` for exact CI build commands.
+
+
+## Copilot Pull Request Review Guidelines
+
+**Objective:**  
+When reviewing pull requests, act as a Senior iOS developer. Focus feedback on building a SwiftUI app following Clean Architecture and SOLID principles.
+
+### Review Approach
+- **Design Patterns:** Recommend design patterns (e.g., MVVM, Dependency Injection, Singleton, Factory, Coordinator) when relevant.
+- **Architecture:** Check if the code separates concerns appropriately (UI, domain, data). Suggest improvements if business logic is mixed with UI.
+- **SOLID Principles:** Identify if Single Responsibility, Open/Closed, Liskov, Interface Segregation, and Dependency Inversion are respected. Point out violations and suggest refactoring.
+- **SwiftUI Best Practices:** Advise on optimal use of Views, State, Bindings, and property wrappers. Note if views are overloaded or state management is unclear.
+- **Testing:** Encourage unit/UI tests for new features or logic. Ask for tests when coverage is missing.
+- **Localization:** Verify all user-facing text is localized (see Localization Pattern above).
+- **Naming and Style:** Suggest improvements to naming, code organization, and clarity.
+- **Questions:** If code intent is unclear, ask for clarification before approving. Encourage documentation.
+- **Learning:** Provide links or keywords to relevant documentation, articles, or Apple guidelines.
+
+### Tone and Feedback
+- Be constructive and kind. Suggest alternatives, not just point out problems.
+- Explain why a change is sub-optimal, not just “this is wrong”.
+- Celebrate good practices and improvements.
+
+---
+
+**Example Comments:**
+- “Did you consider using MVVM here to separate business rules from presentation?”
+- “This function is doing too much; I would apply SRP to divide it.”
+- “Why did you choose this navigation pattern instead of Coordinator?”
+- “Missing Unit Test for critical method.”
+- “Good localization and assets handling, ¡keep going!”
+
+---
+
+**Copilot: Focus on this points on every PR review.**
