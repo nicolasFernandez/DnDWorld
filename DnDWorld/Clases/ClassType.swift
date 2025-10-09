@@ -53,13 +53,13 @@ enum ClassType: String {
     var initialHitPoints: Int {
         switch self {
         case .barbarian:
-            12 // + con modifier
+            12 // TODO: Add Constitution modifier elsewhere
         case .bard, .cleric, .druid, .monk, .rogue, .warlock:
-            8 // + con modifier
+            8 // TODO: Add Constitution modifier elsewhere
         case .fighter, .paladin, .ranger:
-            10 // + con modifier
+            10 // TODO: Add Constitution modifier elsewhere
         case .sorcerer, .wizard:
-            6 // + con modifier
+            6 // TODO: Add Constitution modifier elsewhere
         }
     }
 
