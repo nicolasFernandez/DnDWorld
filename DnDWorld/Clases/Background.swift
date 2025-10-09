@@ -8,7 +8,7 @@
 import Foundation
 
 // Trasfondo
-class Background {
+struct Background {
     let name: String = ""
     let feature: Feat = .none
     let proficiencies: [Skill]? = nil // max two
