@@ -111,7 +111,7 @@ When reviewing pull requests, act as a Senior iOS developer. Focus feedback on b
 - “This function is doing too much; I would apply SRP to divide it.”
 - “Why did you choose this navigation pattern instead of Coordinator?”
 - “Missing Unit Test for critical method.”
-- “Good localization and assets handling, ¡keep going!”
+- “Good localization and assets handling, keep going!”
 
 ---
 
