@@ -115,4 +115,4 @@ When reviewing pull requests, act as a Senior iOS developer. Focus feedback on b
 
 ---
 
-**Copilot: Focus on this points on every PR review.**
+**Copilot: Focus on these points on every PR review.**
