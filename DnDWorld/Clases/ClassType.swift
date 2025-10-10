@@ -50,19 +50,23 @@ enum ClassType: String {
         }
     }
 
-    var initialHitPoints: Int {
+    /// The base hit points at level 1 for each class (without Constitution modifier).
+    var baseHitPointsAtLevel1: Int {
         switch self {
         case .barbarian:
-            12 // TODO: Add Constitution modifier elsewhere
+            12
         case .bard, .cleric, .druid, .monk, .rogue, .warlock:
-            8 // TODO: Add Constitution modifier elsewhere
+            8
         case .fighter, .paladin, .ranger:
-            10 // TODO: Add Constitution modifier elsewhere
+            10
         case .sorcerer, .wizard:
-            6 // TODO: Add Constitution modifier elsewhere
+            6
         }
     }
 
+    var initialHitPoints: Int {
+        baseHitPointsAtLevel1 // TODO: Add Constitution modifier elsewhere
+    }
     // TODO: make calculation engine based on dice or medium
     // medium
     var mediumHigherLevelHitPoints: Int {
