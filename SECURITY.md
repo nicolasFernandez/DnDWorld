@@ -12,39 +12,64 @@ If you discover a security vulnerability in DnDWorld, please email the maintaine
 
 We use MobSF (Mobile Security Framework) for automated security scanning. Below are documented decisions regarding specific alerts:
 
-### Alert #5: Keyboard Cache (ios_keyboard_cache)
+### Alert #2: Certificate Pinning (ios_cert_pinning)
 
-**Status:** Fixed  
-**Level:** Note  
-**Related Issue:** #63  
+**Status:** Dismissed  
+**Level:** Info  
+**Related Issue:** #2  
 **Decision Date:** 2025-10-11
 
-**Alert Message:** "This app does not disable Keyboard cache. It must be disabled for all sensitive data inputs."
+**Alert Message:** "This app does not have Certificate Pinning implemented in code."
 
-**Resolution:**
+**Rationale for Dismissal:**
 
-While DnDWorld primarily handles non-sensitive game data (character names, stats, etc.), we have implemented keyboard cache controls to address this security scanning alert and follow iOS security best practices. 
+This alert recommends implementing certificate pinning to prevent man-in-the-middle (MITM) attacks on network communications. After careful evaluation, we have decided to dismiss this alert for the following reasons:
 
-**Implementation Strategy:**
+1. **No Network Communication:** DnDWorld is a completely offline application. The app does not:
+   - Make any network requests (HTTP/HTTPS)
+   - Connect to remote servers or APIs
+   - Download or upload any data
+   - Communicate with external services
+   - Use URLSession, URLRequest, or any networking frameworks
+   - Require internet connectivity
 
-1. **Reusable ViewModifier:** Created a `SecureTextFieldModifier` that can be applied to any TextField to disable keyboard cache, autocorrection, and spell checking.
+2. **Application Architecture:** The application is designed as:
+   - A local character generator and management tool
+   - All data is stored and processed locally on the device
+   - No backend services or cloud integration
+   - No dependency on network connectivity for any functionality
+   - Purely a client-side SwiftUI application
 
-2. **Application Guidelines:** All text input fields in the application should use the `.disableKeyboardCache()` modifier to ensure consistent behavior and satisfy security scanning requirements.
+3. **Risk Assessment:** The OWASP MSTG-NETWORK-4 guideline for certificate pinning is specifically intended for applications that:
+   - Communicate with servers over the network
+   - Transmit sensitive data over HTTPS connections
+   - Need protection against MITM attacks on network traffic
+   
+   Since DnDWorld has no network communication whatsoever, there is zero risk of MITM attacks or certificate validation issues.
 
-3. **Rationale:** Although the data is non-sensitive, implementing this fix:
-   - Satisfies automated security scanning requirements
-   - Provides a consistent, reusable solution for all text inputs
-   - Follows iOS security best practices
-   - Has minimal impact on user experience for short text inputs like character names
-   - Can be selectively applied or modified if needed for specific use cases
+4. **Implementation Considerations:** Certificate pinning would require:
+   - URLSessionDelegate implementation with `URLSession:didReceiveChallenge:` method
+   - Certificate validation logic
+   - Hardcoded certificate public keys or certificate files
+   - Certificate rotation and update mechanisms
+   
+   All of these are unnecessary for an application with no networking capabilities.
 
-**Code Location:** `DnDWorld/Utils/SecureTextFieldModifier.swift`
+5. **Code Verification:** A comprehensive code review confirms:
+   - No imports of networking frameworks (Network, URLSession, Alamofire, etc.)
+   - No network-related APIs in use
+   - No server endpoints or URLs in the codebase
+   - The app functions entirely offline
 
-**Usage Example:**
-```swift
-TextField("Character Name", text: $characterName)
-    .disableKeyboardCache()
-```
+**Conclusion:** Given that DnDWorld is a purely offline application with zero network communication, implementing certificate pinning would provide no security benefit whatsoever. This alert is dismissed as not applicable to DnDWorld's architecture and functionality.
+
+**Review:** This decision should be re-evaluated if the application's functionality changes to include:
+- Any network communication (API calls, web requests, etc.)
+- Integration with online services or cloud storage
+- Multiplayer or collaborative features requiring network connectivity
+- Content downloads or updates from remote servers
+- Analytics or crash reporting services that communicate over the network
+- Any feature that requires internet connectivity
 
 ### Alert #4: Keyboard Cache (ios_keyboard_cache)
 
@@ -103,6 +128,40 @@ This alert recommends disabling the iOS keyboard cache to prevent sensitive data
 - Payment processing
 - Integration with services requiring credentials
 - Any feature handling data that should not be cached or logged
+
+### Alert #5: Keyboard Cache (ios_keyboard_cache)
+
+**Status:** Fixed  
+**Level:** Note  
+**Related Issue:** #63  
+**Decision Date:** 2025-10-11
+
+**Alert Message:** "This app does not disable Keyboard cache. It must be disabled for all sensitive data inputs."
+
+**Resolution:**
+
+While DnDWorld primarily handles non-sensitive game data (character names, stats, etc.), we have implemented keyboard cache controls to address this security scanning alert and follow iOS security best practices. 
+
+**Implementation Strategy:**
+
+1. **Reusable ViewModifier:** Created a `SecureTextFieldModifier` that can be applied to any TextField to disable keyboard cache, autocorrection, and spell checking.
+
+2. **Application Guidelines:** All text input fields in the application should use the `.disableKeyboardCache()` modifier to ensure consistent behavior and satisfy security scanning requirements.
+
+3. **Rationale:** Although the data is non-sensitive, implementing this fix:
+   - Satisfies automated security scanning requirements
+   - Provides a consistent, reusable solution for all text inputs
+   - Follows iOS security best practices
+   - Has minimal impact on user experience for short text inputs like character names
+   - Can be selectively applied or modified if needed for specific use cases
+
+**Code Location:** `DnDWorld/Utils/SecureTextFieldModifier.swift`
+
+**Usage Example:**
+```swift
+TextField("Character Name", text: $characterName)
+    .disableKeyboardCache()
+```
 
 ### Alert #6: Reverse Engineering Detection (ios_anti_reversing)
 
