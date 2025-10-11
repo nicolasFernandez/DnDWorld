@@ -38,7 +38,7 @@ This alert recommends disabling the iOS keyboard cache to prevent sensitive data
    - Game statistics (strength, dexterity, etc.)
    - Character class and race selections
    - Equipment and spell lists
-   
+
    None of this data is sensitive in nature. Character names are typically fictional and not linked to real identities.
 
 3. **Risk Assessment:** The OWASP MSTG-STORAGE-5 guideline for keyboard cache protection is specifically intended for applications that process:
@@ -56,10 +56,10 @@ This alert recommends disabling the iOS keyboard cache to prevent sensitive data
    - Add unnecessary friction to the character creation process
    - Provide no actual security benefit given the non-sensitive nature of the data
 
-5. **Implementation Considerations:** While technically simple to implement (using `autocorrectionType = .no` and `isSecureTextEntry = true`), these settings would:
+5. **Implementation Considerations:** While technically possible to implement (using `autocorrectionType = .no`, `spellCheckingType = .no`, and potentially `isSecureTextEntry = true` for password-like fields), these settings would:
    - Signal to users that they're entering sensitive data (when they're not)
-   - Disable helpful features like spell-checking for character descriptions
-   - Create unnecessary confusion
+   - Disable helpful features like spell-checking and autocorrect for character names and descriptions
+   - Create unnecessary confusion about the nature of the data being entered
 
 **Conclusion:** Given that DnDWorld exclusively handles non-sensitive game data, disabling the keyboard cache would provide no meaningful security benefit while degrading user experience. This alert is dismissed as not applicable to DnDWorld's threat model and data classification.
 
