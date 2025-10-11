@@ -48,7 +48,7 @@ This alert recommends implementing certificate pinning to prevent man-in-the-mid
    Since DnDWorld has no network communication whatsoever, there is zero risk of MITM attacks or certificate validation issues.
 
 4. **Implementation Considerations:** Certificate pinning would require:
-   - URLSessionDelegate implementation with `URLSession:didReceiveChallenge:` method
+   - URLSessionDelegate implementation with `URLSession(_:didReceive:completionHandler:)` method
    - Certificate validation logic
    - Hardcoded certificate public keys or certificate files
    - Certificate rotation and update mechanisms
