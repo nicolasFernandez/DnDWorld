@@ -12,47 +12,63 @@ If you discover a security vulnerability in DnDWorld, please email the maintaine
 
 We use MobSF (Mobile Security Framework) for automated security scanning. Below are documented decisions regarding specific alerts:
 
-### Alert #4: Jailbreak Detection (ios_jailbreak_detect)
+### Alert #4: Keyboard Cache (ios_keyboard_cache)
 
 **Status:** Dismissed  
 **Level:** Note  
 **Related Issue:** #62  
 **Decision Date:** 2025-10-11
 
+**Alert Message:** "This app does not disable Keyboard cache. It must be disabled for all sensitive data inputs."
+
 **Rationale for Dismissal:**
 
-This alert recommends implementing jailbreak detection capabilities in the iOS application. After careful evaluation, we have decided to dismiss this alert for the following reasons:
+This alert recommends disabling the iOS keyboard cache to prevent sensitive data from being stored in the keyboard's autocomplete suggestions. After careful evaluation, we have decided to dismiss this alert for the following reasons:
 
 1. **Application Nature:** DnDWorld is a character generator tool for tabletop gaming. It does not:
    - Handle sensitive financial information
    - Process personal identifiable information (PII)
-   - Require authentication or user accounts
+   - Require authentication credentials (passwords, tokens, etc.)
    - Store or transmit sensitive data
-   - Connect to external services or APIs
+   - Process payment information
+   - Handle health or medical data
 
-2. **Risk Assessment:** The primary security concern for jailbreak detection is protecting sensitive data and preventing unauthorized access to protected content. Since DnDWorld:
-   - Operates entirely offline
-   - Uses only locally stored, non-sensitive game data (D&D rules and character information)
-   - Does not implement DRM or content protection mechanisms
-   - Has no server-side components to protect
+2. **Data Classification:** The application only handles:
+   - Character names (public, non-sensitive game data)
+   - Game statistics (strength, dexterity, etc.)
+   - Character class and race selections
+   - Equipment and spell lists
+   
+   None of this data is sensitive in nature. Character names are typically fictional and not linked to real identities.
 
-   The risk profile does not justify the complexity and maintenance burden of jailbreak detection.
+3. **Risk Assessment:** The OWASP MSTG-STORAGE-5 guideline for keyboard cache protection is specifically intended for applications that process:
+   - Passwords and authentication credentials
+   - Credit card numbers
+   - Social security numbers
+   - Personal identification information
+   - Confidential business data
 
-3. **User Experience:** Implementing jailbreak detection could:
-   - Prevent legitimate users on jailbroken devices from using the app
-   - Create false positives that block valid use cases
-   - Add unnecessary complexity to the codebase
+   Since DnDWorld processes only game-related data with no real-world sensitivity, the risk of keyboard cache exposure is negligible.
 
-4. **Best Practice Context:** While jailbreak detection is a recommended best practice for apps handling sensitive data or requiring enhanced security, it is not universally required for all iOS applications. The OWASP Mobile Security Testing Guide (MSTG-RESILIENCE-1) acknowledges this is relevant for apps with heightened security requirements.
+4. **User Experience:** Disabling keyboard cache would:
+   - Degrade user experience by preventing helpful autocomplete suggestions
+   - Make it harder for users to quickly enter frequently used character names
+   - Add unnecessary friction to the character creation process
+   - Provide no actual security benefit given the non-sensitive nature of the data
 
-**Conclusion:** Given the non-sensitive nature of the application and its data, implementing jailbreak detection would provide minimal security benefit while adding complexity and potentially degrading user experience. This alert is dismissed as not applicable to DnDWorld's threat model.
+5. **Implementation Considerations:** While technically simple to implement (using `autocorrectionType = .no` and `isSecureTextEntry = true`), these settings would:
+   - Signal to users that they're entering sensitive data (when they're not)
+   - Disable helpful features like spell-checking for character descriptions
+   - Create unnecessary confusion
+
+**Conclusion:** Given that DnDWorld exclusively handles non-sensitive game data, disabling the keyboard cache would provide no meaningful security benefit while degrading user experience. This alert is dismissed as not applicable to DnDWorld's threat model and data classification.
 
 **Review:** This decision should be re-evaluated if the application's functionality changes to include:
-- User authentication
-- Storage of personal data
+- User authentication system
+- Storage of personal identification information
 - Payment processing
-- Network communication with sensitive APIs
-- DRM or content protection requirements
+- Integration with services requiring credentials
+- Any feature handling data that should not be cached or logged
 
 ## Security Best Practices
 
