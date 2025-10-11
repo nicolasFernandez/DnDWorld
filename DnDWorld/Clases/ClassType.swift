@@ -40,13 +40,13 @@ enum ClassType: String {
     var hitDie: Int {
         switch self {
         case .barbarian:
-            12
+            return 12
         case .bard, .cleric, .druid, .monk, .rogue, .warlock:
-            8
+            return 8
         case .fighter, .paladin, .ranger:
-            10
+            return 10
         case .sorcerer, .wizard:
-            6
+            return 6
         }
     }
 
@@ -54,13 +54,13 @@ enum ClassType: String {
     var baseHitPointsAtLevel1: Int {
         switch self {
         case .barbarian:
-            12
+            return 12
         case .bard, .cleric, .druid, .monk, .rogue, .warlock:
-            8
+            return 8
         case .fighter, .paladin, .ranger:
-            10
+            return 10
         case .sorcerer, .wizard:
-            6
+            return 6
         }
     }
 
@@ -72,13 +72,13 @@ enum ClassType: String {
     var mediumHigherLevelHitPoints: Int {
         switch self {
         case .barbarian:
-            7 //  + con modifier per level after 1
+            return 7 //  + con modifier per level after 1
         case .bard, .cleric, .druid, .monk, .rogue, .warlock:
-            5 // + con modifier per level after 1
+            return 5 // + con modifier per level after 1
         case .fighter, .paladin, .ranger:
-            6 // + con modifier per level after 1
+            return 6 // + con modifier per level after 1
         case .sorcerer, .wizard:
-            4 // + con modifier per level after 1
+            return 4 // + con modifier per level after 1
         }
     }
 

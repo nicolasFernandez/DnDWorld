@@ -23,8 +23,8 @@ import SwiftUI
 struct SecureTextFieldModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .autocorrectionDisabled(true)
-            .textInputAutocapitalization(.never)
+            .disableAutocorrection(true)
+            .autocapitalization(.none)
     }
 }
 

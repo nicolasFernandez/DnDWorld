@@ -20,7 +20,7 @@ final class SecureTextFieldModifierTests: XCTestCase {
     
     func testModifierCanBeAppliedToTextField() {
         // Verify that the modifier can be applied to a TextField
-        @State var testText = ""
+//        @State _ = ""
         let textField = TextField("Test", text: .constant(""))
         let modifiedTextField = textField.disableKeyboardCache()
         XCTAssertNotNil(modifiedTextField)
