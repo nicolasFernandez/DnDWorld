@@ -2,14 +2,18 @@
 
 A Swift application for Dungeons & Dragons character management and world building.
 
-## Security Note
+## Security
+
+For information about our security policy, including how to report vulnerabilities and our approach to security alerts, please see [SECURITY.md](SECURITY.md).
+
+### Git Hooks for Sensitive Information
 
 This project uses git hooks to automatically sanitize sensitive information before commits:
 
 1. **pre-commit hook**: Automatically replaces the actual bundle identifiers with placeholder values before committing
 2. **post-checkout hook**: Restores the actual bundle identifiers after checkout for local development
 
-### Setup
+#### Setup
 
 To use these hooks, make sure they are executable:
 
@@ -18,7 +22,7 @@ chmod +x .git/hooks/pre-commit
 chmod +x .git/hooks/post-checkout
 ```
 
-### How it works
+#### How it works
 
 - When you commit changes, the pre-commit hook will sanitize the project.pbxproj file
 - After checkout/pull, the post-checkout hook will restore your actual development identifiers
