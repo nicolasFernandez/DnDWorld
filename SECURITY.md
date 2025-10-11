@@ -71,6 +71,76 @@ This alert recommends implementing certificate pinning to prevent man-in-the-mid
 - Analytics or crash reporting services that communicate over the network
 - Any feature that requires internet connectivity
 
+### Alert #3: Jailbreak Detection (ios_jailbreak_detect)
+
+**Status:** Dismissed  
+**Level:** Warning  
+**Related Issue:** #63  
+**Decision Date:** 2025-10-11
+
+**Alert Message:** "This app does not have Jailbreak detection capabilities."
+
+**Rationale for Dismissal:**
+
+This alert recommends implementing jailbreak detection to prevent the application from running on compromised iOS devices. After careful evaluation, we have decided to dismiss this alert for the following reasons:
+
+1. **Application Nature:** DnDWorld is a character generator tool for tabletop gaming. It does not:
+   - Process financial transactions or payment information
+   - Handle sensitive personal identifiable information (PII)
+   - Store authentication credentials or access tokens
+   - Implement digital rights management (DRM) or content protection
+   - Access or store confidential business data
+   - Communicate with secure backend services requiring device integrity verification
+
+2. **Data Classification:** The application exclusively handles non-sensitive game data:
+   - Character names (fictional, non-identifiable)
+   - Game statistics (strength, dexterity, constitution, etc.)
+   - Character race and class selections
+   - Equipment lists and spell selections
+   - Background stories and character descriptions
+   
+   All data is fictional and related to gameplay with no real-world security implications.
+
+3. **Risk Assessment:** Jailbreak detection is recommended by OWASP MSTG for applications that:
+   - Process sensitive user data that could be compromised
+   - Handle financial transactions that require device trust
+   - Enforce licensing or DRM that could be circumvented
+   - Communicate with servers requiring device attestation
+   - Store secrets that could be extracted on compromised devices
+   
+   DnDWorld does not fall into any of these categories. Running on a jailbroken device poses no security risk to users or the application.
+
+4. **User Freedom:** Implementing jailbreak detection would:
+   - Unnecessarily restrict users' ability to use the app on their own devices
+   - Provide no actual security benefit given the non-sensitive nature of the data
+   - Add maintenance burden for detection bypass attempts
+   - Create a poor user experience for legitimate users who have jailbroken devices for other purposes
+
+5. **Implementation Considerations:** While jailbreak detection can be implemented by checking for:
+   - Cydia or other jailbreak apps presence
+   - Modified system files or directories
+   - Fork/system integrity checks
+   - Suspicious library injections
+   
+   These checks would add complexity without providing meaningful security benefits for a gaming application that processes only fictional character data.
+
+6. **Offline-First Design:** DnDWorld is designed to work primarily offline without requiring network connectivity or server authentication. Jailbreak detection is most relevant for apps that:
+   - Validate device integrity with remote servers
+   - Protect server-side resources from compromised clients
+   - Enforce client-side security policies for enterprise data
+   
+   None of these apply to our offline-first gaming tool.
+
+**Conclusion:** Given that DnDWorld exclusively handles fictional, non-sensitive game data and does not process any information requiring device trust or integrity verification, implementing jailbreak detection would provide no security benefit while unnecessarily restricting user freedom. This alert is dismissed as not applicable to DnDWorld's threat model and use case.
+
+**Review:** This decision should be re-evaluated if the application's functionality changes to include:
+- User authentication or account management
+- In-app purchases or payment processing
+- Cloud synchronization of data requiring server trust
+- Digital rights management or licensed content
+- Integration with services requiring device attestation
+- Storage of any sensitive or personally identifiable information
+
 ### Alert #4: Keyboard Cache (ios_keyboard_cache)
 
 **Status:** Dismissed  
