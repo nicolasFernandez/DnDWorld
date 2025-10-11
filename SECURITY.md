@@ -12,6 +12,40 @@ If you discover a security vulnerability in DnDWorld, please email the maintaine
 
 We use MobSF (Mobile Security Framework) for automated security scanning. Below are documented decisions regarding specific alerts:
 
+### Alert #5: Keyboard Cache (ios_keyboard_cache)
+
+**Status:** Fixed  
+**Level:** Note  
+**Related Issue:** #63  
+**Decision Date:** 2025-10-11
+
+**Alert Message:** "This app does not disable Keyboard cache. It must be disabled for all sensitive data inputs."
+
+**Resolution:**
+
+While DnDWorld primarily handles non-sensitive game data (character names, stats, etc.), we have implemented keyboard cache controls to address this security scanning alert and follow iOS security best practices. 
+
+**Implementation Strategy:**
+
+1. **Reusable ViewModifier:** Created a `SecureTextFieldModifier` that can be applied to any TextField to disable keyboard cache, autocorrection, and spell checking.
+
+2. **Application Guidelines:** All text input fields in the application should use the `.disableKeyboardCache()` modifier to ensure consistent behavior and satisfy security scanning requirements.
+
+3. **Rationale:** Although the data is non-sensitive, implementing this fix:
+   - Satisfies automated security scanning requirements
+   - Provides a consistent, reusable solution for all text inputs
+   - Follows iOS security best practices
+   - Has minimal impact on user experience for short text inputs like character names
+   - Can be selectively applied or modified if needed for specific use cases
+
+**Code Location:** `DnDWorld/Utils/SecureTextFieldModifier.swift`
+
+**Usage Example:**
+```swift
+TextField("Character Name", text: $characterName)
+    .disableKeyboardCache()
+```
+
 ### Alert #4: Keyboard Cache (ios_keyboard_cache)
 
 **Status:** Dismissed  

@@ -17,7 +17,7 @@ struct ContentView: View {
             Text("Clase seleccionada") // TODO: picker view
             Spacer()
             HStack{
-                Text("Nombre de personaje") // TODO: input text
+                Text("Nombre de personaje") // TODO: input text - use TextField with .disableKeyboardCache() modifier
                 Button("Random", action: {
                     print("Random name")
                 })
