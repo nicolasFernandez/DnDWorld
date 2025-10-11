@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		967CA38CD78588F74B39FFA2 /* SecureTextFieldModifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC293469DA8458A3C837A09 /* SecureTextFieldModifierTests.swift */; };
+		C14FDBABCE6546DFCDBF3754 /* SecureTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE8C35399783B7CB1E72C /* SecureTextFieldModifier.swift */; };
 		CA23C1E42A81AE70005F40F0 /* AbilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA23C1E32A81AE70005F40F0 /* AbilityTests.swift */; };
 		CA23C1E62A81B09F005F40F0 /* RaceTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA23C1E52A81B09F005F40F0 /* RaceTypeTests.swift */; };
 		CA37C6B62959F1C500C508CB /* DnDWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6B52959F1C500C508CB /* DnDWorldApp.swift */; };
@@ -68,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BC293469DA8458A3C837A09 /* SecureTextFieldModifierTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecureTextFieldModifierTests.swift; sourceTree = "<group>"; };
+		C9DFE8C35399783B7CB1E72C /* SecureTextFieldModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecureTextFieldModifier.swift; sourceTree = "<group>"; };
 		CA23C1E32A81AE70005F40F0 /* AbilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityTests.swift; sourceTree = "<group>"; };
 		CA23C1E52A81B09F005F40F0 /* RaceTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTypeTests.swift; sourceTree = "<group>"; };
 		CA37C6B22959F1C500C508CB /* DnDWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnDWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				CA486CCA2E8F2B35004C0792 /* String+Utils.swift */,
+				C9DFE8C35399783B7CB1E72C /* SecureTextFieldModifier.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				CA486CCD2E8F2C2A004C0792 /* String+UtilsTests.swift */,
+				2BC293469DA8458A3C837A09 /* SecureTextFieldModifierTests.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -434,6 +440,7 @@
 				CA8BE8F32975F752009517ED /* AbilityScoresView.swift in Sources */,
 				CA37C6ED295A286E00C508CB /* Weapon.swift in Sources */,
 				CA8BE8E12971E5F4009517ED /* Feat.swift in Sources */,
+				C14FDBABCE6546DFCDBF3754 /* SecureTextFieldModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +452,7 @@
 				CA23C1E42A81AE70005F40F0 /* AbilityTests.swift in Sources */,
 				CA23C1E62A81B09F005F40F0 /* RaceTypeTests.swift in Sources */,
 				CA37C6C72959F1CA00C508CB /* DnDWorldTests.swift in Sources */,
+				967CA38CD78588F74B39FFA2 /* SecureTextFieldModifierTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
