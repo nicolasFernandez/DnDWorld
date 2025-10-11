@@ -70,6 +70,63 @@ This alert recommends disabling the iOS keyboard cache to prevent sensitive data
 - Integration with services requiring credentials
 - Any feature handling data that should not be cached or logged
 
+### Alert #6: Reverse Engineering Detection (ios_anti_reversing)
+
+**Status:** Dismissed  
+**Level:** Warning  
+**Related Issue:** #63  
+**Decision Date:** 2025-10-11
+
+**Alert Message:** "This app does not have Reverse engineering detection capabilities."
+
+**Rationale for Dismissal:**
+
+This alert recommends implementing reverse engineering detection mechanisms (such as jailbreak detection, debugger detection, anti-tampering checks, and code obfuscation) to protect the application from being analyzed or modified. After careful evaluation, we have decided to dismiss this alert for the following reasons:
+
+1. **Application Nature:** DnDWorld is an open-source character generator for tabletop gaming. The application:
+   - Contains no proprietary algorithms or trade secrets
+   - Does not process sensitive or confidential data
+   - Has no authentication or user account system
+   - Does not connect to backend services requiring protection
+   - Contains no intellectual property requiring protection from reverse engineering
+
+2. **Open Source Philosophy:** As an open-source project:
+   - The source code is publicly available on GitHub
+   - Anyone can inspect, modify, and learn from the codebase
+   - Attempting to prevent reverse engineering contradicts the open-source nature of the project
+   - The community benefits from transparency and the ability to audit the code
+
+3. **Risk Assessment:** The OWASP MASVS-RESILIENCE requirements for anti-reverse engineering are specifically intended for applications that:
+   - Implement proprietary business logic or algorithms
+   - Handle financial transactions or payment processing
+   - Store or transmit sensitive user data
+   - Contain licensed intellectual property
+   - Require protection against unauthorized modifications that could harm users
+
+   Since DnDWorld is an open-source tool with no sensitive data, proprietary algorithms, or financial transactions, there is no meaningful risk from reverse engineering.
+
+4. **Implementation Burden:** Implementing reverse engineering protections would:
+   - Add significant complexity to the codebase
+   - Require ongoing maintenance as iOS and debugging tools evolve
+   - Potentially interfere with legitimate debugging and development
+   - Create false sense of security without addressing actual threats
+   - Alienate users on jailbroken devices who use legitimate accessibility features
+
+5. **User Experience Impact:** Anti-reverse engineering measures could:
+   - Prevent the app from running on jailbroken devices used by accessibility users
+   - Interfere with legitimate debugging and crash reporting
+   - Create compatibility issues with future iOS versions
+   - Frustrate developers and contributors trying to enhance the app
+
+**Conclusion:** Given that DnDWorld is an open-source application with no sensitive data, proprietary algorithms, or financial transactions, implementing reverse engineering detection would provide no security benefit while adding complexity and potentially degrading user experience. This alert is dismissed as not applicable to DnDWorld's open-source nature and threat model.
+
+**Review:** This decision should be re-evaluated if the application's functionality changes to include:
+- Proprietary or licensed content that requires protection
+- Backend integration with services requiring API key protection
+- In-app purchases or payment processing
+- User authentication with sensitive account data
+- Intellectual property or trade secrets in the codebase
+
 ## Security Best Practices
 
 While we have dismissed certain alerts as not applicable, we remain committed to following security best practices appropriate for our application:
