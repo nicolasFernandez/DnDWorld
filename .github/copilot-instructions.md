@@ -1,9 +1,9 @@
 # DnDWorld - Copilot Coding Agent Instructions
 
 ## Repository Summary
-iOS character generator for D&D 5e (Spanish/English). Creates characters with stats, race/class selection, and equipment. SwiftUI app (~38 files, 1,300 LOC), Swift 5.0, iOS 16.2+, bilingual, no external dependencies. MVVM architecture.
+iOS character generator for D&D 5e (Spanish/English). Creates characters with stats, race/class selection, and equipment. SwiftUI app (~38 files, 1,300 LOC), Swift 5.0, iOS 14.0+, bilingual, no external dependencies. MVVM architecture.
 
-## Build & Test (Requires macOS + Xcode 14.2+)
+## Build & Test (Requires macOS + Xcode 12.4+)
 
 **CRITICAL**: Project requires Xcode on macOS. Cannot build on Linux/Windows.
 

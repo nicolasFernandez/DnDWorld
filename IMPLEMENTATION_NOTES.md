@@ -35,7 +35,7 @@ The security scanner (MobSF) flags applications that don't properly disable keyb
 1. **Provides a reusable solution**: The `SecureTextFieldModifier` can be applied to any TextField
 2. **Disables autocorrection**: Prevents keyboard from caching input
 3. **Disables autocapitalization**: Additional security measure
-4. **Follows iOS best practices**: Uses SwiftUI modifiers available in iOS 16.2+
+4. **Follows iOS best practices**: Uses SwiftUI modifiers available in iOS 14.0+
 
 ## Future Usage
 
