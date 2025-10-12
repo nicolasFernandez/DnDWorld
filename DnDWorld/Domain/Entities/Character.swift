@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Character {
+struct Character: Identifiable, Equatable {
     let name: String
     let race: Race
     let classType: [ClassType]
