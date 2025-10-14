@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol GenerateCharacterArtUseCase {
+struct GenerateCharacterArtUseCase {
     
 }

@@ -22,6 +22,14 @@ struct Spell: Identifiable {
     
     var isRitual: Bool = false
     var requiresConcentration: Bool = false
+     
+    var levelString: String {
+        if level == 0 {
+            return "Cantrip"
+        } else {
+            return "Level \(level)"
+        }
+    }
 }
 
 extension Spell: Equatable {

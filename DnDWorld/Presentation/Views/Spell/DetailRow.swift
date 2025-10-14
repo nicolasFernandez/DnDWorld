@@ -22,3 +22,9 @@ struct DetailRow: View {
         }
     }
 }
+
+struct DetailRow_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailRow(title: "Title", value: "Value")
+    }
+}

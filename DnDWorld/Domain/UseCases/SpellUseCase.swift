@@ -1,5 +1,5 @@
 //
-//  DefaultSpellUseCase.swift
+//  SpellUseCase.swift
 //  DnDWorld
 //
 //  Created on 2025-10-13.
@@ -8,7 +8,7 @@
 import Foundation
 
 // Implementation of the use case
-final class DefaultSpellUseCase: SpellUseCase {
+struct SpellUseCase {
     private let repository: SpellRepository
     
     init(repository: SpellRepository) {
