@@ -35,7 +35,7 @@ struct ContentView: View {
                 Section {
                     TextField("Nombre de Personaje", text: $name).disableKeyboardCache()
                     Button("Random", action: {
-                        print("Random name")
+                        debugPrint("Random name")
                     })
                 }
 
@@ -44,7 +44,7 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Generador de personaje")
-            .navigationBarItems(trailing: Button("Crear") { print("Submit") })
+            .navigationBarItems(trailing: Button("Crear") { debugPrint("Submit") })
         }
     }
 }
