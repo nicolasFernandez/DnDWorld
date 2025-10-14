@@ -1,13 +1,13 @@
 //
-//  School.swift
+//  SpellSchool.swift
 //  DnDWorld
 //
-//  Created by Nicolas Alonso Fernandez Alarcon on 13-01-23.
+//  Created by Nicolas Alonso Fernandez Alarcon on 13-10-25.
 //
 
 import Foundation
 
-enum School: String {
+enum SpellSchool: String {
     case abjuration
     case conjuration
     case divination

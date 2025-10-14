@@ -8,32 +8,49 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State var name: String
+    @State var selectedRace: RaceType?
+    @State var selectedClass: ClassType?
+
     var body: some View {
-        VStack(alignment: .center) { // TODO: spacing to fill screen
-            Text("Generador de personaje").font(.title) // TODO: Nav bar
-            Spacer()
-            Text("Raza seleccionada") // TODO: picker view
-            Spacer()
-            Text("Clase seleccionada") // TODO: picker view
-            Spacer()
-            HStack{
-                Text("Nombre de personaje") // TODO: input text - use TextField with .disableKeyboardCache() modifier
-                Button("Random", action: {
-                    print("Random name")
-                })
+        NavigationView {
+            Form {
+                Section {
+                    Picker("Raza", selection: $selectedRace) {
+                        ForEach(RaceType.allCases) { race in
+                            Text(race.name).tag(race)
+                        }
+                    }
+                }
+
+                Section {
+                    Picker("Clase", selection: $selectedClass) {
+                        ForEach(ClassType.allCases) { clazz in
+                            Text(clazz.name).tag(clazz)
+                        }
+                    }
+                }
+
+                Section {
+                    TextField("Nombre de Personaje", text: $name).disableKeyboardCache()
+                    Button("Random", action: {
+                        print("Random name")
+                    })
+                }
+
+                Section {
+
+                }
             }
-            Spacer()
-            Button("Crear", action: {
-                print("action sent")
-            }).edgesIgnoringSafeArea(.top)
-            Spacer()
+            .navigationTitle("Generador de personaje")
+            .navigationBarItems(trailing: Button("Crear") { print("Submit") })
         }
-//        Text("Nombre de personaje")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(name: "", selectedRace: nil, selectedClass: nil)
     }
 }

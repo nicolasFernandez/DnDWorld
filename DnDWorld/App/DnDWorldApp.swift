@@ -11,7 +11,27 @@ import SwiftUI
 struct DnDWorldApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CompositionRoot()
+                .spellsCoordinator
+                .makeSpellDetailView(
+                    for:
+                        Spell(
+                            name: "Hechizo",
+                            level: 0,
+                            school: .abjuration,
+                            castingTime: "1 ronda",
+                            range: "alcance",
+                            components: SpellComponents(
+                                verbal: true,
+                                somatic: true,
+                                material: true,
+                                materialComponents: "Saquito colgante"
+                            ),
+                            duration: "1 hora",
+                            description: "Haces un hechizo que dura una hora",
+                            classes: [.bard, .cleric, .warlock]
+                        )
+                )
         }
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ClassType: String {
+enum ClassType: String, CaseIterable {
     case barbarian
     case bard
     case cleric
@@ -104,5 +104,11 @@ enum ClassType: String {
     // TODO: Build a choice making system for initial equipment
     var equipment: [String] {
         []
+    }
+}
+
+extension ClassType: Identifiable {
+    var id: ClassType {
+        return self
     }
 }

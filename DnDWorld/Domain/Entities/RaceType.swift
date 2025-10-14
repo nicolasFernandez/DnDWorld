@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum RaceType: String {
+enum RaceType: String, CaseIterable {
     case dragonborn
     case dwarf
     case elf
@@ -29,5 +29,10 @@ enum RaceType: String {
     var racialTraits: String {
         NSLocalizedString("\(self.rawValue.camelToSnakeCase())_racial_traits", comment: "")
     }
+}
 
+extension RaceType: Identifiable {
+    var id: RaceType {
+        return self
+    }
 }

@@ -42,6 +42,19 @@
 		C14FDBABCE6546DFCDBF3754 /* SecureTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE8C35399783B7CB1E72C /* SecureTextFieldModifier.swift */; };
 		CA23C1E42A81AE70005F40F0 /* AbilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA23C1E32A81AE70005F40F0 /* AbilityTests.swift */; };
 		CA23C1E62A81B09F005F40F0 /* RaceTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA23C1E52A81B09F005F40F0 /* RaceTypeTests.swift */; };
+		CA33AF272E9DA54900003DED /* SpellComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF262E9DA54900003DED /* SpellComponents.swift */; };
+		CA33AF292E9DA57000003DED /* SpellSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF282E9DA57000003DED /* SpellSchool.swift */; };
+		CA33AF2D2E9DA6B100003DED /* SpellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF2C2E9DA6B100003DED /* SpellTests.swift */; };
+		CA33AF2F2E9DA6CE00003DED /* SpellCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF2E2E9DA6CE00003DED /* SpellCacheManager.swift */; };
+		CA33AF312E9DA6EF00003DED /* FirebaseSpellRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF302E9DA6EF00003DED /* FirebaseSpellRepository.swift */; };
+		CA33AF332E9DA71500003DED /* DefaultSpellUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF322E9DA71500003DED /* DefaultSpellUseCase.swift */; };
+		CA33AF362E9DA72000003DED /* SpellUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF352E9DA72000003DED /* SpellUseCase.swift */; };
+		CA33AF372E9DA72000003DED /* SpellRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF342E9DA72000003DED /* SpellRepository.swift */; };
+		CA33AF392E9DA77600003DED /* SpellsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF382E9DA77600003DED /* SpellsCoordinator.swift */; };
+		CA33AF3B2E9DA82200003DED /* SpellListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF3A2E9DA82200003DED /* SpellListViewModel.swift */; };
+		CA33AF3E2E9DA83C00003DED /* SpellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF3D2E9DA83C00003DED /* SpellListView.swift */; };
+		CA33AF3F2E9DA83C00003DED /* SpellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF3C2E9DA83C00003DED /* SpellDetailView.swift */; };
+		CA33AF492E9DBD0000003DED /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF482E9DBD0000003DED /* DetailRow.swift */; };
 		CA37C6B62959F1C500C508CB /* DnDWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6B52959F1C500C508CB /* DnDWorldApp.swift */; };
 		CA37C6B82959F1C500C508CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6B72959F1C500C508CB /* ContentView.swift */; };
 		CA37C6BA2959F1CA00C508CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA37C6B92959F1CA00C508CB /* Assets.xcassets */; };
@@ -72,10 +85,8 @@
 		CA8BE8DF2971E5CC009517ED /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8DE2971E5CC009517ED /* Background.swift */; };
 		CA8BE8E12971E5F4009517ED /* Feat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E02971E5F4009517ED /* Feat.swift */; };
 		CA8BE8E32971E64C009517ED /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E22971E64C009517ED /* Spell.swift */; };
-		CA8BE8E52971F3C2009517ED /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E42971F3C2009517ED /* School.swift */; };
 		CA8BE8E92971F59E009517ED /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8E82971F59E009517ED /* Condition.swift */; };
-		CA8BE8EB2971F630009517ED /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EA2971F630009517ED /* Component.swift */; };
-		CA8BE8ED2971F956009517ED /* SchoolRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EC2971F956009517ED /* SchoolRow.swift */; };
+		CA8BE8ED2971F956009517ED /* SpellSchoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EC2971F956009517ED /* SpellSchoolView.swift */; };
 		CA8BE8EF2971FA8D009517ED /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8EE2971FA8D009517ED /* Skills.swift */; };
 		CA8BE8F12971FD29009517ED /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8F02971FD29009517ED /* Skill.swift */; };
 		CA8BE8F32975F752009517ED /* AbilityScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8BE8F22975F752009517ED /* AbilityScoresView.swift */; };
@@ -136,6 +147,19 @@
 		C9DFE8C35399783B7CB1E72C /* SecureTextFieldModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecureTextFieldModifier.swift; sourceTree = "<group>"; };
 		CA23C1E32A81AE70005F40F0 /* AbilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityTests.swift; sourceTree = "<group>"; };
 		CA23C1E52A81B09F005F40F0 /* RaceTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTypeTests.swift; sourceTree = "<group>"; };
+		CA33AF262E9DA54900003DED /* SpellComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellComponents.swift; sourceTree = "<group>"; };
+		CA33AF282E9DA57000003DED /* SpellSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellSchool.swift; sourceTree = "<group>"; };
+		CA33AF2C2E9DA6B100003DED /* SpellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellTests.swift; sourceTree = "<group>"; };
+		CA33AF2E2E9DA6CE00003DED /* SpellCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCacheManager.swift; sourceTree = "<group>"; };
+		CA33AF302E9DA6EF00003DED /* FirebaseSpellRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSpellRepository.swift; sourceTree = "<group>"; };
+		CA33AF322E9DA71500003DED /* DefaultSpellUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSpellUseCase.swift; sourceTree = "<group>"; };
+		CA33AF342E9DA72000003DED /* SpellRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellRepository.swift; sourceTree = "<group>"; };
+		CA33AF352E9DA72000003DED /* SpellUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellUseCase.swift; sourceTree = "<group>"; };
+		CA33AF382E9DA77600003DED /* SpellsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsCoordinator.swift; sourceTree = "<group>"; };
+		CA33AF3A2E9DA82200003DED /* SpellListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListViewModel.swift; sourceTree = "<group>"; };
+		CA33AF3C2E9DA83C00003DED /* SpellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailView.swift; sourceTree = "<group>"; };
+		CA33AF3D2E9DA83C00003DED /* SpellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListView.swift; sourceTree = "<group>"; };
+		CA33AF482E9DBD0000003DED /* DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
 		CA37C6B22959F1C500C508CB /* DnDWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnDWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA37C6B52959F1C500C508CB /* DnDWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDWorldApp.swift; sourceTree = "<group>"; };
 		CA37C6B72959F1C500C508CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -169,10 +193,8 @@
 		CA8BE8DE2971E5CC009517ED /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		CA8BE8E02971E5F4009517ED /* Feat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feat.swift; sourceTree = "<group>"; };
 		CA8BE8E22971E64C009517ED /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
-		CA8BE8E42971F3C2009517ED /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		CA8BE8E82971F59E009517ED /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
-		CA8BE8EA2971F630009517ED /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
-		CA8BE8EC2971F956009517ED /* SchoolRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRow.swift; sourceTree = "<group>"; };
+		CA8BE8EC2971F956009517ED /* SpellSchoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellSchoolView.swift; sourceTree = "<group>"; };
 		CA8BE8EE2971FA8D009517ED /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 		CA8BE8F02971FD29009517ED /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
 		CA8BE8F22975F752009517ED /* AbilityScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityScoresView.swift; sourceTree = "<group>"; };
@@ -211,7 +233,7 @@
 			children = (
 				1254DCC72E9B805A008D5C4E /* Caching */,
 				1254DCC92E9B807F008D5C4E /* Firebase */,
-				1254DCC82E9B8062008D5C4E /* Mappers */,
+				CA33AF402E9DAAE700003DED /* Local */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -222,7 +244,6 @@
 				1254DCC12E9B7FF7008D5C4E /* Entities */,
 				1254DCC32E9B8029008D5C4E /* Protocols */,
 				1254DCC42E9B8031008D5C4E /* UseCases */,
-				1254DCC22E9B800B008D5C4E /* ValueObjects */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -246,41 +267,33 @@
 				CA37C6E0295A02A100C508CB /* Ability.swift */,
 				1254DCD32E9B8158008D5C4E /* AbilityScores.swift */,
 				CA37C6FC295B34BB00C508CB /* Alignment.swift */,
-				CA37C6EE295A287800C508CB /* Armor.swift */,
 				CA5CE0792E96BE72000BC2DC /* AttackType.swift */,
 				CA8BE8DE2971E5CC009517ED /* Background.swift */,
 				CA37C6F6295B294300C508CB /* BackgroundType.swift */,
 				CA37C6E4295A050A00C508CB /* Character.swift */,
 				CA37C6F4295A368300C508CB /* ClassType.swift */,
-				CA8BE8EA2971F630009517ED /* Component.swift */,
 				CA8BE8E82971F59E009517ED /* Condition.swift */,
 				CA37C6F2295A2D6400C508CB /* DamageType.swift */,
-				CA37C6EA295A286300C508CB /* Equipment.swift */,
+				CA33AF2B2E9DA64300003DED /* Equipment */,
 				CA8BE8E02971E5F4009517ED /* Feat.swift */,
 				CA37C6FA295B344300C508CB /* Languages.swift */,
 				1254DCD82E9B8190008D5C4E /* Modifier.swift */,
 				CA37C6E6295A053E00C508CB /* Race.swift */,
 				CADA87C5297B385300C464CE /* RaceType.swift */,
-				CA8BE8E42971F3C2009517ED /* School.swift */,
 				CA8BE8F02971FD29009517ED /* Skill.swift */,
 				CA8BE8EE2971FA8D009517ED /* Skills.swift */,
-				CA8BE8E22971E64C009517ED /* Spell.swift */,
+				CA33AF252E9DA53600003DED /* Spells */,
 				CA37C6E8295A055B00C508CB /* Subrace.swift */,
 				CA37C6EC295A286E00C508CB /* Weapon.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		1254DCC22E9B800B008D5C4E /* ValueObjects */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ValueObjects;
-			sourceTree = "<group>";
-		};
 		1254DCC32E9B8029008D5C4E /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				CA33AF342E9DA72000003DED /* SpellRepository.swift */,
+				CA33AF352E9DA72000003DED /* SpellUseCase.swift */,
 				1254DCDD2E9B81C6008D5C4E /* CharacterRepository.swift */,
 				1254DCE72E9B835A008D5C4E /* ImageGenService.swift */,
 				1254DCEC2E9B83B8008D5C4E /* PdfExporter.swift */,
@@ -292,6 +305,7 @@
 		1254DCC42E9B8031008D5C4E /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				CA33AF322E9DA71500003DED /* DefaultSpellUseCase.swift */,
 				1254DCF92E9B845C008D5C4E /* ComputeDerivedStatsUseCase.swift */,
 				1254DCF42E9B8446008D5C4E /* CreateCharacterUseCase.swift */,
 				1254DD122E9B84B7008D5C4E /* ExportCharacterPdfUseCase.swift */,
@@ -308,22 +322,17 @@
 		1254DCC72E9B805A008D5C4E /* Caching */ = {
 			isa = PBXGroup;
 			children = (
+				CA33AF2E2E9DA6CE00003DED /* SpellCacheManager.swift */,
 				1254DD3D2E9B873A008D5C4E /* DiskCache.swift */,
 				1254DD422E9B874B008D5C4E /* InMemoryCache.swift */,
 			);
 			path = Caching;
 			sourceTree = "<group>";
 		};
-		1254DCC82E9B8062008D5C4E /* Mappers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mappers;
-			sourceTree = "<group>";
-		};
 		1254DCC92E9B807F008D5C4E /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				CA33AF302E9DA6EF00003DED /* FirebaseSpellRepository.swift */,
 				1254DD382E9B8731008D5C4E /* FirebaseAuthService.swift */,
 				1254DD332E9B871B008D5C4E /* FirestoreAssetsRepository.swift */,
 				1254DD292E9B86CD008D5C4E /* FirestoreCharacterRepository.swift */,
@@ -335,6 +344,7 @@
 		1254DCCA2E9B80B8008D5C4E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CA33AF472E9DBCE900003DED /* Spell */,
 				1254DD632E9B87BA008D5C4E /* CharacterEditorView.swift */,
 				1254DD682E9B87C4008D5C4E /* CharactersListView.swift */,
 				CA8BE8D52971A391009517ED /* ClassDetails.swift */,
@@ -349,6 +359,7 @@
 		1254DCCB2E9B80BE008D5C4E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CA33AF3A2E9DA82200003DED /* SpellListViewModel.swift */,
 				1254DD472E9B8769008D5C4E /* CharacterEditorVM.swift */,
 				1254DD4C2E9B8773008D5C4E /* CharactersListVM.swift */,
 				1254DD562E9B878A008D5C4E /* ExportVM.swift */,
@@ -362,7 +373,7 @@
 			children = (
 				CA8BE8F22975F752009517ED /* AbilityScoresView.swift */,
 				CA8BE8D82971A3EF009517ED /* ClassRow.swift */,
-				CA8BE8EC2971F956009517ED /* SchoolRow.swift */,
+				CA8BE8EC2971F956009517ED /* SpellSchoolView.swift */,
 				CA8BE8DA2971AE64009517ED /* StatText.swift */,
 			);
 			path = Components;
@@ -385,66 +396,59 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		1254DCCF2E9B80EC008D5C4E /* Platform */ = {
-			isa = PBXGroup;
-			children = (
-				1254DCD12E9B80FB008D5C4E /* AI */,
-				1254DCD02E9B80F2008D5C4E /* PDF */,
-				1254DCD22E9B80FF008D5C4E /* VTT */,
-			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		1254DCD02E9B80F2008D5C4E /* PDF */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PDF;
-			sourceTree = "<group>";
-		};
-		1254DCD12E9B80FB008D5C4E /* AI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AI;
-			sourceTree = "<group>";
-		};
-		1254DCD22E9B80FF008D5C4E /* VTT */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VTT;
-			sourceTree = "<group>";
-		};
 		1254DD772E9B87F6008D5C4E /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				CA33AF382E9DA77600003DED /* SpellsCoordinator.swift */,
 				1254DD782E9B8800008D5C4E /* AppRouter.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		1254DD852E9B88C2008D5C4E /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		1254DD862E9B88C8008D5C4E /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		CA23C1E22A81AE4B005F40F0 /* Clases */ = {
 			isa = PBXGroup;
 			children = (
+				CA33AF2C2E9DA6B100003DED /* SpellTests.swift */,
 				CA23C1E32A81AE70005F40F0 /* AbilityTests.swift */,
 				CA23C1E52A81B09F005F40F0 /* RaceTypeTests.swift */,
 			);
 			path = Clases;
+			sourceTree = "<group>";
+		};
+		CA33AF252E9DA53600003DED /* Spells */ = {
+			isa = PBXGroup;
+			children = (
+				CA8BE8E22971E64C009517ED /* Spell.swift */,
+				CA33AF282E9DA57000003DED /* SpellSchool.swift */,
+				CA33AF262E9DA54900003DED /* SpellComponents.swift */,
+			);
+			path = Spells;
+			sourceTree = "<group>";
+		};
+		CA33AF2B2E9DA64300003DED /* Equipment */ = {
+			isa = PBXGroup;
+			children = (
+				CA37C6EE295A287800C508CB /* Armor.swift */,
+				CA37C6EA295A286300C508CB /* Equipment.swift */,
+			);
+			path = Equipment;
+			sourceTree = "<group>";
+		};
+		CA33AF402E9DAAE700003DED /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		CA33AF472E9DBCE900003DED /* Spell */ = {
+			isa = PBXGroup;
+			children = (
+				CA33AF3C2E9DA83C00003DED /* SpellDetailView.swift */,
+				CA33AF3D2E9DA83C00003DED /* SpellListView.swift */,
+				CA33AF482E9DBD0000003DED /* DetailRow.swift */,
+			);
+			path = Spell;
 			sourceTree = "<group>";
 		};
 		CA37C6A92959F1C500C508CB = {
@@ -474,7 +478,6 @@
 				1254DCBE2E9B7F5A008D5C4E /* Data */,
 				1254DCBF2E9B7F68008D5C4E /* Domain */,
 				CADA87CB297EDDA900C464CE /* Localizable.strings */,
-				1254DCCF2E9B80EC008D5C4E /* Platform */,
 				1254DCC02E9B7F6F008D5C4E /* Presentation */,
 				CA37C6BB2959F1CA00C508CB /* Preview Content */,
 				CA486CCB2E8F2B35004C0792 /* Utils */,
@@ -493,8 +496,6 @@
 		CA37C6C52959F1CA00C508CB /* DnDWorldTests */ = {
 			isa = PBXGroup;
 			children = (
-				1254DD862E9B88C8008D5C4E /* Domain */,
-				1254DD852E9B88C2008D5C4E /* Data */,
 				CA23C1E22A81AE4B005F40F0 /* Clases */,
 				CA37C6C62959F1CA00C508CB /* DnDWorldTests.swift */,
 				CA486CCE2E8F2C2A004C0792 /* Utils */,
@@ -668,8 +669,10 @@
 				CA37C6F3295A2D6400C508CB /* DamageType.swift in Sources */,
 				CA8BE8F12971FD29009517ED /* Skill.swift in Sources */,
 				CA8BE8EF2971FA8D009517ED /* Skills.swift in Sources */,
+				CA33AF312E9DA6EF00003DED /* FirebaseSpellRepository.swift in Sources */,
 				1254DD342E9B871B008D5C4E /* FirestoreAssetsRepository.swift in Sources */,
-				CA8BE8ED2971F956009517ED /* SchoolRow.swift in Sources */,
+				CA33AF332E9DA71500003DED /* DefaultSpellUseCase.swift in Sources */,
+				CA8BE8ED2971F956009517ED /* SpellSchoolView.swift in Sources */,
 				1254DCFF2E9B847F008D5C4E /* SaveCharacterUseCase.swift in Sources */,
 				CADA87C6297B385300C464CE /* RaceType.swift in Sources */,
 				1254DD0E2E9B84AA008D5C4E /* GenerateVTTTokenUseCase.swift in Sources */,
@@ -677,21 +680,30 @@
 				1254DD3E2E9B873A008D5C4E /* DiskCache.swift in Sources */,
 				1254DD2F2E9B86DC008D5C4E /* FirestoreRulesRepository.swift in Sources */,
 				1254DD642E9B87BA008D5C4E /* CharacterEditorView.swift in Sources */,
+				CA33AF292E9DA57000003DED /* SpellSchool.swift in Sources */,
 				CA37C6EF295A287800C508CB /* Armor.swift in Sources */,
 				CA37C6FB295B344300C508CB /* Languages.swift in Sources */,
 				1254DD4D2E9B8773008D5C4E /* CharactersListVM.swift in Sources */,
+				CA33AF362E9DA72000003DED /* SpellUseCase.swift in Sources */,
+				CA33AF372E9DA72000003DED /* SpellRepository.swift in Sources */,
 				CA37C6E1295A02A100C508CB /* Ability.swift in Sources */,
 				CA37C6EB295A286300C508CB /* Equipment.swift in Sources */,
 				1254DCE82E9B835A008D5C4E /* ImageGenService.swift in Sources */,
+				CA33AF272E9DA54900003DED /* SpellComponents.swift in Sources */,
 				CA37C6E5295A050A00C508CB /* Character.swift in Sources */,
 				1254DD522E9B8780008D5C4E /* ImageGenVM.swift in Sources */,
+				CA33AF3B2E9DA82200003DED /* SpellListViewModel.swift in Sources */,
 				CA37C6F7295B294300C508CB /* BackgroundType.swift in Sources */,
 				1254DD092E9B849B008D5C4E /* GenerateCharacterArtUseCase.swift in Sources */,
 				1254DD692E9B87C4008D5C4E /* CharactersListView.swift in Sources */,
 				CA37C6F5295A368300C508CB /* ClassType.swift in Sources */,
-				CA8BE8E52971F3C2009517ED /* School.swift in Sources */,
+				CA33AF492E9DBD0000003DED /* DetailRow.swift in Sources */,
+				CA33AF3E2E9DA83C00003DED /* SpellListView.swift in Sources */,
+				CA33AF3F2E9DA83C00003DED /* SpellDetailView.swift in Sources */,
 				1254DCE32E9B829D008D5C4E /* RulesRepository.swift in Sources */,
+				CA33AF392E9DA77600003DED /* SpellsCoordinator.swift in Sources */,
 				CA8BE8DF2971E5CC009517ED /* Background.swift in Sources */,
+				CA33AF2F2E9DA6CE00003DED /* SpellCacheManager.swift in Sources */,
 				1254DD432E9B874B008D5C4E /* InMemoryCache.swift in Sources */,
 				1254DD792E9B8800008D5C4E /* AppRouter.swift in Sources */,
 				1254DCED2E9B83B8008D5C4E /* PdfExporter.swift in Sources */,
@@ -708,7 +720,6 @@
 				CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */,
 				CA37C6E7295A053E00C508CB /* Race.swift in Sources */,
 				1254DD252E9B868E008D5C4E /* LoadSRDRulesUseCase.swift in Sources */,
-				CA8BE8EB2971F630009517ED /* Component.swift in Sources */,
 				CA37C6E9295A055B00C508CB /* Subrace.swift in Sources */,
 				1254DD482E9B8769008D5C4E /* CharacterEditorVM.swift in Sources */,
 				CA8BE8DD2971D7DC009517ED /* RaceDetails.swift in Sources */,
@@ -734,6 +745,7 @@
 			files = (
 				CA486CCF2E8F2C2A004C0792 /* String+UtilsTests.swift in Sources */,
 				CA23C1E42A81AE70005F40F0 /* AbilityTests.swift in Sources */,
+				CA33AF2D2E9DA6B100003DED /* SpellTests.swift in Sources */,
 				CA23C1E62A81B09F005F40F0 /* RaceTypeTests.swift in Sources */,
 				CA37C6C72959F1CA00C508CB /* DnDWorldTests.swift in Sources */,
 				967CA38CD78588F74B39FFA2 /* SecureTextFieldModifierTests.swift in Sources */,
