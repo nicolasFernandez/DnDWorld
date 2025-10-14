@@ -102,7 +102,7 @@ struct SpellDetailView: View {
     }
     
     private func formatClasses() -> String {
-        return spell.classes.map { "\($0)" }.joined(separator: ", ")
+        return spell.classes.map { "\($0.name)" }.joined(separator: ", ")
     }
 }
 

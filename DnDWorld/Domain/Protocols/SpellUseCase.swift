@@ -9,10 +9,10 @@ import Foundation
 
 // Protocol for business logic
 protocol SpellUseCase {
-    func getAllSpells() async throws -> [Spell]
-    func getSpell(withID id: UUID) async throws -> Spell
-    func getSpellsForClass(_ classType: ClassType) async throws -> [Spell]
-    func getSpellsForLevel(_ level: Int) async throws -> [Spell]
-    func searchSpells(byName name: String) async throws -> [Spell]
-    func saveNewSpell(_ spell: Spell) async throws
+    func getAllSpells(completion: @escaping (Result<[Spell], Error>) -> Void)
+    func getSpell(withID id: UUID, completion: @escaping (Result<Spell, Error>) -> Void)
+    func getSpellsForClass(_ classType: ClassType, completion: @escaping (Result<[Spell], Error>) -> Void)
+    func getSpellsForLevel(_ level: Int, completion: @escaping (Result<[Spell], Error>) -> Void)
+    func searchSpells(byName name: String, completion: @escaping (Result<[Spell], Error>) -> Void)
+    func saveNewSpell(_ spell: Spell, completion: @escaping (Result<Void, Error>) -> Void)
 }

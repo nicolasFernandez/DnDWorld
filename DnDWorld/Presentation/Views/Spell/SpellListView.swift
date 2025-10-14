@@ -14,30 +14,30 @@ struct SpellListView: View {
     
     var body: some View {
         NavigationView {
-            if #available(iOS 15.0, *) {
+            VStack {
+                TextField("Search spells", text: $searchText, onEditingChanged: { _ in }, onCommit: {
+                    viewModel.search(query: searchText)
+                })
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+                .onChange(of: searchText) { newValue in
+                    viewModel.search(query: newValue)
+                }
+                
                 content
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            Button(action: { showingFilters.toggle() }) {
-                                Image(systemName: "line.3.horizontal.decrease.circle")
-                            }
-                        }
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: { showingFilters.toggle() }) {
+                        Image(systemName: "line.3.horizontal.decrease.circle")
                     }
-                    .sheet(isPresented: $showingFilters) {
-                        FilterView(viewModel: viewModel)
-                    }
-                    .searchable(text: $searchText)
-                    .onChange(of: searchText) { newValue in
-                        Task {
-                            await viewModel.search(query: newValue)
-                        }
-                    }
-                    .task {
-                        await viewModel.loadSpells()
-                    }
-            } else {
-                // TODO: Add fallback search
-                content
+                }
+            }
+            .sheet(isPresented: $showingFilters) {
+                FilterView(viewModel: viewModel)
+            }
+            .onAppear {
+                viewModel.loadSpells()
             }
         }
     }
@@ -94,10 +94,10 @@ struct SpellRowView: View {
     }
 }
 
-@available(iOS 15.0, *)
+@available(iOS 14.0, *)
 struct FilterView: View {
     @ObservedObject var viewModel: SpellListViewModel
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.presentationMode) var presentationMode
     
     let spellLevels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     
@@ -107,12 +107,10 @@ struct FilterView: View {
                 Section(header: Text("Spell Level")) {
                     ForEach(spellLevels, id: \.self) { level in
                         Button(action: {
-                            Task {
-                                if viewModel.selectedLevelFilter == level {
-                                    await viewModel.filterByLevel(nil)
-                                } else {
-                                    await viewModel.filterByLevel(level)
-                                }
+                            if viewModel.selectedLevelFilter == level {
+                                viewModel.filterByLevel(nil)
+                            } else {
+                                viewModel.filterByLevel(level)
                             }
                         }) {
                             HStack {
@@ -131,16 +129,16 @@ struct FilterView: View {
                 }
                 
                 Button("Clear Filters") {
-                    Task {
-                        await viewModel.filterByClass(nil)
-                        await viewModel.filterByLevel(nil)
-                        dismiss()
-                    }
+                    viewModel.filterByClass(nil)
+                    viewModel.filterByLevel(nil)
+                    presentationMode.wrappedValue.dismiss()
                 }
                 .foregroundColor(.blue)
             }
             .navigationTitle("Filter Spells")
-            .navigationBarItems(trailing: Button("Done") { dismiss() })
+            .navigationBarItems(trailing: Button("Done") { 
+                presentationMode.wrappedValue.dismiss()
+            })
         }
     }
 }
