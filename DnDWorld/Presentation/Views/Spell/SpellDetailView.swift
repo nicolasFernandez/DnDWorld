@@ -20,7 +20,7 @@ struct SpellDetailView: View {
                         .fontWeight(.bold)
                     
                     HStack {
-                        Text(getLevelText())
+                        Text(spell.levelString)
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                         
@@ -64,14 +64,6 @@ struct SpellDetailView: View {
         }
     }
     
-    private func getLevelText() -> String {
-        if spell.level == 0 {
-            return "Cantrip"
-        } else {
-            return "Level \(spell.level)"
-        }
-    }
-    
     private func formatComponents() -> String {
         var components: [String] = []
         
@@ -106,4 +98,25 @@ struct SpellDetailView: View {
     }
 }
 
+struct SpellDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        let spell = Spell(
+            name: "Hechizo",
+            level: 0,
+            school: .abjuration,
+            castingTime: "1 ronda",
+            range: "alcance",
+            components: SpellComponents(
+                verbal: true,
+                somatic: true,
+                material: true,
+                materialComponents: "Saquito colgante"
+            ),
+            duration: "1 hora",
+            description: "Haces un hechizo que dura una hora",
+            classes: [.bard, .cleric, .warlock]
+        )
+        SpellDetailView(spell: spell)
+    }
+}
 

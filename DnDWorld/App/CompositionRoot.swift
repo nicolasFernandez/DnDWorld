@@ -19,7 +19,7 @@ final class CompositionRoot {
     // MARK: - Private Factory Methods
     
     private func makeSpellUseCase() -> SpellUseCase {
-        DefaultSpellUseCase(repository: makeSpellRepository())
+        SpellUseCase(repository: makeSpellRepository())
     }
     
     private func makeSpellRepository() -> SpellRepository {

@@ -29,15 +29,17 @@
 		1254DD3E2E9B873A008D5C4E /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD3D2E9B873A008D5C4E /* DiskCache.swift */; };
 		1254DD432E9B874B008D5C4E /* InMemoryCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD422E9B874B008D5C4E /* InMemoryCache.swift */; };
 		1254DD482E9B8769008D5C4E /* CharacterEditorVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD472E9B8769008D5C4E /* CharacterEditorVM.swift */; };
-		1254DD4D2E9B8773008D5C4E /* CharactersListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD4C2E9B8773008D5C4E /* CharactersListVM.swift */; };
-		1254DD522E9B8780008D5C4E /* ImageGenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD512E9B8780008D5C4E /* ImageGenVM.swift */; };
-		1254DD572E9B878A008D5C4E /* ExportVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD562E9B878A008D5C4E /* ExportVM.swift */; };
+		1254DD4D2E9B8773008D5C4E /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD4C2E9B8773008D5C4E /* CharacterListViewModel.swift */; };
+		1254DD522E9B8780008D5C4E /* ImageGenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD512E9B8780008D5C4E /* ImageGenViewModel.swift */; };
+		1254DD572E9B878A008D5C4E /* ExportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD562E9B878A008D5C4E /* ExportViewModel.swift */; };
 		1254DD642E9B87BA008D5C4E /* CharacterEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD632E9B87BA008D5C4E /* CharacterEditorView.swift */; };
 		1254DD692E9B87C4008D5C4E /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD682E9B87C4008D5C4E /* CharactersListView.swift */; };
 		1254DD6E2E9B87D3008D5C4E /* ImageGenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD6D2E9B87D3008D5C4E /* ImageGenView.swift */; };
 		1254DD732E9B87DF008D5C4E /* ExportSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD722E9B87DF008D5C4E /* ExportSheetView.swift */; };
 		1254DD792E9B8800008D5C4E /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD782E9B8800008D5C4E /* AppRouter.swift */; };
 		1254DD812E9B8839008D5C4E /* CompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254DD802E9B8839008D5C4E /* CompositionRoot.swift */; };
+		12D033132E9EE64A00BA86DE /* SpellRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D033122E9EE64A00BA86DE /* SpellRowView.swift */; };
+		12D033182E9EE72100BA86DE /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D033172E9EE72100BA86DE /* FilterView.swift */; };
 		967CA38CD78588F74B39FFA2 /* SecureTextFieldModifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC293469DA8458A3C837A09 /* SecureTextFieldModifierTests.swift */; };
 		C14FDBABCE6546DFCDBF3754 /* SecureTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DFE8C35399783B7CB1E72C /* SecureTextFieldModifier.swift */; };
 		CA23C1E42A81AE70005F40F0 /* AbilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA23C1E32A81AE70005F40F0 /* AbilityTests.swift */; };
@@ -47,8 +49,7 @@
 		CA33AF2D2E9DA6B100003DED /* SpellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF2C2E9DA6B100003DED /* SpellTests.swift */; };
 		CA33AF2F2E9DA6CE00003DED /* SpellCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF2E2E9DA6CE00003DED /* SpellCacheManager.swift */; };
 		CA33AF312E9DA6EF00003DED /* FirebaseSpellRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF302E9DA6EF00003DED /* FirebaseSpellRepository.swift */; };
-		CA33AF332E9DA71500003DED /* DefaultSpellUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF322E9DA71500003DED /* DefaultSpellUseCase.swift */; };
-		CA33AF362E9DA72000003DED /* SpellUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF352E9DA72000003DED /* SpellUseCase.swift */; };
+		CA33AF332E9DA71500003DED /* SpellUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF322E9DA71500003DED /* SpellUseCase.swift */; };
 		CA33AF372E9DA72000003DED /* SpellRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF342E9DA72000003DED /* SpellRepository.swift */; };
 		CA33AF392E9DA77600003DED /* SpellsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF382E9DA77600003DED /* SpellsCoordinator.swift */; };
 		CA33AF3B2E9DA82200003DED /* SpellListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF3A2E9DA82200003DED /* SpellListViewModel.swift */; };
@@ -134,15 +135,17 @@
 		1254DD3D2E9B873A008D5C4E /* DiskCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskCache.swift; sourceTree = "<group>"; };
 		1254DD422E9B874B008D5C4E /* InMemoryCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCache.swift; sourceTree = "<group>"; };
 		1254DD472E9B8769008D5C4E /* CharacterEditorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEditorVM.swift; sourceTree = "<group>"; };
-		1254DD4C2E9B8773008D5C4E /* CharactersListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListVM.swift; sourceTree = "<group>"; };
-		1254DD512E9B8780008D5C4E /* ImageGenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenVM.swift; sourceTree = "<group>"; };
-		1254DD562E9B878A008D5C4E /* ExportVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportVM.swift; sourceTree = "<group>"; };
+		1254DD4C2E9B8773008D5C4E /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		1254DD512E9B8780008D5C4E /* ImageGenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenViewModel.swift; sourceTree = "<group>"; };
+		1254DD562E9B878A008D5C4E /* ExportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewModel.swift; sourceTree = "<group>"; };
 		1254DD632E9B87BA008D5C4E /* CharacterEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterEditorView.swift; sourceTree = "<group>"; };
 		1254DD682E9B87C4008D5C4E /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
 		1254DD6D2E9B87D3008D5C4E /* ImageGenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenView.swift; sourceTree = "<group>"; };
 		1254DD722E9B87DF008D5C4E /* ExportSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSheetView.swift; sourceTree = "<group>"; };
 		1254DD782E9B8800008D5C4E /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		1254DD802E9B8839008D5C4E /* CompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionRoot.swift; sourceTree = "<group>"; };
+		12D033122E9EE64A00BA86DE /* SpellRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellRowView.swift; sourceTree = "<group>"; };
+		12D033172E9EE72100BA86DE /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		2BC293469DA8458A3C837A09 /* SecureTextFieldModifierTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecureTextFieldModifierTests.swift; sourceTree = "<group>"; };
 		C9DFE8C35399783B7CB1E72C /* SecureTextFieldModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SecureTextFieldModifier.swift; sourceTree = "<group>"; };
 		CA23C1E32A81AE70005F40F0 /* AbilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilityTests.swift; sourceTree = "<group>"; };
@@ -152,9 +155,8 @@
 		CA33AF2C2E9DA6B100003DED /* SpellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellTests.swift; sourceTree = "<group>"; };
 		CA33AF2E2E9DA6CE00003DED /* SpellCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCacheManager.swift; sourceTree = "<group>"; };
 		CA33AF302E9DA6EF00003DED /* FirebaseSpellRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSpellRepository.swift; sourceTree = "<group>"; };
-		CA33AF322E9DA71500003DED /* DefaultSpellUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSpellUseCase.swift; sourceTree = "<group>"; };
+		CA33AF322E9DA71500003DED /* SpellUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellUseCase.swift; sourceTree = "<group>"; };
 		CA33AF342E9DA72000003DED /* SpellRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellRepository.swift; sourceTree = "<group>"; };
-		CA33AF352E9DA72000003DED /* SpellUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellUseCase.swift; sourceTree = "<group>"; };
 		CA33AF382E9DA77600003DED /* SpellsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsCoordinator.swift; sourceTree = "<group>"; };
 		CA33AF3A2E9DA82200003DED /* SpellListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListViewModel.swift; sourceTree = "<group>"; };
 		CA33AF3C2E9DA83C00003DED /* SpellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailView.swift; sourceTree = "<group>"; };
@@ -292,7 +294,6 @@
 			isa = PBXGroup;
 			children = (
 				CA33AF342E9DA72000003DED /* SpellRepository.swift */,
-				CA33AF352E9DA72000003DED /* SpellUseCase.swift */,
 				1254DCDD2E9B81C6008D5C4E /* CharacterRepository.swift */,
 				1254DCE72E9B835A008D5C4E /* ImageGenService.swift */,
 				1254DCEC2E9B83B8008D5C4E /* PdfExporter.swift */,
@@ -304,9 +305,9 @@
 		1254DCC42E9B8031008D5C4E /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				CA33AF322E9DA71500003DED /* DefaultSpellUseCase.swift */,
 				1254DCF92E9B845C008D5C4E /* ComputeDerivedStatsUseCase.swift */,
 				1254DCF42E9B8446008D5C4E /* CreateCharacterUseCase.swift */,
+				CA33AF322E9DA71500003DED /* SpellUseCase.swift */,
 				1254DD122E9B84B7008D5C4E /* ExportCharacterPdfUseCase.swift */,
 				1254DD082E9B849B008D5C4E /* GenerateCharacterArtUseCase.swift */,
 				1254DD0D2E9B84AA008D5C4E /* GenerateVTTTokenUseCase.swift */,
@@ -358,11 +359,11 @@
 		1254DCCB2E9B80BE008D5C4E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CA33AF3A2E9DA82200003DED /* SpellListViewModel.swift */,
 				1254DD472E9B8769008D5C4E /* CharacterEditorVM.swift */,
-				1254DD4C2E9B8773008D5C4E /* CharactersListVM.swift */,
-				1254DD562E9B878A008D5C4E /* ExportVM.swift */,
-				1254DD512E9B8780008D5C4E /* ImageGenVM.swift */,
+				1254DD4C2E9B8773008D5C4E /* CharacterListViewModel.swift */,
+				1254DD562E9B878A008D5C4E /* ExportViewModel.swift */,
+				1254DD512E9B8780008D5C4E /* ImageGenViewModel.swift */,
+				CA33AF3A2E9DA82200003DED /* SpellListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -453,6 +454,8 @@
 			children = (
 				CA33AF3C2E9DA83C00003DED /* SpellDetailView.swift */,
 				CA33AF3D2E9DA83C00003DED /* SpellListView.swift */,
+				12D033172E9EE72100BA86DE /* FilterView.swift */,
+				12D033122E9EE64A00BA86DE /* SpellRowView.swift */,
 				CA33AF482E9DBD0000003DED /* DetailRow.swift */,
 			);
 			path = Spell;
@@ -670,7 +673,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1254DD572E9B878A008D5C4E /* ExportVM.swift in Sources */,
+				1254DD572E9B878A008D5C4E /* ExportViewModel.swift in Sources */,
 				CA486CCC2E8F2B35004C0792 /* String+Utils.swift in Sources */,
 				CA5CE07A2E96BE72000BC2DC /* AttackType.swift in Sources */,
 				1254DD132E9B84B7008D5C4E /* ExportCharacterPdfUseCase.swift in Sources */,
@@ -679,7 +682,7 @@
 				CA8BE8EF2971FA8D009517ED /* Skills.swift in Sources */,
 				CA33AF312E9DA6EF00003DED /* FirebaseSpellRepository.swift in Sources */,
 				1254DD342E9B871B008D5C4E /* FirestoreAssetsRepository.swift in Sources */,
-				CA33AF332E9DA71500003DED /* DefaultSpellUseCase.swift in Sources */,
+				CA33AF332E9DA71500003DED /* SpellUseCase.swift in Sources */,
 				CA8BE8ED2971F956009517ED /* SpellSchoolView.swift in Sources */,
 				1254DCFF2E9B847F008D5C4E /* SaveCharacterUseCase.swift in Sources */,
 				CADA87C6297B385300C464CE /* RaceType.swift in Sources */,
@@ -691,15 +694,15 @@
 				CA33AF292E9DA57000003DED /* SpellSchool.swift in Sources */,
 				CA37C6EF295A287800C508CB /* Armor.swift in Sources */,
 				CA37C6FB295B344300C508CB /* Languages.swift in Sources */,
-				1254DD4D2E9B8773008D5C4E /* CharactersListVM.swift in Sources */,
-				CA33AF362E9DA72000003DED /* SpellUseCase.swift in Sources */,
+				1254DD4D2E9B8773008D5C4E /* CharacterListViewModel.swift in Sources */,
 				CA33AF372E9DA72000003DED /* SpellRepository.swift in Sources */,
 				CA37C6E1295A02A100C508CB /* Ability.swift in Sources */,
 				CA37C6EB295A286300C508CB /* Equipment.swift in Sources */,
 				1254DCE82E9B835A008D5C4E /* ImageGenService.swift in Sources */,
+				12D033132E9EE64A00BA86DE /* SpellRowView.swift in Sources */,
 				CA33AF272E9DA54900003DED /* SpellComponents.swift in Sources */,
 				CA37C6E5295A050A00C508CB /* Character.swift in Sources */,
-				1254DD522E9B8780008D5C4E /* ImageGenVM.swift in Sources */,
+				1254DD522E9B8780008D5C4E /* ImageGenViewModel.swift in Sources */,
 				CA33AF3B2E9DA82200003DED /* SpellListViewModel.swift in Sources */,
 				CA37C6F7295B294300C508CB /* BackgroundType.swift in Sources */,
 				1254DD092E9B849B008D5C4E /* GenerateCharacterArtUseCase.swift in Sources */,
@@ -728,6 +731,7 @@
 				CA37C6FD295B34BB00C508CB /* Alignment.swift in Sources */,
 				CA37C6E7295A053E00C508CB /* Race.swift in Sources */,
 				1254DD252E9B868E008D5C4E /* LoadSRDRulesUseCase.swift in Sources */,
+				12D033182E9EE72100BA86DE /* FilterView.swift in Sources */,
 				CA37C6E9295A055B00C508CB /* Subrace.swift in Sources */,
 				1254DD482E9B8769008D5C4E /* CharacterEditorVM.swift in Sources */,
 				CA8BE8DD2971D7DC009517ED /* RaceDetails.swift in Sources */,

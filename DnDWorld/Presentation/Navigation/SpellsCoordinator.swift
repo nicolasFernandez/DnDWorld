@@ -34,7 +34,7 @@ extension SpellsCoordinator {
     static var preview: SpellsCoordinator {
         let cacheManager = SpellCacheManager()
         let repository = FirebaseSpellRepository(cacheManager: cacheManager)
-        let useCase = DefaultSpellUseCase(repository: repository)
+        let useCase = SpellUseCase(repository: repository)
         return SpellsCoordinator(spellUseCase: useCase)
     }
 }

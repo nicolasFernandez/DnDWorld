@@ -70,75 +70,13 @@ struct SpellListView: View {
     }
 }
 
-struct SpellRowView: View {
-    let spell: Spell
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            HStack {
-                Text(spell.name)
-                    .font(.headline)
-                
-                Spacer()
-                
-                Text("Level \(spell.level)")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-            }
-            
-            Text(spell.school.rawValue.capitalized)
-                .font(.caption)
-                .foregroundColor(.secondary)
-        }
-        .padding(.vertical, 4)
+struct SpellListView_Previews: PreviewProvider {
+    static var previews: some View {
+        let cacheManager = SpellCacheManager()
+        let repository = FirebaseSpellRepository(cacheManager: cacheManager)
+        let useCase = SpellUseCase(repository: repository)
+        let viewModel = SpellListViewModel(spellUseCase: useCase)
+        SpellListView(viewModel: viewModel)
     }
 }
 
-@available(iOS 14.0, *)
-struct FilterView: View {
-    @ObservedObject var viewModel: SpellListViewModel
-    @Environment(\.presentationMode) var presentationMode
-    
-    let spellLevels = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    
-    var body: some View {
-        NavigationView {
-            Form {
-                Section(header: Text("Spell Level")) {
-                    ForEach(spellLevels, id: \.self) { level in
-                        Button(action: {
-                            if viewModel.selectedLevelFilter == level {
-                                viewModel.filterByLevel(nil)
-                            } else {
-                                viewModel.filterByLevel(level)
-                            }
-                        }) {
-                            HStack {
-                                Text(level == 0 ? "Cantrip" : "Level \(level)")
-                                
-                                Spacer()
-                                
-                                if viewModel.selectedLevelFilter == level {
-                                    Image(systemName: "checkmark")
-                                        .foregroundColor(.blue)
-                                }
-                            }
-                        }
-                        .foregroundColor(.primary)
-                    }
-                }
-                
-                Button("Clear Filters") {
-                    viewModel.filterByClass(nil)
-                    viewModel.filterByLevel(nil)
-                    presentationMode.wrappedValue.dismiss()
-                }
-                .foregroundColor(.blue)
-            }
-            .navigationTitle("Filter Spells")
-            .navigationBarItems(trailing: Button("Done") { 
-                presentationMode.wrappedValue.dismiss()
-            })
-        }
-    }
-}

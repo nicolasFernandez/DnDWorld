@@ -38,10 +38,6 @@ struct ContentView: View {
                         debugPrint("Random name")
                     })
                 }
-
-                Section {
-
-                }
             }
             .navigationTitle("Generador de personaje")
             .navigationBarItems(trailing: Button("Crear") { debugPrint("Submit") })

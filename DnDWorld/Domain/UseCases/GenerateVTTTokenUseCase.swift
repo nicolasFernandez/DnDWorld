@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol GenerateVTTTokenUseCase {
+struct GenerateVTTTokenUseCase {
     
 }
 

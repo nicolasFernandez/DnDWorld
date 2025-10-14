@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ComputeDerivedStatsUseCase {
+struct ComputeDerivedStatsUseCase {
     
 }
