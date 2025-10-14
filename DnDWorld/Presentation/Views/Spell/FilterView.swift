@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-@available(iOS 14.0, *)
 struct FilterView: View {
     @ObservedObject var viewModel: SpellListViewModel
     @Environment(\.presentationMode) var presentationMode
@@ -49,9 +48,13 @@ struct FilterView: View {
                 .foregroundColor(.blue)
             }
             .navigationTitle("Filter Spells")
-            .navigationBarItems(trailing: Button("Done") {
-                presentationMode.wrappedValue.dismiss()
-            })
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Done") {
+                        presentationMode.wrappedValue.dismiss()
+                    }
+                }
+            }
         }
     }
 }
