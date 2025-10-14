@@ -15,62 +15,103 @@ final class FirebaseSpellRepository: SpellRepository {
         self.cacheManager = cacheManager
     }
     
-    func fetchAllSpells() async throws -> [Spell] {
+    func fetchAllSpells(completion: @escaping (Result<[Spell], Error>) -> Void) {
         // Check cache first
         if let cachedSpells = cacheManager.getCachedSpells() {
-            return cachedSpells
+            completion(.success(cachedSpells))
+            return
         }
         
         // Simulate Firebase fetch
-        let spells = try await fetchSpellsFromFirebase()
-        
-        // Cache the results
-        cacheManager.cacheSpells(spells)
-        
-        return spells
-    }
-    
-    func fetchSpell(withID id: UUID) async throws -> Spell {
-        // Implementation would include Firebase document fetch
-        // For template purposes, we'll simulate with a dummy implementation
-        
-        if let cachedSpell = cacheManager.getCachedSpell(withID: id) {
-            return cachedSpell
+        DispatchQueue.global().async { [weak self] in
+            guard let self = self else { return }
+            
+            self.fetchSpellsFromFirebase { result in
+                switch result {
+                case .success(let spells):
+                    // Cache the results
+                    self.cacheManager.cacheSpells(spells)
+                    completion(.success(spells))
+                case .failure(let error):
+                    completion(.failure(error))
+                }
+            }
         }
-        
-        // Simulate Firebase fetch for a single spell
-        throw NSError(domain: "FirebaseSpellRepository", code: 404, userInfo: [NSLocalizedDescriptionKey: "Spell not found"])
     }
     
-    func fetchSpells(forClass classType: ClassType) async throws -> [Spell] {
+    func fetchSpell(withID id: UUID, completion: @escaping (Result<Spell, Error>) -> Void) {
+        DispatchQueue.global().async { [weak self] in
+            guard let self = self else { return }
+            
+            // Implementation would include Firebase document fetch
+            // For template purposes, we'll simulate with a dummy implementation
+            
+            if let cachedSpell = self.cacheManager.getCachedSpell(withID: id) {
+                completion(.success(cachedSpell))
+                return
+            }
+            
+            // Simulate Firebase fetch for a single spell
+            let error = NSError(domain: "FirebaseSpellRepository", code: 404, userInfo: [NSLocalizedDescriptionKey: "Spell not found"])
+            completion(.failure(error))
+        }
+    }
+    
+    func fetchSpells(forClass classType: ClassType, completion: @escaping (Result<[Spell], Error>) -> Void) {
         // Implementation would filter by class using Firebase query
-        let allSpells = try await fetchAllSpells()
-        return allSpells.filter { $0.classes.contains(classType) }
+        fetchAllSpells { result in
+            switch result {
+            case .success(let allSpells):
+                let filtered = allSpells.filter { $0.classes.contains(classType) }
+                completion(.success(filtered))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
     
-    func fetchSpells(forLevel level: Int) async throws -> [Spell] {
+    func fetchSpells(forLevel level: Int, completion: @escaping (Result<[Spell], Error>) -> Void) {
         // Implementation would filter by level using Firebase query
-        let allSpells = try await fetchAllSpells()
-        return allSpells.filter { $0.level == level }
+        fetchAllSpells { result in
+            switch result {
+            case .success(let allSpells):
+                let filtered = allSpells.filter { $0.level == level }
+                completion(.success(filtered))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
     
-    func searchSpells(byName name: String) async throws -> [Spell] {
+    func searchSpells(byName name: String, completion: @escaping (Result<[Spell], Error>) -> Void) {
         // Implementation would use Firebase text search or filter locally
-        let allSpells = try await fetchAllSpells()
-        return allSpells.filter { $0.name.lowercased().contains(name.lowercased()) }
+        fetchAllSpells { result in
+            switch result {
+            case .success(let allSpells):
+                let filtered = allSpells.filter { $0.name.lowercased().contains(name.lowercased()) }
+                completion(.success(filtered))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
     
-    func saveSpell(_ spell: Spell) async throws {
-        // Implementation would save to Firebase
-        // For template purposes, we'll simulate with a dummy implementation
-        cacheManager.addSpellToCache(spell)
+    func saveSpell(_ spell: Spell, completion: @escaping (Result<Void, Error>) -> Void) {
+        DispatchQueue.global().async { [weak self] in
+            guard let self = self else { return }
+            
+            // Implementation would save to Firebase
+            // For template purposes, we'll simulate with a dummy implementation
+            self.cacheManager.addSpellToCache(spell)
+            completion(.success(()))
+        }
     }
     
     // MARK: - Private Methods
     
-    private func fetchSpellsFromFirebase() async throws -> [Spell] {
+    private func fetchSpellsFromFirebase(completion: @escaping (Result<[Spell], Error>) -> Void) {
         // This would be actual Firebase implementation
         // For template purposes, return an empty array
-        return []
+        completion(.success([]))
     }
 }

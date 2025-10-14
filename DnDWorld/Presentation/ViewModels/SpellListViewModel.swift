@@ -23,65 +23,82 @@ final class SpellListViewModel: ObservableObject {
         self.spellUseCase = spellUseCase
     }
     
-    @MainActor
-    func loadSpells() async {
+    func loadSpells() {
         isLoading = true
         errorMessage = nil
         
-        do {
-            spells = try await spellUseCase.getAllSpells()
-            applyFilters()
-        } catch {
-            errorMessage = "Failed to load spells: \(error.localizedDescription)"
+        spellUseCase.getAllSpells { [weak self] result in
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                
+                switch result {
+                case .success(let spells):
+                    self.spells = spells
+                    self.applyFilters()
+                case .failure(let error):
+                    self.errorMessage = "Failed to load spells: \(error.localizedDescription)"
+                }
+                
+                self.isLoading = false
+            }
         }
-        
-        isLoading = false
     }
     
-    @MainActor
-    func filterByClass(_ classType: ClassType?) async {
+    func filterByClass(_ classType: ClassType?) {
         selectedClassFilter = classType
         
         if let classType = classType {
             isLoading = true
             errorMessage = nil
             
-            do {
-                filteredSpells = try await spellUseCase.getSpellsForClass(classType)
-            } catch {
-                errorMessage = "Failed to filter spells: \(error.localizedDescription)"
-                filteredSpells = []
+            spellUseCase.getSpellsForClass(classType) { [weak self] result in
+                DispatchQueue.main.async {
+                    guard let self = self else { return }
+                    
+                    switch result {
+                    case .success(let spells):
+                        self.filteredSpells = spells
+                    case .failure(let error):
+                        self.errorMessage = "Failed to filter spells: \(error.localizedDescription)"
+                        self.filteredSpells = []
+                    }
+                    
+                    self.isLoading = false
+                }
             }
-            
-            isLoading = false
         } else {
             applyFilters()
         }
     }
     
-    @MainActor
-    func filterByLevel(_ level: Int?) async {
+    func filterByLevel(_ level: Int?) {
         selectedLevelFilter = level
         
         if let level = level {
             isLoading = true
             errorMessage = nil
             
-            do {
-                filteredSpells = try await spellUseCase.getSpellsForLevel(level)
-            } catch {
-                errorMessage = "Failed to filter spells: \(error.localizedDescription)"
-                filteredSpells = []
+            spellUseCase.getSpellsForLevel(level) { [weak self] result in
+                DispatchQueue.main.async {
+                    guard let self = self else { return }
+                    
+                    switch result {
+                    case .success(let spells):
+                        self.filteredSpells = spells
+                    case .failure(let error):
+                        self.errorMessage = "Failed to filter spells: \(error.localizedDescription)"
+                        self.filteredSpells = []
+                    }
+                    
+                    self.isLoading = false
+                }
             }
-            
-            isLoading = false
         } else {
             applyFilters()
         }
     }
     
-    @MainActor
-    func search(query: String) async {
+    func search(query: String) {
         searchText = query
         
         if query.isEmpty {
@@ -92,14 +109,21 @@ final class SpellListViewModel: ObservableObject {
         isLoading = true
         errorMessage = nil
         
-        do {
-            filteredSpells = try await spellUseCase.searchSpells(byName: query)
-        } catch {
-            errorMessage = "Failed to search spells: \(error.localizedDescription)"
-            filteredSpells = []
+        spellUseCase.searchSpells(byName: query) { [weak self] result in
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                
+                switch result {
+                case .success(let spells):
+                    self.filteredSpells = spells
+                case .failure(let error):
+                    self.errorMessage = "Failed to search spells: \(error.localizedDescription)"
+                    self.filteredSpells = []
+                }
+                
+                self.isLoading = false
+            }
         }
-        
-        isLoading = false
     }
     
     private func applyFilters() {

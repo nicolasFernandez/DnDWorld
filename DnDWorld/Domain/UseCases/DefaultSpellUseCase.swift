@@ -15,27 +15,27 @@ final class DefaultSpellUseCase: SpellUseCase {
         self.repository = repository
     }
     
-    func getAllSpells() async throws -> [Spell] {
-        return try await repository.fetchAllSpells()
+    func getAllSpells(completion: @escaping (Result<[Spell], Error>) -> Void) {
+        repository.fetchAllSpells(completion: completion)
     }
     
-    func getSpell(withID id: UUID) async throws -> Spell {
-        return try await repository.fetchSpell(withID: id)
+    func getSpell(withID id: UUID, completion: @escaping (Result<Spell, Error>) -> Void) {
+        repository.fetchSpell(withID: id, completion: completion)
     }
     
-    func getSpellsForClass(_ classType: ClassType) async throws -> [Spell] {
-        return try await repository.fetchSpells(forClass: classType)
+    func getSpellsForClass(_ classType: ClassType, completion: @escaping (Result<[Spell], Error>) -> Void) {
+        repository.fetchSpells(forClass: classType, completion: completion)
     }
     
-    func getSpellsForLevel(_ level: Int) async throws -> [Spell] {
-        return try await repository.fetchSpells(forLevel: level)
+    func getSpellsForLevel(_ level: Int, completion: @escaping (Result<[Spell], Error>) -> Void) {
+        repository.fetchSpells(forLevel: level, completion: completion)
     }
     
-    func searchSpells(byName name: String) async throws -> [Spell] {
-        return try await repository.searchSpells(byName: name)
+    func searchSpells(byName name: String, completion: @escaping (Result<[Spell], Error>) -> Void) {
+        repository.searchSpells(byName: name, completion: completion)
     }
     
-    func saveNewSpell(_ spell: Spell) async throws {
-        try await repository.saveSpell(spell)
+    func saveNewSpell(_ spell: Spell, completion: @escaping (Result<Void, Error>) -> Void) {
+        repository.saveSpell(spell, completion: completion)
     }
 }

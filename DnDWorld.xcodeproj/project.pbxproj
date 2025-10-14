@@ -233,7 +233,6 @@
 			children = (
 				1254DCC72E9B805A008D5C4E /* Caching */,
 				1254DCC92E9B807F008D5C4E /* Firebase */,
-				CA33AF402E9DAAE700003DED /* Local */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -405,14 +404,29 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		CA23C1E22A81AE4B005F40F0 /* Clases */ = {
+		12E1FD672E9E8F4D00F95690 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				CA33AF2C2E9DA6B100003DED /* SpellTests.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		12E1FD682E9E8F4D00F95690 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				12E1FD692E9E8F6800F95690 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		12E1FD692E9E8F6800F95690 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
 				CA23C1E32A81AE70005F40F0 /* AbilityTests.swift */,
 				CA23C1E52A81B09F005F40F0 /* RaceTypeTests.swift */,
+				CA33AF2C2E9DA6B100003DED /* SpellTests.swift */,
 			);
-			path = Clases;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		CA33AF252E9DA53600003DED /* Spells */ = {
@@ -432,13 +446,6 @@
 				CA37C6EA295A286300C508CB /* Equipment.swift */,
 			);
 			path = Equipment;
-			sourceTree = "<group>";
-		};
-		CA33AF402E9DAAE700003DED /* Local */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Local;
 			sourceTree = "<group>";
 		};
 		CA33AF472E9DBCE900003DED /* Spell */ = {
@@ -496,8 +503,9 @@
 		CA37C6C52959F1CA00C508CB /* DnDWorldTests */ = {
 			isa = PBXGroup;
 			children = (
-				CA23C1E22A81AE4B005F40F0 /* Clases */,
+				12E1FD672E9E8F4D00F95690 /* Data */,
 				CA37C6C62959F1CA00C508CB /* DnDWorldTests.swift */,
+				12E1FD682E9E8F4D00F95690 /* Domain */,
 				CA486CCE2E8F2C2A004C0792 /* Utils */,
 			);
 			path = DnDWorldTests;
@@ -850,6 +858,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -907,6 +916,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
