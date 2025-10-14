@@ -1,0 +1,24 @@
+//
+//  DetailRow.swift
+//  DnDWorld
+//
+//  Created by Nicolas Alonso Fernandez Alarcon on 13-10-25.
+//
+
+import SwiftUI
+
+struct DetailRow: View {
+    let title: String
+    let value: String
+
+    var body: some View {
+        HStack(alignment: .top) {
+            Text(title)
+                .font(.headline)
+                .frame(width: 120, alignment: .leading)
+
+            Text(value)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+    }
+}

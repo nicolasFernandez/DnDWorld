@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct SchoolRow: View {
-    var school: School
+struct SpellSchoolView: View {
+    var spellSchool: SpellSchool
     var body: some View {
         HStack {
-            Text(school.name)
+            Text(spellSchool.name)
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(
@@ -24,8 +24,8 @@ struct SchoolRow: View {
 
 struct SchoolRow_Previews: PreviewProvider {
     static var previews: some View {
-        SchoolRow(
-            school: .abjuration
+        SpellSchoolView(
+            spellSchool: .abjuration
         ).previewLayout(.fixed(width: 500, height: 100))
     }
 }

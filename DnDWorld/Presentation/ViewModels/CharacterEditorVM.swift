@@ -8,6 +8,5 @@
 import Foundation
 
 class CharacterEditorVM: ObservableObject {
-    @Published
-    private let useCase: CreateCharacter
+
 }
