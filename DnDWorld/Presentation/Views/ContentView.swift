@@ -40,7 +40,13 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Generador de personaje")
-            .navigationBarItems(trailing: Button("Crear") { debugPrint("Submit") })
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Crear") {
+                        debugPrint("Submit action")
+                    }
+                }
+            }
         }
     }
 }
