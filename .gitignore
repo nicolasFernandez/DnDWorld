@@ -1,5 +1,38 @@
-# Created by https://www.toptal.com/developers/gitignore/api/swift,swiftpackagemanager,swiftpm
-# Edit at https://www.toptal.com/developers/gitignore?templates=swift,swiftpackagemanager,swiftpm
+# Created by https://www.toptal.com/developers/gitignore/api/swift,swiftpackagemanager,swiftpm,macos,xcode
+# Edit at https://www.toptal.com/developers/gitignore?templates=swift,swiftpackagemanager,swiftpm,macos,xcode
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### macOS Patch ###
+# iCloud generated files
+*.icloud
 
 ### Swift ###
 # Xcode
@@ -88,10 +121,23 @@ iOSInjectionProject/
 ### SwiftPackageManager ###
 Packages
 xcuserdata
-#*.xcodeproj
+*.xcodeproj
 
 
 ### SwiftPM ###
 
 
-# End of https://www.toptal.com/developers/gitignore/api/swift,swiftpackagemanager,swiftpm
+### Xcode ###
+
+## Xcode 8 and earlier
+
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# End of https://www.toptal.com/developers/gitignore/api/swift,swiftpackagemanager,swiftpm,macos,xcode
