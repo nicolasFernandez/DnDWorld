@@ -2,6 +2,10 @@
 
 A Swift application for Dungeons & Dragons character management and world building.
 
+This project is unofficial Fan Content permitted under the [Fan Content Policy](https://company.wizards.com/en/legal/fancontentpolicy). Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+
+This project includes material from the [System Reference Document 5.1](https://www.dndbeyond.com/srd#SystemReferenceDocumentv51) by Wizards of the Coast LLC, available [here](https://www.dndbeyond.com/srd#SystemReferenceDocumentv51) and licensed for use under the Creative Commons Attribution 4.0 International License.
+
 ## Security
 
 For information about our security policy, including how to report vulnerabilities and our approach to security alerts, please see [SECURITY.md](SECURITY.md).
