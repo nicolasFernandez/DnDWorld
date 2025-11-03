@@ -152,7 +152,7 @@
 "Hit Die" = "Dado de golpe";
 "Primary Ability" = "Característica principal";
 "Saving Throw" = "Tirada de salvación";
-"%@ Traits" = "Rasgos %@";
+"traits_format" = "Rasgos %@";
 
 // Abilities
 "Strength" = "Fuerza";
@@ -161,3 +161,34 @@
 "Intelligence" = "Inteligencia";
 "Wisdom" = "Sabiduría";
 "Charisma" = "Carisma";
+
+// Spells
+"spell_school_abjuration" = "Abjuración";
+"spell_school_conjuration" = "Conjuración";
+"spell_school_divination" = "Adivinación";
+"spell_school_enchantment" = "Encantamiento";
+"spell_school_evocation" = "Evocación";
+"spell_school_illusion" = "Ilusión";
+"spell_school_necromancy" = "Nigromancia";
+"spell_school_transmutation" = "Transmutación";
+
+"spell_ritual" = "Ritual";
+"spell_casting_time" = "Tiempo de lanzamiento";
+"spell_range" = "Alcance";
+"spell_components" = "Componentes";
+"spell_duration" = "Duración";
+
+"spell_available_to" = "Disponible para:";
+"spell_concentration" = "Concentración, %@";
+
+"spell_search_text" = "Buscar conjuros";
+"spells_title" = "Conjuros";
+"spell_not_found" = "No se encontraron conjuros";
+"spell_level" = "Nivel de Conjuro";
+"cantrip_text" = "Truco";
+"level_text" = "Nivel %d";
+
+"clear_filters" = "Borrar Filtros";
+"filter_spells" = "Filtrar Conjuros";
+"done" = "Listo";
+

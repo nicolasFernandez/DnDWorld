@@ -16,7 +16,7 @@ struct FilterView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Spell Level")) {
+                Section(header: Text(NSLocalizedString("spell_level", comment: ""))) {
                     ForEach(spellLevels, id: \.self) { level in
                         Button(action: {
                             if viewModel.selectedLevelFilter == level {
@@ -26,8 +26,12 @@ struct FilterView: View {
                             }
                         }) {
                             HStack {
-                                Text(level == 0 ? "Cantrip" : "Level \(level)")
-                                
+                                Text(
+                                    level == 0 ?
+                                    NSLocalizedString("cantrip_text", comment: "") :
+                                        String(format: NSLocalizedString("level_text", comment: ""), level)
+                                )
+
                                 Spacer()
                                 
                                 if viewModel.selectedLevelFilter == level {
@@ -40,17 +44,17 @@ struct FilterView: View {
                     }
                 }
                 
-                Button("Clear Filters") {
+                Button(NSLocalizedString("clear_filters", comment: "")) {
                     viewModel.filterByClass(nil)
                     viewModel.filterByLevel(nil)
                     presentationMode.wrappedValue.dismiss()
                 }
                 .foregroundColor(.blue)
             }
-            .navigationTitle("Filter Spells")
+            .navigationTitle(NSLocalizedString("filter_spells", comment: ""))
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Done") {
+                    Button(NSLocalizedString("done", comment: "")) {
                         presentationMode.wrappedValue.dismiss()
                     }
                 }
