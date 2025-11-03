@@ -25,9 +25,9 @@ struct Spell: Identifiable {
      
     var levelString: String {
         if level == 0 {
-            return "Cantrip"
+            return NSLocalizedString("cantrip_text", comment: "")
         } else {
-            return "Level \(level)"
+            return String(format: NSLocalizedString("level_text", comment: ""), level)
         }
     }
 }

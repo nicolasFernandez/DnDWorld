@@ -152,7 +152,7 @@
 "Hit Die" = "Hit Die";
 "Primary Ability" = "Primary Ability";
 "Saving Throw" = "Saving Throw";
-"%@ Traits" = "%@ Traits";
+"traits_format" = "%@ Traits";
 
 // Abilities
 "Strength" = "Strength";
@@ -161,3 +161,33 @@
 "Intelligence" = "Intelligence";
 "Wisdom" = "Wisdom";
 "Charisma" = "Charisma";
+
+// Spell Schools
+"spell_school_abjuration" = "Abjuration";
+"spell_school_conjuration" = "Conjuration";
+"spell_school_divination" = "Divination";
+"spell_school_enchantment" = "Enchantment";
+"spell_school_evocation" = "Evocation";
+"spell_school_illusion" = "Illusion";
+"spell_school_necromancy" = "Necromancy";
+"spell_school_transmutation" = "Transmutation";
+
+"spell_ritual" = "Ritual";
+"spell_casting_time" = "Casting Time";
+"spell_range" = "Range";
+"spell_components" = "Components";
+"spell_duration" = "Duration";
+
+"spell_available_to" = "Available to:";
+"spell_concentration" = "Concentration, %@";
+
+"spell_search_text" = "Search spells";
+"spells_title" = "Spells";
+"spell_not_found" = "No spells found";
+"spell_level" = "Spell Level";
+"cantrip_text" = "Cantrip";
+"level_text" = "Level %d";
+
+"clear_filters" = "Clear Filters";
+"filter_spells" = "Filter Spells";
+"done" = "Done";

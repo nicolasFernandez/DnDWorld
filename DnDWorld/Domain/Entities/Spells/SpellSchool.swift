@@ -18,6 +18,6 @@ enum SpellSchool: String {
     case transmutation
 
     var name: String {
-        NSLocalizedString("\(self.rawValue)_name", comment: "")
+        NSLocalizedString("spell_school_\(self.rawValue)", comment: "")
     }
 }

@@ -21,7 +21,9 @@ struct RaceDetails: View {
                 .padding(.trailing, 30)
                 .padding(.bottom, 8)
                 .padding(.top, 8)
-            Text("\(raceType.name) Traits")
+            Text(
+                String(format: NSLocalizedString("traits_format", comment:""), raceType.name)
+            )
                 .fontWeight(.bold)
                 .padding(.leading, 30)
                 .padding(.trailing, 30)

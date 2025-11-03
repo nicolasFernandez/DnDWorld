@@ -15,9 +15,11 @@ struct SpellListView: View {
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Search spells", text: $searchText, onEditingChanged: { _ in }, onCommit: {
-                    viewModel.search(query: searchText)
-                })
+                TextField(
+                    NSLocalizedString("spell_search_text", comment: ""),
+                    text: $searchText,
+                    onEditingChanged: { _ in },
+                    onCommit: { viewModel.search(query: searchText) })
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
                 .onChange(of: searchText) { newValue in
@@ -52,9 +54,11 @@ struct SpellListView: View {
                     .foregroundColor(.red)
                     .padding()
             } else if viewModel.filteredSpells.isEmpty {
-                Text("No spells found")
-                    .foregroundColor(.secondary)
-                    .padding()
+                Text(
+                    NSLocalizedString("spell_not_found", comment: "")
+                )
+                .foregroundColor(.secondary)
+                .padding()
             } else {
                 List {
                     ForEach(viewModel.filteredSpells) { spell in
@@ -66,7 +70,7 @@ struct SpellListView: View {
                 .listStyle(PlainListStyle())
             }
         }
-        .navigationTitle("Spells")
+        .navigationTitle(NSLocalizedString("spells_title", comment: ""))
     }
 }
 
