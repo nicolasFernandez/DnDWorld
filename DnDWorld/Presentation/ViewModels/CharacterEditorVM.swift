@@ -9,7 +9,7 @@ import Foundation
 
 final class CharacterEditorVM: ObservableObject {
 
-    private let createCharacterUseCase: CreateCharacterDraftUseCase
+    private let createCharacterUseCase: CreateCharacterUseCase
     private let updateAbilityScoreUseCase: UpdateAbilityScoreUseCase
     private let computeDerivedStatsUseCase: ComputeDerivedStatsUseCase
 
@@ -17,7 +17,7 @@ final class CharacterEditorVM: ObservableObject {
     @Published var errorMessage: String?
     
     init(
-        createCharacterUseCase: CreateCharacterDraftUseCase,
+        createCharacterUseCase: CreateCharacterUseCase,
         updateAbilityScoreUseCase: UpdateAbilityScoreUseCase,
         computeDerivedStatsUseCase: ComputeDerivedStatsUseCase
     ) {
