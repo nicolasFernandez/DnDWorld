@@ -12,7 +12,7 @@ struct ClassRow: View {
     var body: some View {
         HStack {
             Text(classType.name)
-                .font(.title)
+                .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding(
                     .trailing, 30

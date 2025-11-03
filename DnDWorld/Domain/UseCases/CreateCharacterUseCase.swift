@@ -8,6 +8,6 @@
 import Foundation
 
 // Crea CharacterDraft (solo decisiones del usuario)
-struct CreateCharacterDraftUseCase {
+struct CreateCharacterUseCase {
     
 }
