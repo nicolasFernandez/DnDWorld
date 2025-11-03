@@ -6,6 +6,7 @@
 //
 
 import Foundation
+//import Firebase
 
 // Implementation of repository
 final class FirebaseSpellRepository: SpellRepository {
