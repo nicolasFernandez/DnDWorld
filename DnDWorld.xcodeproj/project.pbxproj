@@ -286,7 +286,6 @@
 				CA8BE8EE2971FA8D009517ED /* Skills.swift */,
 				CA33AF252E9DA53600003DED /* Spells */,
 				CA37C6E8295A055B00C508CB /* Subrace.swift */,
-				CA37C6EC295A286E00C508CB /* Weapon.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -436,6 +435,7 @@
 			children = (
 				CA37C6EE295A287800C508CB /* Armor.swift */,
 				CA37C6EA295A286300C508CB /* Equipment.swift */,
+				CA37C6EC295A286E00C508CB /* Weapon.swift */,
 			);
 			path = Equipment;
 			sourceTree = "<group>";
