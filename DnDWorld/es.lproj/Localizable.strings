@@ -153,6 +153,7 @@
 "Primary Ability" = "Característica principal";
 "Saving Throw" = "Tirada de salvación";
 "traits_format" = "Rasgos %@";
+"Class Features" = "Rasgos de clase";
 
 // Abilities
 "Strength" = "Fuerza";

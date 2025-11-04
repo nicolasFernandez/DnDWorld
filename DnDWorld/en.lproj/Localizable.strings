@@ -153,6 +153,7 @@
 "Primary Ability" = "Primary Ability";
 "Saving Throw" = "Saving Throw";
 "traits_format" = "%@ Traits";
+"Class Features" = "Class features";
 
 // Abilities
 "Strength" = "Strength";
