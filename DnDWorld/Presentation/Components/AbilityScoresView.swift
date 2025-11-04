@@ -21,7 +21,7 @@ struct AbilityScoresView: View {
                     Text("\(self.options[$0])").tag($0)
                 }
             }
-            let total = Int(exactly: options[selectedOption])! + bonus
+            let total = options[selectedOption] + bonus
             Text("Total: \(total)").bold()
             // Modifier
             
