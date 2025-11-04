@@ -17,7 +17,8 @@ struct Spell: Identifiable {
     let range: String
     let components: SpellComponents
     let duration: String
-    let description: String
+    let levelDescription: String
+    let higherLevelsDescription: String?
     let classes: [ClassType]
     
     var isRitual: Bool = false
