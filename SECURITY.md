@@ -2,11 +2,11 @@
 
 ## Overview
 
-DnDWorld is an iOS character generator application for Dungeons & Dragons 5th Edition. This document outlines our security approach and documents decisions regarding code scanning alerts.
+TTRPGCharacterForge is an iOS character generator application for Dungeons & Dragons 5th Edition. This document outlines our security approach and documents decisions regarding code scanning alerts.
 
 ## Reporting Security Issues
 
-If you discover a security vulnerability in DnDWorld, please email the maintainers directly at the contact information provided in the repository. Please do not create public issues for security vulnerabilities.
+If you discover a security vulnerability in TTRPGCharacterForge, please email the maintainers directly at the contact information provided in the repository. Please do not create public issues for security vulnerabilities.
 
 ## Code Scanning Alerts
 
@@ -25,7 +25,7 @@ We use MobSF (Mobile Security Framework) for automated security scanning. Below 
 
 This alert recommends implementing certificate pinning to prevent man-in-the-middle (MITM) attacks on network communications. After careful evaluation, we have decided to dismiss this alert for the following reasons:
 
-1. **No Network Communication:** DnDWorld is a completely offline application. The app does not:
+1. **No Network Communication:** TTRPGCharacterForge is a completely offline application. The app does not:
    - Make any network requests (HTTP/HTTPS)
    - Connect to remote servers or APIs
    - Download or upload any data
@@ -45,7 +45,7 @@ This alert recommends implementing certificate pinning to prevent man-in-the-mid
    - Transmit sensitive data over HTTPS connections
    - Need protection against MITM attacks on network traffic
    
-   Since DnDWorld has no network communication whatsoever, there is zero risk of MITM attacks or certificate validation issues.
+   Since TTRPGCharacterForge has no network communication whatsoever, there is zero risk of MITM attacks or certificate validation issues.
 
 4. **Implementation Considerations:** Certificate pinning would require:
    - URLSessionDelegate implementation with `urlSession(_:didReceive:completionHandler:)` method
@@ -61,7 +61,7 @@ This alert recommends implementing certificate pinning to prevent man-in-the-mid
    - No server endpoints or URLs in the codebase
    - The app functions entirely offline
 
-**Conclusion:** Given that DnDWorld is a purely offline application with zero network communication, implementing certificate pinning would provide no security benefit whatsoever. This alert is dismissed as not applicable to DnDWorld's architecture and functionality.
+**Conclusion:** Given that TTRPGCharacterForge is a purely offline application with zero network communication, implementing certificate pinning would provide no security benefit whatsoever. This alert is dismissed as not applicable to TTRPGCharacterForge's architecture and functionality.
 
 **Review:** This decision should be re-evaluated if the application's functionality changes to include:
 - Any network communication (API calls, web requests, etc.)
@@ -84,7 +84,7 @@ This alert recommends implementing certificate pinning to prevent man-in-the-mid
 
 This alert recommends implementing jailbreak detection to prevent the application from running on compromised iOS devices. After careful evaluation, we have decided to dismiss this alert for the following reasons:
 
-1. **Application Nature:** DnDWorld is a character generator tool for tabletop gaming. It does not:
+1. **Application Nature:** TTRPGCharacterForge is a character generator tool for tabletop gaming. It does not:
    - Process financial transactions or payment information
    - Handle sensitive personal identifiable information (PII)
    - Store authentication credentials or access tokens
@@ -108,7 +108,7 @@ This alert recommends implementing jailbreak detection to prevent the applicatio
    - Communicate with servers requiring device attestation
    - Store secrets that could be extracted on compromised devices
    
-   DnDWorld does not fall into any of these categories. Running on a jailbroken device poses no security risk to users or the application.
+   TTRPGCharacterForge does not fall into any of these categories. Running on a jailbroken device poses no security risk to users or the application.
 
 4. **User Freedom:** Implementing jailbreak detection would:
    - Unnecessarily restrict users' ability to use the app on their own devices
@@ -124,14 +124,14 @@ This alert recommends implementing jailbreak detection to prevent the applicatio
    
    These checks would add complexity without providing meaningful security benefits for a gaming application that processes only fictional character data.
 
-6. **Offline-First Design:** DnDWorld is designed to work primarily offline without requiring network connectivity or server authentication. Jailbreak detection is most relevant for apps that:
+6. **Offline-First Design:** TTRPGCharacterForge is designed to work primarily offline without requiring network connectivity or server authentication. Jailbreak detection is most relevant for apps that:
    - Validate device integrity with remote servers
    - Protect server-side resources from compromised clients
    - Enforce client-side security policies for enterprise data
    
    None of these apply to our offline-first gaming tool.
 
-**Conclusion:** Given that DnDWorld exclusively handles fictional, non-sensitive game data and does not process any information requiring device trust or integrity verification, implementing jailbreak detection would provide no security benefit while unnecessarily restricting user freedom. This alert is dismissed as not applicable to DnDWorld's threat model and use case.
+**Conclusion:** Given that TTRPGCharacterForge exclusively handles fictional, non-sensitive game data and does not process any information requiring device trust or integrity verification, implementing jailbreak detection would provide no security benefit while unnecessarily restricting user freedom. This alert is dismissed as not applicable to TTRPGCharacterForge's threat model and use case.
 
 **Review:** This decision should be re-evaluated if the application's functionality changes to include:
 - User authentication or account management
@@ -154,7 +154,7 @@ This alert recommends implementing jailbreak detection to prevent the applicatio
 
 This alert recommends disabling the iOS keyboard cache to prevent sensitive data from being stored in the keyboard's autocomplete suggestions. After careful evaluation, we have decided to dismiss this alert for the following reasons:
 
-1. **Application Nature:** DnDWorld is a character generator tool for tabletop gaming. It does not:
+1. **Application Nature:** TTRPGCharacterForge is a character generator tool for tabletop gaming. It does not:
    - Handle sensitive financial information
    - Process personal identifiable information (PII)
    - Require authentication credentials (passwords, tokens, etc.)
@@ -177,7 +177,7 @@ This alert recommends disabling the iOS keyboard cache to prevent sensitive data
    - Personal identification information
    - Confidential business data
 
-   Since DnDWorld processes only game-related data with no real-world sensitivity, the risk of keyboard cache exposure is negligible.
+   Since TTRPGCharacterForge processes only game-related data with no real-world sensitivity, the risk of keyboard cache exposure is negligible.
 
 4. **User Experience:** Disabling keyboard cache would:
    - Degrade user experience by preventing helpful autocomplete suggestions
@@ -190,7 +190,7 @@ This alert recommends disabling the iOS keyboard cache to prevent sensitive data
    - Disable helpful features like spell-checking and autocorrect for character names and descriptions
    - Create unnecessary confusion about the nature of the data being entered
 
-**Conclusion:** Given that DnDWorld exclusively handles non-sensitive game data, disabling the keyboard cache would provide no meaningful security benefit while degrading user experience. This alert is dismissed as not applicable to DnDWorld's threat model and data classification.
+**Conclusion:** Given that TTRPGCharacterForge exclusively handles non-sensitive game data, disabling the keyboard cache would provide no meaningful security benefit while degrading user experience. This alert is dismissed as not applicable to TTRPGCharacterForge's threat model and data classification.
 
 **Review:** This decision should be re-evaluated if the application's functionality changes to include:
 - User authentication system
@@ -210,7 +210,7 @@ This alert recommends disabling the iOS keyboard cache to prevent sensitive data
 
 **Resolution:**
 
-While DnDWorld primarily handles non-sensitive game data (character names, stats, etc.), we have implemented keyboard cache controls to address this security scanning alert and follow iOS security best practices. 
+While TTRPGCharacterForge primarily handles non-sensitive game data (character names, stats, etc.), we have implemented keyboard cache controls to address this security scanning alert and follow iOS security best practices. 
 
 **Implementation Strategy:**
 
@@ -246,7 +246,7 @@ TextField("Character Name", text: $characterName)
 
 This alert recommends implementing reverse engineering detection mechanisms (such as jailbreak detection, debugger detection, anti-tampering checks, and code obfuscation) to protect the application from being analyzed or modified. After careful evaluation, we have decided to dismiss this alert for the following reasons:
 
-1. **Application Nature:** DnDWorld is an open-source character generator for tabletop gaming. The application:
+1. **Application Nature:** TTRPGCharacterForge is an open-source character generator for tabletop gaming. The application:
    - Contains no proprietary algorithms or trade secrets
    - Does not process sensitive or confidential data
    - Has no authentication or user account system
@@ -266,7 +266,7 @@ This alert recommends implementing reverse engineering detection mechanisms (suc
    - Contain licensed intellectual property
    - Require protection against unauthorized modifications that could harm users
 
-   Since DnDWorld is an open-source tool with no sensitive data, proprietary algorithms, or financial transactions, there is no meaningful risk from reverse engineering.
+   Since TTRPGCharacterForge is an open-source tool with no sensitive data, proprietary algorithms, or financial transactions, there is no meaningful risk from reverse engineering.
 
 4. **Implementation Burden:** Implementing reverse engineering protections would:
    - Add significant complexity to the codebase
@@ -281,7 +281,7 @@ This alert recommends implementing reverse engineering detection mechanisms (suc
    - Create compatibility issues with future iOS versions
    - Frustrate developers and contributors trying to enhance the app
 
-**Conclusion:** Given that DnDWorld is an open-source application with no sensitive data, proprietary algorithms, or financial transactions, implementing reverse engineering detection would provide no security benefit while adding complexity and potentially degrading user experience. This alert is dismissed as not applicable to DnDWorld's open-source nature and threat model.
+**Conclusion:** Given that TTRPGCharacterForge is an open-source application with no sensitive data, proprietary algorithms, or financial transactions, implementing reverse engineering detection would provide no security benefit while adding complexity and potentially degrading user experience. This alert is dismissed as not applicable to TTRPGCharacterForge's open-source nature and threat model.
 
 **Review:** This decision should be re-evaluated if the application's functionality changes to include:
 - Proprietary or licensed content that requires protection
