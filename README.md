@@ -1,6 +1,6 @@
-# DnDWorld
+# TTRPGCharacterForge
 
-A Swift application for Dungeons & Dragons character management and world building.
+A free, open source Swift application for creating and managing characters compatible with the 2014 fifth edition ruleset for Dungeons & Dragons (in the meantime).
 
 This project is unofficial Fan Content permitted under the [Fan Content Policy](https://company.wizards.com/en/legal/fancontentpolicy). Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
 
@@ -34,13 +34,15 @@ chmod +x .git/hooks/post-checkout
 
 ## Development
 
-- Follow SOLID principles and Clean Code practices
-- Apply design patterns like Strategy, NullObject, Composite, Adapter, Observer when needed
-- Use SwiftUI instead of UIKit
+- Follow SOLID and Clean Code principles.
+- Apply Design Patters as needed following [Refactoring Guru](https://refactoring.guru/design-patterns) guidelines.
+- Use SwiftUI instead of UIKit.
 
 ## TO-DO:
 
-- [ ] View components for Character Sheet
-- [ ] Character Sheet View
-- [ ] Export as PDF or image
-- [ ] Allow user to create characters step-by-step (race, class, background, initial equipment or wealth, choose point assignment systems) 
+- [ ] Create characters step-by-step (race, class, background, initial equipment or wealth, choose point assignment systems) using SRD 5.1.
+- [ ] Edit and save characters locally and/or remotely.
+- [ ] Export character sheet as PDF. 
+- [ ] Import image for character, adding it to exportable character sheet.
+- [ ] Export character token for use in Virtual Tabletops. 
+- [ ] Add new TTRPG Game systems like: Pathfinder, Vampire: The Masquerade, Call of Cthulhu, etc. There's a big list on [TTRPGList.com](https://ttrpglist.com/systems)

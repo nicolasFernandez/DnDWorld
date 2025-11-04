@@ -1,4 +1,4 @@
-> DnDWorld is licensed under the PolyForm Noncommercial License 1.0.0. Refer to [License doc](https://example.com) if you have any questions, or reach out at email@domain.com 
+> TTRPGCharacterForge is licensed under the PolyForm Noncommercial License 1.0.0. Refer to [License wiki](https://github.com/nicolasFernandez/TTRPGCharacterForge/wiki/License) if you have any questions, or reach me out at nicolas.fernandez.a@gmail.com 
 
 # PolyForm Noncommercial License 1.0.0
 
