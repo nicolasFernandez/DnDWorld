@@ -46,3 +46,5 @@ chmod +x .git/hooks/post-checkout
 - [ ] Import image for character, adding it to exportable character sheet.
 - [ ] Export character token for use in Virtual Tabletops. 
 - [ ] Add new TTRPG Game systems like: Pathfinder, Vampire: The Masquerade, Call of Cthulhu, etc. There's a big list on [TTRPGList.com](https://ttrpglist.com/systems)
+
+> **Note:** Adding support for other TTRPG systems (such as Pathfinder, Vampire: The Masquerade, Call of Cthulhu, etc.) may require additional licensing considerations beyond the D&D Fan Content Policy. Please review and comply with the licensing requirements of each game system and publisher before implementing or distributing support for their content.
