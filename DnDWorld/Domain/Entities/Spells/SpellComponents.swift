@@ -1,6 +1,6 @@
 //
 //  SpellComponents.swift
-//  DnDWorld
+//  TTRPGCharacterForge
 //
 //  Created by Nicolas Alonso Fernandez Alarcon on 13-10-25.
 //

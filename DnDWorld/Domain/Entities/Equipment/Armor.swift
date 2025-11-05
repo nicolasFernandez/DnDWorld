@@ -1,6 +1,6 @@
 //
 //  Armor.swift
-//  DnDWorld
+//  TTRPGCharacterForge
 //
 //  Created by Nicolas Alonso Fernandez Alarcon on 26-12-22.
 //

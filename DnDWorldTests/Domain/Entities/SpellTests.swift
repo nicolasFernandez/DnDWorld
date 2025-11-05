@@ -1,12 +1,12 @@
 //
 //  SpellTests.swift
-//  DnDWorldTests
+//  TTRPGCharacterForgeTests
 //
 //  Created on 2025-10-13.
 //
 
 import XCTest
-@testable import DnDWorld
+@testable import TTRPGCharacterForge
 
 final class SpellTests: XCTestCase {
     

@@ -1,6 +1,6 @@
 //
 //  SecureTextFieldModifier.swift
-//  DnDWorld
+//  TTRPGCharacterForge
 //
 //  Created by Copilot on 11-10-25.
 //  Addresses security alert #5: Keyboard Cache
@@ -11,7 +11,7 @@ import SwiftUI
 /// A ViewModifier that disables keyboard cache, autocorrection, and spell checking
 /// for text input fields to address security scanning requirements.
 ///
-/// While DnDWorld primarily handles non-sensitive game data, this modifier
+/// While TTRPGCharacterForge primarily handles non-sensitive game data, this modifier
 /// ensures compliance with iOS security best practices and satisfies
 /// automated security scanning requirements.
 ///
