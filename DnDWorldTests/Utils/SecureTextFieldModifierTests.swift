@@ -1,6 +1,6 @@
 import XCTest
 import SwiftUI
-@testable import DnDWorld
+@testable import TTRPGCharacterForge
 
 final class SecureTextFieldModifierTests: XCTestCase {
     

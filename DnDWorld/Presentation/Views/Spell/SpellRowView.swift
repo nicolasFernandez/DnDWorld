@@ -1,6 +1,6 @@
 //
 //  SpellRowView.swift
-//  DnDWorld
+//  TTRPGCharacterForge
 //
 //  Created by Nicolás Fernández on 14-10-25.
 //
