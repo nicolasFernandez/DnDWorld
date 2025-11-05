@@ -1,5 +1,5 @@
 import XCTest
-@testable import DnDWorld
+@testable import TTRPGCharacterForge
 
 final class StringUtilsTests: XCTestCase {
     func testSnakeCaseRawValue_EmptyString() {

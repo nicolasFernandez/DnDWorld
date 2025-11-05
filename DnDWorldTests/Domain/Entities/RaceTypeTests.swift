@@ -1,12 +1,12 @@
 //
 //  RaceTypeTests.swift
-//  DnDWorldTests
+//  TTRPGCharacterForgeTests
 //
 //  Created by Nicolas Alonso Fernandez Alarcon on 07-08-23.
 //
 
 import XCTest
-@testable import DnDWorld
+@testable import TTRPGCharacterForge
 
 final class RaceTypeTests: XCTestCase {
 

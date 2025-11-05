@@ -56,13 +56,13 @@
 		CA33AF3E2E9DA83C00003DED /* SpellListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF3D2E9DA83C00003DED /* SpellListView.swift */; };
 		CA33AF3F2E9DA83C00003DED /* SpellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF3C2E9DA83C00003DED /* SpellDetailView.swift */; };
 		CA33AF492E9DBD0000003DED /* DetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33AF482E9DBD0000003DED /* DetailRow.swift */; };
-		CA37C6B62959F1C500C508CB /* DnDWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6B52959F1C500C508CB /* DnDWorldApp.swift */; };
+		CA37C6B62959F1C500C508CB /* TTRPGCharacterForgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6B52959F1C500C508CB /* TTRPGCharacterForgeApp.swift */; };
 		CA37C6B82959F1C500C508CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6B72959F1C500C508CB /* ContentView.swift */; };
 		CA37C6BA2959F1CA00C508CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA37C6B92959F1CA00C508CB /* Assets.xcassets */; };
 		CA37C6BD2959F1CA00C508CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA37C6BC2959F1CA00C508CB /* Preview Assets.xcassets */; };
-		CA37C6C72959F1CA00C508CB /* DnDWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6C62959F1CA00C508CB /* DnDWorldTests.swift */; };
-		CA37C6D12959F1CA00C508CB /* DnDWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6D02959F1CA00C508CB /* DnDWorldUITests.swift */; };
-		CA37C6D32959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6D22959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift */; };
+		CA37C6C72959F1CA00C508CB /* TTRPGCharacterForgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6C62959F1CA00C508CB /* TTRPGCharacterForgeTests.swift */; };
+		CA37C6D12959F1CA00C508CB /* TTRPGCharacterForgeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6D02959F1CA00C508CB /* TTRPGCharacterForgeUITests.swift */; };
+		CA37C6D32959F1CA00C508CB /* TTRPGCharacterForgeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6D22959F1CA00C508CB /* TTRPGCharacterForgeUITestsLaunchTests.swift */; };
 		CA37C6E1295A02A100C508CB /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E0295A02A100C508CB /* Ability.swift */; };
 		CA37C6E3295A043100C508CB /* Abilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E2295A043100C508CB /* Abilities.swift */; };
 		CA37C6E5295A050A00C508CB /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA37C6E4295A050A00C508CB /* Character.swift */; };
@@ -163,15 +163,15 @@
 		CA33AF3D2E9DA83C00003DED /* SpellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListView.swift; sourceTree = "<group>"; };
 		CA33AF482E9DBD0000003DED /* DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
 		CA37C6B22959F1C500C508CB /* DnDWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnDWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA37C6B52959F1C500C508CB /* DnDWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDWorldApp.swift; sourceTree = "<group>"; };
+		CA37C6B52959F1C500C508CB /* TTRPGCharacterForgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTRPGCharacterForgeApp.swift; sourceTree = "<group>"; };
 		CA37C6B72959F1C500C508CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA37C6B92959F1CA00C508CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA37C6BC2959F1CA00C508CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA37C6C22959F1CA00C508CB /* DnDWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DnDWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA37C6C62959F1CA00C508CB /* DnDWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDWorldTests.swift; sourceTree = "<group>"; };
+		CA37C6C62959F1CA00C508CB /* TTRPGCharacterForgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTRPGCharacterForgeTests.swift; sourceTree = "<group>"; };
 		CA37C6CC2959F1CA00C508CB /* DnDWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DnDWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA37C6D02959F1CA00C508CB /* DnDWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDWorldUITests.swift; sourceTree = "<group>"; };
-		CA37C6D22959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DnDWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA37C6D02959F1CA00C508CB /* TTRPGCharacterForgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTRPGCharacterForgeUITests.swift; sourceTree = "<group>"; };
+		CA37C6D22959F1CA00C508CB /* TTRPGCharacterForgeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTRPGCharacterForgeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CA37C6E0295A02A100C508CB /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
 		CA37C6E2295A043100C508CB /* Abilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abilities.swift; sourceTree = "<group>"; };
 		CA37C6E4295A050A00C508CB /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
@@ -388,7 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				1254DD802E9B8839008D5C4E /* CompositionRoot.swift */,
-				CA37C6B52959F1C500C508CB /* DnDWorldApp.swift */,
+				CA37C6B52959F1C500C508CB /* TTRPGCharacterForgeApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -497,7 +497,7 @@
 		CA37C6C52959F1CA00C508CB /* DnDWorldTests */ = {
 			isa = PBXGroup;
 			children = (
-				CA37C6C62959F1CA00C508CB /* DnDWorldTests.swift */,
+				CA37C6C62959F1CA00C508CB /* TTRPGCharacterForgeTests.swift */,
 				12E1FD682E9E8F4D00F95690 /* Domain */,
 				CA486CCE2E8F2C2A004C0792 /* Utils */,
 			);
@@ -507,8 +507,8 @@
 		CA37C6CF2959F1CA00C508CB /* DnDWorldUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CA37C6D02959F1CA00C508CB /* DnDWorldUITests.swift */,
-				CA37C6D22959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift */,
+				CA37C6D02959F1CA00C508CB /* TTRPGCharacterForgeUITests.swift */,
+				CA37C6D22959F1CA00C508CB /* TTRPGCharacterForgeUITestsLaunchTests.swift */,
 			);
 			path = DnDWorldUITests;
 			sourceTree = "<group>";
@@ -759,7 +759,7 @@
 				CA37C6E9295A055B00C508CB /* Subrace.swift in Sources */,
 				1254DD482E9B8769008D5C4E /* CharacterEditorVM.swift in Sources */,
 				CA8BE8DD2971D7DC009517ED /* RaceDetails.swift in Sources */,
-				CA37C6B62959F1C500C508CB /* DnDWorldApp.swift in Sources */,
+				CA37C6B62959F1C500C508CB /* TTRPGCharacterForgeApp.swift in Sources */,
 				1254DD732E9B87DF008D5C4E /* ExportSheetView.swift in Sources */,
 				1254DCDE2E9B81C6008D5C4E /* CharacterRepository.swift in Sources */,
 				1254DD202E9B8673008D5C4E /* UpdateAbilityScoreUseCase.swift in Sources */,
@@ -783,7 +783,7 @@
 				CA23C1E42A81AE70005F40F0 /* AbilityTests.swift in Sources */,
 				CA33AF2D2E9DA6B100003DED /* SpellTests.swift in Sources */,
 				CA23C1E62A81B09F005F40F0 /* RaceTypeTests.swift in Sources */,
-				CA37C6C72959F1CA00C508CB /* DnDWorldTests.swift in Sources */,
+				CA37C6C72959F1CA00C508CB /* TTRPGCharacterForgeTests.swift in Sources */,
 				967CA38CD78588F74B39FFA2 /* SecureTextFieldModifierTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -792,8 +792,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA37C6D32959F1CA00C508CB /* DnDWorldUITestsLaunchTests.swift in Sources */,
-				CA37C6D12959F1CA00C508CB /* DnDWorldUITests.swift in Sources */,
+				CA37C6D32959F1CA00C508CB /* TTRPGCharacterForgeUITestsLaunchTests.swift in Sources */,
+				CA37C6D12959F1CA00C508CB /* TTRPGCharacterForgeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

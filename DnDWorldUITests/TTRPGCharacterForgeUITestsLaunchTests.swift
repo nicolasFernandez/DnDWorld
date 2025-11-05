@@ -1,13 +1,13 @@
 //
-//  DnDWorldUITestsLaunchTests.swift
-//  DnDWorldUITests
+//  TTRPGCharacterForgeUITestsLaunchTests.swift
+//  TTRPGCharacterForgeUITests
 //
 //  Created by Nicolas Alonso Fernandez Alarcon on 26-12-22.
 //
 
 import XCTest
 
-final class DnDWorldUITestsLaunchTests: XCTestCase {
+final class TTRPGCharacterForgeUITestsLaunchTests: XCTestCase {
 
 //    override class var runsForEachTargetApplicationUIConfiguration: Bool {
 //        true
