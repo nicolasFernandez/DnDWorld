@@ -246,17 +246,17 @@ TextField("Character Name", text: $characterName)
 
 This alert recommends implementing reverse engineering detection mechanisms (such as jailbreak detection, debugger detection, anti-tampering checks, and code obfuscation) to protect the application from being analyzed or modified. After careful evaluation, we have decided to dismiss this alert for the following reasons:
 
-1. **Application Nature:** TTRPGCharacterForge is an open-source character generator for tabletop gaming. The application:
+1. **Application Nature:** TTRPGCharacterForge is a source-available character generator for tabletop gaming. The application:
    - Contains no proprietary algorithms or trade secrets
    - Does not process sensitive or confidential data
    - Has no authentication or user account system
    - Does not connect to backend services requiring protection
    - Contains no intellectual property requiring protection from reverse engineering
 
-2. **Open Source Philosophy:** As an open-source project:
+2. **Source-Available Philosophy:** As a source-available project:
    - The source code is publicly available on GitHub
    - Anyone can inspect, modify, and learn from the codebase
-   - Attempting to prevent reverse engineering contradicts the open-source nature of the project
+   - Attempting to prevent reverse engineering contradicts the source-available nature of the project
    - The community benefits from transparency and the ability to audit the code
 
 3. **Risk Assessment:** The OWASP MASVS-RESILIENCE requirements for anti-reverse engineering are specifically intended for applications that:
@@ -266,7 +266,7 @@ This alert recommends implementing reverse engineering detection mechanisms (suc
    - Contain licensed intellectual property
    - Require protection against unauthorized modifications that could harm users
 
-   Since TTRPGCharacterForge is an open-source tool with no sensitive data, proprietary algorithms, or financial transactions, there is no meaningful risk from reverse engineering.
+   Since TTRPGCharacterForge is a source-available tool with no sensitive data, proprietary algorithms, or financial transactions, there is no meaningful risk from reverse engineering.
 
 4. **Implementation Burden:** Implementing reverse engineering protections would:
    - Add significant complexity to the codebase
@@ -281,7 +281,7 @@ This alert recommends implementing reverse engineering detection mechanisms (suc
    - Create compatibility issues with future iOS versions
    - Frustrate developers and contributors trying to enhance the app
 
-**Conclusion:** Given that TTRPGCharacterForge is an open-source application with no sensitive data, proprietary algorithms, or financial transactions, implementing reverse engineering detection would provide no security benefit while adding complexity and potentially degrading user experience. This alert is dismissed as not applicable to TTRPGCharacterForge's open-source nature and threat model.
+**Conclusion:** Given that TTRPGCharacterForge is a source-available application with no sensitive data, proprietary algorithms, or financial transactions, implementing reverse engineering detection would provide no security benefit while adding complexity and potentially degrading user experience. This alert is dismissed as not applicable to TTRPGCharacterForge's source-available nature and threat model.
 
 **Review:** This decision should be re-evaluated if the application's functionality changes to include:
 - Proprietary or licensed content that requires protection
