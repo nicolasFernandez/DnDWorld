@@ -225,7 +225,7 @@ While TTRPGCharacterForge primarily handles non-sensitive game data (character n
    - Has minimal impact on user experience for short text inputs like character names
    - Can be selectively applied or modified if needed for specific use cases
 
-**Code Location:** `DnDWorld/Utils/SecureTextFieldModifier.swift`
+**Code Location:** `TTRPGCharacterForge/Utils/SecureTextFieldModifier.swift`
 
 **Usage Example:**
 ```swift
