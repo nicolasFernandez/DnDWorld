@@ -23,7 +23,7 @@ struct SpellDetailView: View {
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                         
-                        Text(spell.school.rawValue.capitalized)
+                        Text(spell.school.name.capitalized)
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                         if spell.isRitual {

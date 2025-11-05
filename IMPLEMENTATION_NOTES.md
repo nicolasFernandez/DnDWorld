@@ -5,14 +5,14 @@ This document describes the implementation of the fix for security scanning aler
 
 ## Files Created
 
-### 1. `DnDWorld/Utils/SecureTextFieldModifier.swift`
+### 1. `TTRPGCharacterForge/Utils/SecureTextFieldModifier.swift`
 - **Purpose**: Provides a reusable ViewModifier to disable keyboard cache on TextFields
-- **Status**: ✅ **Added to Xcode project (DnDWorld target)**
+- **Status**: ✅ **Added to Xcode project (TTRPGCharacterForge target)**
 - **Usage**: Apply `.disableKeyboardCache()` to any TextField
 
-### 2. `DnDWorldTests/Utils/SecureTextFieldModifierTests.swift`
+### 2. `TTRPGCharacterForgeTests/Utils/SecureTextFieldModifierTests.swift`
 - **Purpose**: Unit tests for the SecureTextFieldModifier
-- **Status**: ✅ **Added to Xcode project (DnDWorldTests target)**
+- **Status**: ✅ **Added to Xcode project (TTRPGCharacterForgeTests target)**
 - **Tests**: Verifies modifier can be instantiated and applied
 
 ## Build and Verification
@@ -22,7 +22,7 @@ The files have been added to the Xcode project programmatically using the xcodep
 ### To verify on macOS with Xcode:
 
 ```bash
-xcodebuild test -scheme DnDWorld -project DnDWorld.xcodeproj \
+xcodebuild test -scheme TTRPGCharacterForge -project TTRPGCharacterForge.xcodeproj \
   -destination 'platform=iOS Simulator,name=iPhone 15'
 ```
 

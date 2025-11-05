@@ -1,4 +1,4 @@
-# DnDWorld - Copilot Coding Agent Instructions
+# TTRPGCharacterForge - Copilot Coding Agent Instructions
 
 ## Repository Summary
 iOS character generator for D&D 5e (Spanish/English). Creates characters with stats, race/class selection, and equipment. SwiftUI app (~38 files, 1,300 LOC), Swift 5.0, iOS 14.0+, bilingual, no external dependencies. MVVM architecture.
@@ -10,16 +10,16 @@ iOS character generator for D&D 5e (Spanish/English). Creates characters with st
 ### Build Commands
 ```bash
 # Build (1-2 min first time, 30-60s incremental)
-xcodebuild build-for-testing -scheme DnDWorld -project DnDWorld.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 15'
+xcodebuild build-for-testing -scheme TTRPGCharacterForge -project TTRPGCharacterForge.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 15'
 
 # Test (includes unit and UI tests, ~1-2 min)
-xcodebuild test-without-building -scheme DnDWorld -project DnDWorld.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 15'
+xcodebuild test-without-building -scheme TTRPGCharacterForge -project TTRPGCharacterForge.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 15'
 
 # Combined build + test
-xcodebuild test -scheme DnDWorld -project DnDWorld.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 15'
+xcodebuild test -scheme TTRPGCharacterForge -project TTRPGCharacterForge.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 15'
 
 # Clean if issues
-xcodebuild clean -scheme DnDWorld -project DnDWorld.xcodeproj
+xcodebuild clean -scheme TTRPGCharacterForge -project TTRPGCharacterForge.xcodeproj
 ```
 
 ### CI/CD Workflows
@@ -29,21 +29,33 @@ xcodebuild clean -scheme DnDWorld -project DnDWorld.xcodeproj
 ## Project Structure
 
 ```
-DnDWorld/
-├── DnDWorld/                      # Main app
-│   ├── DnDWorldApp.swift          # Entry point (@main)
-│   ├── ContentView.swift          # Main UI (WIP: picker views, nav bar)
-│   ├── Clases/ (23 files)         # Models: Character, Ability/Abilities, RaceType, ClassType, 
-│   │                              # BackgroundType, Equipment/Weapon/Armor, Spell/School, 
-│   │                              # Skill/Skills, Feat, etc.
-│   ├── Views/ (6 files)           # AbilityScoresView (WIP), ClassDetails/Row, RaceDetails, etc.
-│   ├── Utils/String+Utils.swift   # camelToSnakeCase() for localization keys
-│   ├── Assets.xcassets/           # Images: classes/, races/, schools/, sources/
-│   ├── en.lproj/Localizable.strings (203 entries)
-│   └── es.lproj/Localizable.strings (203 entries)
-├── DnDWorldTests/                 # Unit tests (mirror source structure)
-├── DnDWorldUITests/               # UI tests
-└── DnDWorld.xcodeproj/            # Xcode project (no external dependencies)
+TTRPGCharacterForge/
+├── TTRPGCharacterForge/           # Main app
+│   ├── App/                       # App entry point 
+│   │   ├── TTRPGCharacterForgeApp.swift # Entry point (@main)
+│   │   └── CompositionRoot.swift  # Dependency injection
+│   ├── Domain/                    # Core business logic
+│   │   ├── Entities/              # Character, Ability/Abilities, Race, Class, etc.
+│   │   ├── Protocols/             # Interfaces for repositories and services
+│   │   └── UseCases/              # Application business rules
+│   ├── Data/                      # Data access layer
+│   │   ├── Local/                 # Local storage
+│   │   ├── Firebase/              # Remote data (if used)
+│   │   └── Caching/               # Caching mechanisms
+│   ├── Presentation/              # UI layer
+│   │   ├── Components/            # Reusable UI components
+│   │   ├── DesignSystem/          # Colors, typography, shared styles
+│   │   ├── Navigation/            # Navigation controllers and routing
+│   │   ├── ViewModels/            # MVVM view models
+│   │   └── Views/                 # SwiftUI views
+│   ├── Utils/                     # Utility functions and extensions
+│   │   ├── String+Utils.swift     # camelToSnakeCase() for localization
+│   │   └── SecureTextFieldModifier.swift # Security features
+│   ├── en.lproj/Localizable.strings # English localization (203 entries)
+│   └── es.lproj/Localizable.strings # Spanish localization (203 entries)
+├── TTRPGCharacterForgeTests/      # Unit tests (mirror source structure)
+├── TTRPGCharacterForgeUITests/    # UI tests
+└── TTRPGCharacterForge.xcodeproj/ # Xcode project (no external dependencies)
 ```
 
 ## Key Patterns
@@ -54,8 +66,8 @@ DnDWorld/
 - Use `NSLocalizedString("{key}", comment: "")` for all user-facing text
 
 ### Testing
-- Tests mirror source: `DnDWorldTests/Clases/`, `DnDWorldTests/Utils/`
-- Use `@testable import DnDWorld` and XCTest assertions
+- Tests mirror source: `TTRPGCharacterForgeTests/Domain/Entities/`, `TTRPGCharacterForgeTests/Utils/`
+- Use `@testable import TTRPGCharacterForge` and XCTest assertions
 - D&D modifier formula: `((totalScore - 10) / 2).rounded(.down)` (see `Ability.swift`)
 
 ### Configuration
@@ -77,7 +89,7 @@ DnDWorld/
 - **xcuserdata**: Git-ignored. Don't depend on user-specific settings.
 
 ## Repository Root Files
-`README.md` (Spanish), `CODE_OF_CONDUCT.md` (Contributor Covenant v2.0), `.gitignore`, `DnDWorld.xcodeproj/`, `DnDWorld/`, `DnDWorldTests/`, `DnDWorldUITests/`, `.github/`
+`README.md`, `CODE_OF_CONDUCT.md` (Contributor Covenant v2.0), `IMPLEMENTATION_NOTES.md`, `LICENSE.md`, `SECURITY.md`, `.gitignore`, `TTRPGCharacterForge.xcodeproj/`, `TTRPGCharacterForge/`, `TTRPGCharacterForgeTests/`, `TTRPGCharacterForgeUITests/`, `.github/`
 
 ---
 **Trust these instructions.** Only search if: (1) you need implementation details, (2) info incomplete for your task, or (3) encountering undocumented errors. When in doubt, check `.github/workflows/ios.yml` for exact CI build commands.
