@@ -1,6 +1,6 @@
 # TTRPGCharacterForge
 
-A free, open source Swift application for creating and managing characters compatible with the 2014 fifth edition ruleset for Dungeons & Dragons (in the meantime).
+A free, source-available Swift application for non-commercial use, for creating and managing characters compatible with the 2014 fifth edition ruleset for Dungeons & Dragons.
 
 This project is unofficial Fan Content permitted under the [Fan Content Policy](https://company.wizards.com/en/legal/fancontentpolicy). Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
 
@@ -35,7 +35,7 @@ chmod +x .git/hooks/post-checkout
 ## Development
 
 - Follow SOLID and Clean Code principles.
-- Apply Design Patters as needed following [Refactoring Guru](https://refactoring.guru/design-patterns) guidelines.
+- Apply Design Patterns as needed following [Refactoring Guru](https://refactoring.guru/design-patterns) guidelines.
 - Use SwiftUI instead of UIKit.
 
 ## TO-DO:
