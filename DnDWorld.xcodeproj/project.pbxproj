@@ -101,14 +101,14 @@
 			containerPortal = CA37C6AA2959F1C500C508CB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CA37C6B12959F1C500C508CB;
-			remoteInfo = DnDWorld;
+			remoteInfo = TTRPGCharacterForge;
 		};
 		CA37C6CD2959F1CA00C508CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CA37C6AA2959F1C500C508CB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CA37C6B12959F1C500C508CB;
-			remoteInfo = DnDWorld;
+			remoteInfo = TTRPGCharacterForge;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -162,14 +162,14 @@
 		CA33AF3C2E9DA83C00003DED /* SpellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailView.swift; sourceTree = "<group>"; };
 		CA33AF3D2E9DA83C00003DED /* SpellListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListView.swift; sourceTree = "<group>"; };
 		CA33AF482E9DBD0000003DED /* DetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRow.swift; sourceTree = "<group>"; };
-		CA37C6B22959F1C500C508CB /* DnDWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DnDWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA37C6B22959F1C500C508CB /* TTRPGCharacterForge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTRPGCharacterForge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA37C6B52959F1C500C508CB /* TTRPGCharacterForgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTRPGCharacterForgeApp.swift; sourceTree = "<group>"; };
 		CA37C6B72959F1C500C508CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA37C6B92959F1CA00C508CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA37C6BC2959F1CA00C508CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CA37C6C22959F1CA00C508CB /* DnDWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DnDWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA37C6C22959F1CA00C508CB /* TTRPGCharacterForgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTRPGCharacterForgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA37C6C62959F1CA00C508CB /* TTRPGCharacterForgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTRPGCharacterForgeTests.swift; sourceTree = "<group>"; };
-		CA37C6CC2959F1CA00C508CB /* DnDWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DnDWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA37C6CC2959F1CA00C508CB /* TTRPGCharacterForgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTRPGCharacterForgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA37C6D02959F1CA00C508CB /* TTRPGCharacterForgeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTRPGCharacterForgeUITests.swift; sourceTree = "<group>"; };
 		CA37C6D22959F1CA00C508CB /* TTRPGCharacterForgeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTRPGCharacterForgeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CA37C6E0295A02A100C508CB /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
@@ -465,9 +465,9 @@
 		CA37C6B32959F1C500C508CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA37C6B22959F1C500C508CB /* DnDWorld.app */,
-				CA37C6C22959F1CA00C508CB /* DnDWorldTests.xctest */,
-				CA37C6CC2959F1CA00C508CB /* DnDWorldUITests.xctest */,
+				CA37C6B22959F1C500C508CB /* TTRPGCharacterForge.app */,
+				CA37C6C22959F1CA00C508CB /* TTRPGCharacterForgeTests.xctest */,
+				CA37C6CC2959F1CA00C508CB /* TTRPGCharacterForgeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -570,7 +570,7 @@
 /* Begin PBXNativeTarget section */
 		CA37C6B12959F1C500C508CB /* DnDWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA37C6D62959F1CA00C508CB /* Build configuration list for PBXNativeTarget "DnDWorld" */;
+			buildConfigurationList = CA37C6D62959F1CA00C508CB /* Build configuration list for PBXNativeTarget "TTRPGCharacterForge" */;
 			buildPhases = (
 				CA37C6AE2959F1C500C508CB /* Sources */,
 				CA37C6AF2959F1C500C508CB /* Frameworks */,
@@ -580,14 +580,14 @@
 			);
 			dependencies = (
 			);
-			name = DnDWorld;
-			productName = DnDWorld;
-			productReference = CA37C6B22959F1C500C508CB /* DnDWorld.app */;
+			name = TTRPGCharacterForge;
+			productName = TTRPGCharacterForge;
+			productReference = CA37C6B22959F1C500C508CB /* TTRPGCharacterForge.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CA37C6C12959F1CA00C508CB /* DnDWorldTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA37C6D92959F1CA00C508CB /* Build configuration list for PBXNativeTarget "DnDWorldTests" */;
+			buildConfigurationList = CA37C6D92959F1CA00C508CB /* Build configuration list for PBXNativeTarget "TTRPGCharacterForgeTests" */;
 			buildPhases = (
 				CA37C6BE2959F1CA00C508CB /* Sources */,
 				CA37C6BF2959F1CA00C508CB /* Frameworks */,
@@ -598,14 +598,14 @@
 			dependencies = (
 				CA37C6C42959F1CA00C508CB /* PBXTargetDependency */,
 			);
-			name = DnDWorldTests;
-			productName = DnDWorldTests;
-			productReference = CA37C6C22959F1CA00C508CB /* DnDWorldTests.xctest */;
+			name = TTRPGCharacterForgeTests;
+			productName = TTRPGCharacterForgeTests;
+			productReference = CA37C6C22959F1CA00C508CB /* TTRPGCharacterForgeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		CA37C6CB2959F1CA00C508CB /* DnDWorldUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA37C6DC2959F1CA00C508CB /* Build configuration list for PBXNativeTarget "DnDWorldUITests" */;
+			buildConfigurationList = CA37C6DC2959F1CA00C508CB /* Build configuration list for PBXNativeTarget "TTRPGCharacterForgeUITests" */;
 			buildPhases = (
 				CA37C6C82959F1CA00C508CB /* Sources */,
 				CA37C6C92959F1CA00C508CB /* Frameworks */,
@@ -616,9 +616,9 @@
 			dependencies = (
 				CA37C6CE2959F1CA00C508CB /* PBXTargetDependency */,
 			);
-			name = DnDWorldUITests;
-			productName = DnDWorldUITests;
-			productReference = CA37C6CC2959F1CA00C508CB /* DnDWorldUITests.xctest */;
+			name = TTRPGCharacterForgeUITests;
+			productName = TTRPGCharacterForgeUITests;
+			productReference = CA37C6CC2959F1CA00C508CB /* TTRPGCharacterForgeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -644,7 +644,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CA37C6AD2959F1C500C508CB /* Build configuration list for PBXProject "DnDWorld" */;
+			buildConfigurationList = CA37C6AD2959F1C500C508CB /* Build configuration list for PBXProject "TTRPGCharacterForge" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -970,7 +970,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DnDWorld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TTRPGCharacterForge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -999,7 +999,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DnDWorld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TTRPGCharacterForge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1018,12 +1018,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DnDWorldTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TTRPGCharacterForgeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DnDWorld.app/DnDWorld";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTRPGCharacterForge.app/TTRPGCharacterForge";
 			};
 			name = Debug;
 		};
@@ -1038,12 +1038,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DnDWorldTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TTRPGCharacterForgeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DnDWorld.app/DnDWorld";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTRPGCharacterForge.app/TTRPGCharacterForge";
 			};
 			name = Release;
 		};
@@ -1055,7 +1055,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DnDWorldUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TTRPGCharacterForgeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -1072,7 +1072,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.DnDWorldUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TTRPGCharacterForgeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -1084,7 +1084,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA37C6AD2959F1C500C508CB /* Build configuration list for PBXProject "DnDWorld" */ = {
+		CA37C6AD2959F1C500C508CB /* Build configuration list for PBXProject "TTRPGCharacterForge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA37C6D42959F1CA00C508CB /* Debug */,
@@ -1093,7 +1093,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA37C6D62959F1CA00C508CB /* Build configuration list for PBXNativeTarget "DnDWorld" */ = {
+		CA37C6D62959F1CA00C508CB /* Build configuration list for PBXNativeTarget "TTRPGCharacterForge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA37C6D72959F1CA00C508CB /* Debug */,
@@ -1102,7 +1102,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA37C6D92959F1CA00C508CB /* Build configuration list for PBXNativeTarget "DnDWorldTests" */ = {
+		CA37C6D92959F1CA00C508CB /* Build configuration list for PBXNativeTarget "TTRPGCharacterForgeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA37C6DA2959F1CA00C508CB /* Debug */,
@@ -1111,7 +1111,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA37C6DC2959F1CA00C508CB /* Build configuration list for PBXNativeTarget "DnDWorldUITests" */ = {
+		CA37C6DC2959F1CA00C508CB /* Build configuration list for PBXNativeTarget "TTRPGCharacterForgeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA37C6DD2959F1CA00C508CB /* Debug */,
