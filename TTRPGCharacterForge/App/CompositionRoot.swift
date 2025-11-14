@@ -29,4 +29,8 @@ final class CompositionRoot {
     private func makeSpellCacheManager() -> SpellCacheManager {
         SpellCacheManager()
     }
+
+    lazy var coordinator: Coordinator = {
+        Coordinator()
+    }()
 }
